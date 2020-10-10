@@ -8,7 +8,7 @@ const methodOverride = require('method-override');
 const session = require('express-session');
 
 const routes = {
-  index: require('./routes/index'),
+  categoriesInfo: require('./routes/cateroriesInfo'),
   hello: require('./routes/hello'),
 };
 
@@ -36,7 +36,7 @@ app.use(app.router);
 app.use(express.errorHandler());
 
 // App routes
-app.get('/', routes.index);
+app.get('/:categoryId', routes.categoriesInfo);
 app.get('/hello', routes.hello);
 
 // Run server
