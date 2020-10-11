@@ -1,0 +1,15 @@
+<%- include header.ejs%>
+
+<div style="margin-left: 15%; margin-right: 15%">
+    <ol>
+        <% _.each(products, (product)=> { %>
+            <li style="margin-top: 10px;margin-bottom: 10px">
+                <div><%=product.name%></div>
+                <img src="/images/<%=product.image_groups[0].images[0].link%>" alt="">
+                <div style="display: inline; text-align: center"><%=product.short_description%></div>
+            </li>
+        <%});%>
+    </ol>
+</div>
+
+<%- include footer.ejs%>

@@ -9,7 +9,7 @@ const session = require('express-session');
 
 const routes = {
   categoriesInfo: require('./routes/cateroriesInfo'),
-  hello: require('./routes/hello'),
+  categoryItems: require('./routes/categoryItems'),
 };
 
 const app = express();
@@ -37,7 +37,8 @@ app.use(express.errorHandler());
 
 // App routes
 app.get('/:categoryId', routes.categoriesInfo);
-app.get('/hello', routes.hello);
+app.get('/products/:categoryId-:subcategoryId', routes.categoryItems);
+
 
 // Run server
 http.createServer(app).listen(app.get('port'), () => {
