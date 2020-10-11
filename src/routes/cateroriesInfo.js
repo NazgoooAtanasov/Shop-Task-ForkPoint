@@ -9,6 +9,8 @@ module.exports = async function categoriesInfo(req, res) {
     const {categoryId} = req.params;
     const db = client.db('shop');
     const collection = db.collection('categories');
+
+    // Finds the category by the given id.
     const {page_title, name, page_description,categories} = await collection.findOne({id: categoryId});
 
     res.render('categoriesPage', {

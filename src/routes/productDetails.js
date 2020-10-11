@@ -9,12 +9,10 @@ module.exports = async function productDetails(req, res) {
         const {productId,categoryId,subcategoryId} = req.params;
         const db = client.db('shop');
         const collection = db.collection('products');
+
+        // Finds a product by a given id.
         const product = await collection.findOne({id: productId});
 
-        res.render('productDetails',{
-            _,
-            title: 'asd',
-            product:product,
-        })
+        res.render('productDetails');
     });
 };
