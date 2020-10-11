@@ -1,23 +1,24 @@
 <%- include header.ejs %>
 
-    <div class="bodyContainer" style="margin-left: 15%; margin-right: 15%">
-        <h1><%= categoryName %></h1>
-        <p><%= categoryDesc %></p>
+    <div class="body-wrapper">
+        <div class="bodyArranger">
+            <h1><%= categoryName %></h1>
+            <p><%= categoryDesc %></p>
+            <h2>Subcategories</h2>
+            <ul>
+                <% _.each(categories, (category) => { %>
+                    <li>
+                        <img class="" src="/images/<%= category.image %>">
+                        <p> <%= category.page_description %> </p>
+                        <div style="margin-bottom: 15px">
+                            <a class="customButton"
+                               href="/products/<%= category.id %>">View Products</a>
+                        </div>
+                    </li>
+                <% })%>
+            </ul>
 
-        <h2>Subcategories</h2>
-        <ul style="list-style-type: none">
-            <% _.each(categories, (category) => { %>
-                <li style="border-bottom: black solid; margin-top: 50px">
-                    <img class="" src="/images/<%= category.image %>">
-                    <p> <%= category.page_description %> </p>
-                    <div style="margin-bottom: 15px">
-                        <a style="border-radius: 10px; border: black solid;text-decoration: none; color:black; padding: 7px"
-                        href="/products/<%= category.id %>">View Products</a>
-                    </div>
-                </li>
-            <% })%>
-        </ul>
-
+        </div>
     </div>
 
 <%- include footer.ejs %>

@@ -6,16 +6,12 @@
     </head>
 
     <body>
-        <div class="header-wrapper " style="border: black solid; ">
-            <div style="margin-right: 15%;margin-left: 15% ">
+        <div class="header-wrapper">
+            <div class="headerNav">
                 <span class="headerNotification">Shop-Task-ForkPoint</span>
-                <div style="display: inline">
-                    <a style=";border: black solid; border-radius: 10px; padding: 5px;text-decoration: none; color: black" href="/mens">Mens</a>
-                    <a style="border: black solid; border-radius: 10px; padding: 5px; text-decoration: none; color: black" href="/womens">Womans</a>
-                </div>
+                <a class="customButton" href="/mens">Mens</a>
+                <a class="customButton" href="/womens">Womans</a>
             </div>
-
-        </div>
-        <div style="margin-right: 15%;margin-left: 15%; margin-top: 10px">
-            <span style="padding: 5px"><a href="/">Home</a> / <a href="<%= categoryName %>"><%= categoryName %></a></span>
+<!-- Todo: make better breadcrumbs navigation! -->
+<!--            <div class="breadcrumbs"><a href="/">Home</a> / <a href="<%= categoryId %>"><%= categoryName %></a></div>-->
         </div>

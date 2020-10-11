@@ -1,6 +1,27 @@
 .header-wrapper {
-    .headerNotification {
-        font-weight: bold;
-        font-size: 30px;
-    }
+  .breadcrumbs{
+    margin: 0px 15% 0px 15%;
+  }
+  .headerNav{
+    border: solid black;
+  }
+  .headerNotification {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+}
+
+.customButton{
+  border: solid black;
+  margin: 5px;
+  border-radius: 15px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+.customButton:hover{
+  color: black;
 }

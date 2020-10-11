@@ -5172,14 +5172,45 @@ a.thumbnail {
 .clearfix::after {
   clear: both; }
 
-.header-wrapper .headerNotification {
-  font-weight: bold;
-  font-size: 30px; }
+.body-wrapper .bodyArranger {
+  margin: 0px 15% 0px 15%; }
 
 .body-wrapper .bodyNotifier {
   font-weight: bold;
   font-size: 30px; }
 
-.footer-wrapper .footerNotifier {
+.body-wrapper ul {
+  list-style-type: none; }
+
+li {
+  border-bottom: black solid;
+  margin-top: 50px; }
+
+.footer-wrapper {
+  border-top: solid black; }
+  .footer-wrapper .footerNotifier {
+    font-weight: bold;
+    font-size: 30px; }
+
+.header-wrapper .breadcrumbs {
+  margin: 0px 15% 0px 15%; }
+
+.header-wrapper .headerNav {
+  border: solid black; }
+
+.header-wrapper .headerNotification {
+  margin-left: 15%;
+  margin-right: 15%;
   font-weight: bold;
   font-size: 30px; }
+
+.customButton {
+  border: solid black;
+  margin: 5px;
+  border-radius: 15px;
+  padding: 5px;
+  text-decoration: none;
+  color: black; }
+
+.customButton:hover {
+  color: black; }
