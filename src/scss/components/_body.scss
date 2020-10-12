@@ -10,8 +10,15 @@
     ul{
         list-style-type: none;
     }
+    li{
+        list-style-type: none;
+        padding: 10px;
+    }
 }
 
-li{
-    border-bottom: black solid; margin-top: 50px
+.gridContainer{
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: auto auto;
+    width: 100%;
 }

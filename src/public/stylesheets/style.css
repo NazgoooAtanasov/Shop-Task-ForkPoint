@@ -5182,9 +5182,15 @@ a.thumbnail {
 .body-wrapper ul {
   list-style-type: none; }
 
-li {
-  border-bottom: black solid;
-  margin-top: 50px; }
+.body-wrapper li {
+  list-style-type: none;
+  padding: 10px; }
+
+.gridContainer {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto auto;
+  width: 100%; }
 
 .footer-wrapper {
   border-top: solid black; }

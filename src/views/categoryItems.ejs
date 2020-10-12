@@ -2,16 +2,19 @@
 
 <div class="body-wrapper">
     <div class="bodyArranger">
+
         <ol>
-            <% _.each(products, (product)=> { %>
-            <li style="margin-top: 10px;margin-bottom: 10px">
-                <div><%=product.name%></div>
-                <img src="/images/<%=product.image_groups[0].images[0].link%>" alt="">
-                <div style="display: inline; text-align: center"><%=product.short_description%></div>
-                <div>Price: $ <%=product.price%></div>
-                <a class="customButton" href="/products/<%=product.primary_category_id%>/<%= product.id %>">More info</a>
-            </li>
-            <%});%>
+            <div class="gridContainer">
+                <% _.each(products, (product)=> { %>
+                <li>
+                    <div><%=product.name%></div>
+                    <img src="/images/<%=product.image_groups[0].images[0].link%>" alt="">
+                    <div><%=product.short_description%></div>
+                    <div>Price: $ <%=product.price%></div>
+                    <a class="customButton" href="/products/<%=product.primary_category_id%>/<%= product.id %>">More info</a>
+                </li>
+                <%});%>
+            </div>
         </ol>
     </div>
 </div>
