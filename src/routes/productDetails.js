@@ -6,7 +6,7 @@ dotenv.config();
 
 module.exports = async function productDetails(req, res) {
     await mdbClient.connect(process.env.CONNECTIONSTRING,  async (err, client) => {
-        const {productId,categoryId,subcategoryId} = req.params;
+        const {productId} = req.params;
         const db = client.db('shop');
         const collection = db.collection('products');
 
@@ -14,7 +14,13 @@ module.exports = async function productDetails(req, res) {
             // Finds a product by a given id.
             const product = await collection.findOne({id: productId});
 
-            res.render('productDetails');
+            const {link} = product.image_groups.filter(value => value.view_type == 'large')[0].images[0];
+
+            res.render('productDetails',{
+                _,
+                imageLink: link,
+                data: product
+            });
         }
         catch (e) {
             console.log(e);

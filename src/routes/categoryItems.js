@@ -20,7 +20,7 @@ module.exports = async function mensCategoryInfo(req, res) {
             // Renders the proper view with the information it needs.
             res.render('categoryItems', {
                 _,
-                category: category,
+                data: {page_title: category.page_title},
                 products: products,
             });
         }

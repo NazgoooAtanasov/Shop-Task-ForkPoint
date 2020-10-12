@@ -1,0 +1,22 @@
+<%- include header.ejs %>
+    <div class="body-wrapper">
+        <div class="bodyArranger">
+            <div class="gridContainer">
+                <div>
+                    <img src="/images/<%=imageLink%>">
+                </div>
+                <div>
+                    <%- data.long_description %>
+                    <div class="gridContainer">
+                        <div>
+                            <a class="customButton">Buy now</a>
+                        </div>
+                        <div>
+                            <p>Price: <%=data.price%></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include footer.ejs%>

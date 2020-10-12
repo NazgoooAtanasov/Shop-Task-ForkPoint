@@ -15,7 +15,7 @@ module.exports = async function categoriesInfo(req, res) {
         // Underscore.js lib
         _,
         // Template data
-        category: category,
+        data: category,
       });
     }catch (e){
       console.log(e);

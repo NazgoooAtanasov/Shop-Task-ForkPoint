@@ -5,7 +5,7 @@
 
         <ol>
             <div class="gridContainer">
-                <% _.each(products, (product)=> { %>
+                <% _.each(products, product=> { %>
                 <li>
                     <div><%=product.name%></div>
                     <img src="/images/<%=product.image_groups[0].images[0].link%>" alt="">

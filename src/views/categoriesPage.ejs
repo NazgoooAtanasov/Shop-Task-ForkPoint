@@ -2,11 +2,11 @@
 
     <div class="body-wrapper">
         <div class="bodyArranger">
-            <h1><%= category.name %></h1>
-            <p><%= category.page_description %></p>
+            <h1><%= data.name %></h1>
+            <p><%= data.page_description %></p>
             <h2>Subcategories</h2>
             <ul>
-                <% _.each(category.categories, (category) => { %>
+                <% _.each(data.categories, (category) => { %>
                     <li>
                         <img class="" src="/images/<%= category.image %>">
                         <p> <%= category.page_description %> </p>
