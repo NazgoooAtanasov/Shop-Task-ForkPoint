@@ -13,14 +13,17 @@ module.exports = async function mensCategoryInfo(req, res) {
             // Gets the name and the page title for the parent category.
             const category = await db.collection('categories').findOne({id: categoryId});
 
+            const name = category.categories.filter(value => value.id == `${categoryId}-${subcategoryId}`)[0].name;
+
             // Gets the products for the subcategory.
             const products = await db.collection('products')
                 .find({primary_category_id: {$regex: new RegExp(`\\b${categoryId}-${subcategoryId}`)}}).toArray();
 
             // Renders the proper view with the information it needs.
-            res.render('categoryItems', {
+            res.render('plp', {
                 _,
-                data: {page_title: category.page_title},
+                data: category,
+                name: name,
                 products: products,
             });
         }

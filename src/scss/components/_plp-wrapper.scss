@@ -1,0 +1,142 @@
+.plp-wrapper{
+  .header-plp-freeShipping{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+  .header-plp-nav{
+    background-color: black;
+    color: white;
+
+    .header-plp-nav-menu{
+      text-align: right;
+      margin: 0 15% 0 15%;
+      *{
+        padding: 0px 3px 0px 3px;
+        display: inline;
+      }
+    }
+  }
+
+  .header-plp-menu{
+    height: 7vh;
+
+    .header-plp-menu-arranger{
+      display: inline;
+      height: 100%;
+      margin: 0px 15% 0px 15%;
+
+      .header-plp-menu-elements{
+        display: inline;
+        height: 100%;
+        display: inline;
+        .element{
+          padding: 5px;
+          color: dimgray;
+          height: 100%;
+          text-align: center;
+          display: inline;
+        }
+      }
+    }
+  }
+
+  .header-plp-header-title{
+    margin: 10px 15% 10px 15%;
+
+    .header-plp-header-title-arranger{
+      *{
+        display: inline;
+      }
+
+      .title{
+        font-size: 40px;
+        font-weight: bold;
+        padding-right: 5px;
+        border-right: solid darkgrey 1px;
+      }
+      .items-count{
+      }
+    }
+  }
+
+  .body-plp-grid-body{
+    margin: 0px 15% 0px 15%;
+    display: flex;
+
+    .body-plp-grid-arranger{
+      flex: 100%;
+      display: grid;
+      grid-template-columns: 30% 70%;
+
+      .grid-arranger-filer{
+
+      }
+
+      .grid-arranger-items{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+
+        .item{
+          margin: 5px;
+          border: solid black;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  .grid-container{
+    margin: 0px 15% 0px 15%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .filter-plp{
+    font-size: 20px;
+    margin-right: 10px;
+    .category{
+      .elements{
+        margin: 20px 10px 0px 10px;
+        .subelements{
+          margin-left: 10px;
+          a{
+            text-decoration: none;
+            color: darkgrey;
+          }
+        }
+      }
+    }
+    .filter-elements{
+      border-left: solid darkgrey 1px;
+      color: darkgrey;
+      border-right: solid darkgrey 1px;
+      border-top: solid darkgrey 1px;
+      font-weight: bold;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    .card{
+      color: darkgrey;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}
