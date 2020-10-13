@@ -1,10 +1,10 @@
+.header-plp-freeShipping{
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
 .plp-wrapper{
-  .header-plp-freeShipping{
-    background-color: red;
-    color: white;
-    text-align: center;
-    font-size: 15px;
-  }
   .header-plp-nav{
     background-color: black;
     color: white;
@@ -69,10 +69,6 @@
       flex: 100%;
       display: grid;
       grid-template-columns: 30% 70%;
-
-      .grid-arranger-filer{
-
-      }
 
       .grid-arranger-items{
         display: grid;

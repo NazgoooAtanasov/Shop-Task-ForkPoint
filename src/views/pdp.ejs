@@ -1,0 +1,70 @@
+<%- include siteHeader.ejs%>
+<div class="pdp-wrapper">
+    <div class="pdp-nav-menu">
+        <div class="header-pdp-nav-menu-left">
+            <div>STORE</div>
+            <div>COMPANY</div>
+            <div>AIRBAG</div>
+            <div>ATHLETES</div>
+            <div>NEWS</div>
+        </div>
+        <div class="header-pdp-nav-menu">
+            <div>Store locator</div>
+            <div>Login</div>
+            <div>Order status</div>
+            <div>EN</div>
+            <div>0</div>
+        </div>
+    </div>
+    <div class="pdp-menu">
+        <img class="element" src="/images/fp-logo.png" alt="">
+        <div class="element">MOTORBIKE</div>
+        <div class="element">AVG</div>
+        <div class="element">WINTERSPORTS</div>
+        <div class="element">BIKE</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="itemDesc">
+            <div class="pic">
+                <img src="/images/<%=imageLink%>" alt="">
+            </div>
+            <div class="description">
+                <div class="title">Description</div>
+                <%-data.long_description%>
+            </div>
+        </div>
+        <div class="info">
+            <div class="itemId">
+                Item No. <%=data.id%>
+            </div>
+            <div class="itemName">
+                <%=data.name%>
+            </div>
+            <div class="itemPrice">
+                <%=data.price%> EURO
+            </div>
+            <div class="colors">
+                <div class="title">
+                    Colors:
+                </div>
+                <div class="colorWrapper">
+                    <% _.each(colors, color=> { %>
+                    <div class="colorElements"><%=color.name%></div>
+                    <%});%>
+                </div>
+            </div>
+            <div class="sizes">
+                <div class="title">
+                    Size:
+                </div>
+                <div class="sizeWrapper">
+                    <% _.each(sizes, size=> { %>
+                    <div class="sizeElements"><%=size.name%></div>
+                    <%});%>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include siteFooter.ejs%>

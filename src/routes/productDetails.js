@@ -15,10 +15,14 @@ module.exports = async function productDetails(req, res) {
             const product = await collection.findOne({id: productId});
 
             const {link} = product.image_groups.filter(value => value.view_type == 'large')[0].images[0];
-
-            res.render('productDetails',{
+            const colors = product.variation_attributes.filter(value => value.id == 'color')[0].values;
+            const sizes = product.variation_attributes.filter(value => value.id == 'size')[0].values;
+            console.log(sizes);
+            res.render('pdp',{
                 _,
                 imageLink: link,
+                sizes: sizes,
+                colors: colors,
                 data: product
             });
         }

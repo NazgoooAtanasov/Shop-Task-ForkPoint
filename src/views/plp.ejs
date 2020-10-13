@@ -1,7 +1,6 @@
 <%- include siteHeader.ejs%>
 
 <div class="plp-wrapper">
-    <div class="header-plp-freeShipping" style="">FREE SHIPPING ON ALL ORDERS ABOVE 99€</div>
     <div class="header-plp-nav">
         <div class="header-plp-nav-menu">
             <div>Store Locator</div>
@@ -58,7 +57,7 @@
             <% _.each(products, product=> { %>
                 <div class="card">
                     <img src="/images/<%=product.image_groups.filter(value => value.view_type =='large')[0].images[0].link%>" alt="">
-                    <div><%=product.name%></div>
+                    <div><a href="/products/<%=data.id%>-<%=subcategoryId%>/<%=product.id%>"><%=product.name%></a></div>
                     <div><%=product.price%></div>
                 </div>
             <%});%>
@@ -66,4 +65,4 @@
     </div>
 </div>
 
-<%- include siteHeader.ejs%>
+<%- include siteFooter.ejs%>
