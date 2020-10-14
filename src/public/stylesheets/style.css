@@ -5315,6 +5315,34 @@ a.thumbnail {
       padding: 0px 3px 0px 3px;
       display: inline; }
 
+.pdp-wrapper .nav-mobile {
+  display: none;
+  margin: 0px; }
+  .pdp-wrapper .nav-mobile .nav-mobile-wrapper {
+    padding: 5px;
+    background-color: black;
+    color: white; }
+    .pdp-wrapper .nav-mobile .nav-mobile-wrapper .nav-mobile-elements {
+      text-align: center;
+      font-weight: bold; }
+      .pdp-wrapper .nav-mobile .nav-mobile-wrapper .nav-mobile-elements * {
+        padding: 0px 3px 0px 3px;
+        display: inline; }
+    .pdp-wrapper .nav-mobile .nav-mobile-wrapper .nav-mobile-elements-right {
+      text-align: right;
+      font-weight: bold;
+      margin: 0 15% 0 15%; }
+      .pdp-wrapper .nav-mobile .nav-mobile-wrapper .nav-mobile-elements-right * {
+        padding: 0px 3px 0px 3px;
+        display: inline; }
+    .pdp-wrapper .nav-mobile .nav-mobile-wrapper .nav-mobile-elements-left {
+      text-align: left;
+      font-weight: bold;
+      margin: 0 15% 0 15%; }
+      .pdp-wrapper .nav-mobile .nav-mobile-wrapper .nav-mobile-elements-left * {
+        padding: 0px 3px 0px 3px;
+        display: inline; }
+
 .pdp-wrapper .menu-wrapper {
   height: 7vh;
   margin: 0px 15% 0px 15%; }
@@ -5355,6 +5383,7 @@ a.thumbnail {
     display: inline;
     margin: 20px; }
     .pdp-wrapper .info-wrapper .colors .color-wrapper .color-elements {
+      border: solid dimgray 1px;
       display: inline;
       padding: 5px; }
 
@@ -5365,5 +5394,25 @@ a.thumbnail {
     display: inline;
     margin: 20px; }
     .pdp-wrapper .info-wrapper .sizes .size-wrapper .size-elements {
+      border: solid dimgray 1px;
       display: inline;
       padding: 5px; }
+
+.pdp-wrapper .info-wrapper .buy-now {
+  text-align: center; }
+  .pdp-wrapper .info-wrapper .buy-now .buy-now-wrapper * {
+    display: inline; }
+  .pdp-wrapper .info-wrapper .buy-now .buy-now-wrapper .counter button {
+    border: solid dimgray 1px;
+    padding: 5px; }
+  .pdp-wrapper .info-wrapper .buy-now .buy-now-wrapper .count-button {
+    width: 60%;
+    font-weight: bolder; }
+
+@media only screen and (max-width: 600px) {
+  .pdp-wrapper .nav-desktop {
+    display: none; }
+  .pdp-wrapper .menu-wrapper {
+    display: none; }
+  .pdp-wrapper .nav-mobile {
+    display: inline; } }

@@ -24,7 +24,44 @@
     }
   }
 
-  // .nav-mobile{}
+  .nav-mobile{
+    display: none;
+    margin: 0px;
+    .nav-mobile-wrapper{
+      padding: 5px;
+      background-color: black;
+      color: white;
+
+      .nav-mobile-elements{
+        text-align: center;
+        font-weight: bold;
+        *{
+          padding: 0px 3px 0px 3px;
+          display: inline;
+        }
+      }
+
+      .nav-mobile-elements-right{
+        text-align: right;
+        font-weight: bold;
+        margin: 0 15% 0 15%;
+        *{
+          padding: 0px 3px 0px 3px;
+          display: inline;
+        }
+      }
+
+      .nav-mobile-elements-left{
+        text-align: left;
+        font-weight: bold;
+        margin: 0 15% 0 15%;
+        *{
+          padding: 0px 3px 0px 3px;
+          display: inline;
+        }
+      }
+    }
+  }
 
   .menu-wrapper{
     height: 7vh;
@@ -77,6 +114,7 @@
           display: inline;
           margin: 20px;
           .color-elements{
+            border: solid dimgray 1px;
             display: inline;
             padding: 5px;
           }
@@ -89,10 +127,41 @@
           display: inline;
           margin: 20px;
           .size-elements{
+            border: solid dimgray 1px;
             display: inline;
             padding: 5px;
           }
         }
       }
+
+      .buy-now{
+        text-align: center;
+        .buy-now-wrapper{
+          *{
+            display: inline;
+          }
+          .counter{
+            button{
+              border: solid dimgray 1px;
+              padding: 5px;
+            }
+          }
+          .count-button{
+            width: 60%; font-weight: bolder
+          }
+        }
+      }
     }
+
+  @media only screen and (max-width: 600px) {
+    .nav-desktop {
+      display: none;
+    }
+    .menu-wrapper{
+      display: none;
+    }
+    .nav-mobile{
+      display: inline;
+    }
+  }
 }
