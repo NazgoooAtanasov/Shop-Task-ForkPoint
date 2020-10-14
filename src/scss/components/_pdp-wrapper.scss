@@ -1,9 +1,9 @@
 .pdp-wrapper{
-  .pdp-nav-menu{
+  .nav-desktop{
     background-color: black;
     color: white;
 
-    .header-pdp-nav-menu-left{
+    .nav-desktop-left{
       display: inline;
       text-align: left;
       margin: 0 15% 0 15%;
@@ -13,7 +13,7 @@
       }
     }
 
-    .header-pdp-nav-menu{
+    .nav-desktop-right{
       display: inline;
       text-align: right;
       margin: 0 15% 0 15%;
@@ -24,7 +24,9 @@
     }
   }
 
-  .pdp-menu{
+  // .nav-mobile{}
+
+  .menu-wrapper{
     height: 7vh;
     margin: 0px 15% 0px 15%;
     .element{
@@ -36,7 +38,7 @@
     }
   }
 
-    .itemDesc{
+  .item-description-wrapper{
       .pic{
         text-align: center;
       }
@@ -49,20 +51,20 @@
       }
     }
 
-    .info{
-      .itemId{
+  .info-wrapper{
+      .item-id{
         font-size: 10px;
         color: dimgray;
         border-bottom: dimgray solid 1px;
       }
-      .itemName{
+      .item-name{
         font-size: 25px;
         color: black;
         font-weight: bold;
         margin: 10px 0px 10px 0px;
       }
 
-      .itemPrice{
+      .item-price{
         font-size: 25px;
         color: dimgray;
         border-bottom: dimgray solid 1px;
@@ -71,10 +73,10 @@
       .colors{
         margin: 20px;
         color: dimgray;
-        .colorWrapper{
+        .color-wrapper{
           display: inline;
           margin: 20px;
-          .colorElements{
+          .color-elements{
             display: inline;
             padding: 5px;
           }
@@ -83,10 +85,10 @@
       .sizes{
         margin: 20px;
         color: dimgray;
-        .sizeWrapper{
+        .size-wrapper{
           display: inline;
           margin: 20px;
-          .sizeElements{
+          .size-elements{
             display: inline;
             padding: 5px;
           }

@@ -1,14 +1,14 @@
 <%- include siteHeader.ejs%>
 <div class="pdp-wrapper">
-    <div class="pdp-nav-menu">
-        <div class="header-pdp-nav-menu-left">
+    <div class="nav-desktop">
+        <div class="nav-desktop-left">
             <div>STORE</div>
             <div>COMPANY</div>
             <div>AIRBAG</div>
             <div>ATHLETES</div>
             <div>NEWS</div>
         </div>
-        <div class="header-pdp-nav-menu">
+        <div class="nav-desktop-right">
             <div>Store locator</div>
             <div>Login</div>
             <div>Order status</div>
@@ -16,7 +16,7 @@
             <div>0</div>
         </div>
     </div>
-    <div class="pdp-menu">
+    <div class="menu-wrapper">
         <img class="element" style="max-width: 55%; max-height: 55%" src="/images/fp-logo.png" alt="">
         <div class="element">MOTORBIKE</div>
         <div class="element">AVG</div>
@@ -27,7 +27,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8">
-                <div class="itemDesc">
+                <div class="item-description-wrapper">
                     <div style="max-width: 100%" class="pic">
                         <img src="/images/<%=imageLink%>" alt="">
                     </div>
@@ -38,24 +38,24 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="info">
-                    <div class="itemId">
+                <div class="info-wrapper">
+                    <div class="item-id">
                         Item No. <%=data.id%>
                     </div>
-                    <div class="itemName">
+                    <div class="item-name">
                         <%=data.name%>
                     </div>
-                    <div class="itemPrice">
+                    <div class="item-price">
                         <%=data.price%> EURO
                     </div>
                     <div class="colors">
                         <div class="title">
                             Colors:
                         </div>
-                        <div class="colorWrapper">
+                        <div class="color-wrapper">
                             <ul>
                                 <% _.each(colors, color=> { %>
-                                <li class="colorElements"><%=color.name%></li>
+                                <li class="color-elements"><%=color.name%></li>
                                 <%});%>
                             </ul>
                             </div>
@@ -64,10 +64,10 @@
                         <div class="title">
                             Sizes:
                         </div>
-                        <div class="sizeWrapper">
+                        <div class="size-wrapper">
                             <ul>
                                 <% _.each(sizes, size=> { %>
-                                <li class="sizeElements"><%=size.name%></li>
+                                <li class="size-elements"><%=size.name%></li>
                                 <%});%>
                             </ul>
                         </div>
