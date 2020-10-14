@@ -2,6 +2,7 @@
   .nav-desktop{
     background-color: black;
     color: white;
+    padding: 10px;
 
     .nav-desktop-left{
       display: inline;
@@ -84,6 +85,12 @@
           font-size: 30px;
           font-weight: bold;
           margin: 20px 0px 20px 0px;
+        }
+
+        .long_desc{
+          font-size: 20px;
+          margin: 20px 0px 20px 0px;
+          list-style-type: none;
         }
       }
     }

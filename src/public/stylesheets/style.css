@@ -5247,7 +5247,8 @@ a.thumbnail {
 
 .plp-wrapper .nav-desktop .nav-desktop-wrapper {
   background-color: black;
-  color: white; }
+  color: white;
+  padding: 10px; }
   .plp-wrapper .nav-desktop .nav-desktop-wrapper .nav-desktop-elements {
     text-align: right;
     margin: 0 15% 0 15%; }
@@ -5299,7 +5300,8 @@ a.thumbnail {
 
 .pdp-wrapper .nav-desktop {
   background-color: black;
-  color: white; }
+  color: white;
+  padding: 10px; }
   .pdp-wrapper .nav-desktop .nav-desktop-left {
     display: inline;
     text-align: left;
@@ -5359,6 +5361,11 @@ a.thumbnail {
   font-size: 30px;
   font-weight: bold;
   margin: 20px 0px 20px 0px; }
+
+.pdp-wrapper .item-description-wrapper .description .long_desc {
+  font-size: 20px;
+  margin: 20px 0px 20px 0px;
+  list-style-type: none; }
 
 .pdp-wrapper .info-wrapper .item-id {
   font-size: 10px;

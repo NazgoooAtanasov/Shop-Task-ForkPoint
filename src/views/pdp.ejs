@@ -38,13 +38,11 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8">
-                <div class="item-description-wrapper">
-                    <div style="max-width: 100%" class="pic">
-                        <img src="/images/<%=imageLink%>" alt="">
-                    </div>
-                    <div class="description">
-                        <div class="title">Description</div>
-                        <%-data.long_description%>
+                <div class="col-sm-8">
+                    <div class="item-description-wrapper">
+                        <div style="max-width: 100%" class="pic">
+                            <img src="/images/<%=imageLink%>" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,7 +67,7 @@
                                 <li class="color-elements"><%=color.name%></li>
                                 <%});%>
                             </ul>
-                            </div>
+                        </div>
                     </div>
                     <div class="sizes">
                         <div class="title">
@@ -90,12 +88,33 @@
                                 <div>1</div>
                                 <button>-</button>
                             </div>
-                            <button class="count-button btn btn-danger">ASD</button>
+                            <button class="count-button btn btn-danger">ADD TO CART</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="item-description-wrapper">
+                    <div class="description">
+                        <div class="title">Description</div>
+                        <%=data.short_description%>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="item-description-wrapper">
+                    <div class="description">
+                        <div class="long_desc">
+                            <%-data.long_description%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </div>
 </div>
 <%- include siteFooter.ejs%>
