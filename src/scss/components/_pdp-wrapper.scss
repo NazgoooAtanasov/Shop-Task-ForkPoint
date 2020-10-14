@@ -36,10 +36,6 @@
     }
   }
 
-  .grid-container{
-    display: grid;
-    grid-template-columns: 70% 30%;
-
     .itemDesc{
       .pic{
         text-align: center;
@@ -81,8 +77,6 @@
           .colorElements{
             display: inline;
             padding: 5px;
-            border-left: dimgray solid 1px;
-            border-right: dimgray solid 1px;
           }
         }
       }
@@ -95,11 +89,8 @@
           .sizeElements{
             display: inline;
             padding: 5px;
-            border-left: dimgray solid 1px;
-            border-right: dimgray solid 1px;
           }
         }
       }
     }
-  }
 }

@@ -17,51 +17,61 @@
         </div>
     </div>
     <div class="pdp-menu">
-        <img class="element" src="/images/fp-logo.png" alt="">
+        <img class="element" style="max-width: 55%; max-height: 55%" src="/images/fp-logo.png" alt="">
         <div class="element">MOTORBIKE</div>
         <div class="element">AVG</div>
         <div class="element">WINTERSPORTS</div>
         <div class="element">BIKE</div>
     </div>
 
-    <div class="grid-container">
-        <div class="itemDesc">
-            <div class="pic">
-                <img src="/images/<%=imageLink%>" alt="">
-            </div>
-            <div class="description">
-                <div class="title">Description</div>
-                <%-data.long_description%>
-            </div>
-        </div>
-        <div class="info">
-            <div class="itemId">
-                Item No. <%=data.id%>
-            </div>
-            <div class="itemName">
-                <%=data.name%>
-            </div>
-            <div class="itemPrice">
-                <%=data.price%> EURO
-            </div>
-            <div class="colors">
-                <div class="title">
-                    Colors:
-                </div>
-                <div class="colorWrapper">
-                    <% _.each(colors, color=> { %>
-                    <div class="colorElements"><%=color.name%></div>
-                    <%});%>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="itemDesc">
+                    <div style="max-width: 100%" class="pic">
+                        <img src="/images/<%=imageLink%>" alt="">
+                    </div>
+                    <div class="description">
+                        <div class="title">Description</div>
+                        <%-data.long_description%>
+                    </div>
                 </div>
             </div>
-            <div class="sizes">
-                <div class="title">
-                    Size:
-                </div>
-                <div class="sizeWrapper">
-                    <% _.each(sizes, size=> { %>
-                    <div class="sizeElements"><%=size.name%></div>
-                    <%});%>
+            <div class="col-sm-4">
+                <div class="info">
+                    <div class="itemId">
+                        Item No. <%=data.id%>
+                    </div>
+                    <div class="itemName">
+                        <%=data.name%>
+                    </div>
+                    <div class="itemPrice">
+                        <%=data.price%> EURO
+                    </div>
+                    <div class="colors">
+                        <div class="title">
+                            Colors:
+                        </div>
+                        <div class="colorWrapper">
+                            <ul>
+                                <% _.each(colors, color=> { %>
+                                <li class="colorElements"><%=color.name%></li>
+                                <%});%>
+                            </ul>
+                            </div>
+                    </div>
+                    <div class="sizes">
+                        <div class="title">
+                            Sizes:
+                        </div>
+                        <div class="sizeWrapper">
+                            <ul>
+                                <% _.each(sizes, size=> { %>
+                                <li class="sizeElements"><%=size.name%></li>
+                                <%});%>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

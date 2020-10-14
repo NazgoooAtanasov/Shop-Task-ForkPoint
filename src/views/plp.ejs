@@ -1,68 +1,68 @@
 <%- include siteHeader.ejs%>
 
 <div class="plp-wrapper">
-    <div class="header-plp-nav">
-        <div class="header-plp-nav-menu">
-            <div>Store Locator</div>
-            <div>Login</div>
-            <div>EN</div>
-            <div>0</div>
+    <div class="nav-desktop">
+        <div class="header-plp-nav">
+            <div class="header-plp-nav-menu">
+                <div>Store Locator</div>
+                <div>Login</div>
+                <div>EN</div>
+                <div>0</div>
+            </div>
         </div>
-    </div>
-    <div class="header-plp-menu">
-        <div class="header-plp-menu-arranger">
-            <div class="header-plp-menu-elements">
-                <img class="element" src="/images/fp-logo.png" alt="">
-                <div class="element">STORE</div>
-                <div class="element">COMPANY</div>
-                <div class="element">AIRBAG</div>
-                <div class="element">ATHLETES</div>
-                <div class="element">NEWS</div>
+        <div class="header-plp-menu">
+            <div class="header-plp-menu-arranger">
+                <div class="header-plp-menu-elements">
+                    <img class="element" style="max-width: 75%; max-height: 75%" src="/images/fp-logo.png" alt="">
+                    <div class="element">STORE</div>
+                    <div class="element">COMPANY</div>
+                    <div class="element">AIRBAG</div>
+                    <div class="element">ATHLETES</div>
+                    <div class="element">NEWS</div>
+                </div>
+            </div>
+        </div>
+        <div class="header-plp-header-title">
+            <div class="header-plp-header-title-arranger">
+                <div class="title"><%=name%></div>
+                <div class="items-count"><%=products.length%> ITEMS</div>
             </div>
         </div>
     </div>
-    <div class="header-plp-header-title">
-        <div class="header-plp-header-title-arranger">
-            <div class="title"><%=name%></div>
-            <div class="items-count"><%=products.length%> ITEMS</div>
+    <div class="nav-mobile">
+        <div class="header-plp-nav">
+            <div class="header-plp-nav-menu">
+                <div><%=name%></div>
+            </div>
+        </div>
+        <div style="background-color: lightgray; margin: 0px" class="header-plp-nav">
+            <div style="color: dimgray;text-align: left" class="header-plp-nav-menu">
+                <div>Filters</div>
+                <div>Search</div>
+            </div>
         </div>
     </div>
     <div class="grid-container">
-        <div class="filter-plp">
-            <div class="filter-elements">Refine by:</div>
-            <div class="category filter-elements">
-                <div class="elements">
-                    <div>CATEGORY</div>
-                    <div class="subelements"><a href="/womens">Female</a></div>
-                    <div class="subelements"><a href="/mens%>">Men</a></div>
-                </div>
-            </div>
-            <div class="category filter-elements">
-                <div class="elements">
-                    <div>PRODUCT TYPE</div>
-                    <% _.each(data.categories, category => {%>
-                        <div class="subelements"><a href="/products/<%=category.id%>"><%=category.name%></a></div>
+        <div class="plp-filter"></div>
+        <div class="container-flex">
+            <div class="row">
+                <div class="card-deck">
+                    <% _.each(products, product=> { %>
+                        <div class="col-sm-4">
+                            <div onclick="window.location.assign('<%=data.id%>-<%=subcategoryId%>/<%=product.id%>');" class="card" style="width: 18rem;">
+                                <img class="card-img-top thumbnail" src="/images/<%=product.image_groups.filter(value => value.view_type =='large')[0].images[0].link%>">
+                                <div class="card-body">
+                                    <div style="color: dimgray; border-bottom: dimgray solid 1px" class="card-title"><%=product.name%></div>
+                                    <div style="color: dimgray" class="card-price"><%=product.price%> EUR</div>
+                                </div>
+                            </div>
+                        </div>
                     <%});%>
                 </div>
             </div>
-            <div class="category filter-elements">
-                <div class="elements">
-                    <div>GENDER</div>
-                    <div class="subelements"><a href="/mens%>">Men</a></div>
-                    <div class="subelements"><a href="/womens">Female</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="cards">
-            <% _.each(products, product=> { %>
-                <div class="card">
-                    <img src="/images/<%=product.image_groups.filter(value => value.view_type =='large')[0].images[0].link%>" alt="">
-                    <div><a href="/products/<%=data.id%>-<%=subcategoryId%>/<%=product.id%>"><%=product.name%></a></div>
-                    <div><%=product.price%></div>
-                </div>
-            <%});%>
         </div>
     </div>
+
 </div>
 
 <%- include siteFooter.ejs%>

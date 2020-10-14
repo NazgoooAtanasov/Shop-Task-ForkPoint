@@ -25,3 +25,16 @@
 .customButton:hover{
   color: black;
 }
+
+.header-freeShipping{
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+@media only screen and (max-width: 600px){
+
+  .header-freeShipping{
+    display: none;
+  }
+}

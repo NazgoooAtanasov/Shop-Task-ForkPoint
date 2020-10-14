@@ -5221,11 +5221,29 @@ a.thumbnail {
 .customButton:hover {
   color: black; }
 
-.header-plp-freeShipping {
+.header-freeShipping {
   background-color: red;
   color: white;
   text-align: center;
   font-size: 15px; }
+
+@media only screen and (max-width: 600px) {
+  .header-freeShipping {
+    display: none; } }
+
+.plp-wrapper .nav-mobile {
+  display: none; }
+  .plp-wrapper .nav-mobile .header-plp-nav {
+    padding: 5px;
+    background-color: black;
+    color: white; }
+    .plp-wrapper .nav-mobile .header-plp-nav .header-plp-nav-menu {
+      text-align: center;
+      font-weight: bold;
+      margin: 0 15% 0 15%; }
+      .plp-wrapper .nav-mobile .header-plp-nav .header-plp-nav-menu * {
+        padding: 0px 3px 0px 3px;
+        display: inline; }
 
 .plp-wrapper .header-plp-nav {
   background-color: black;
@@ -5264,58 +5282,20 @@ a.thumbnail {
     padding-right: 5px;
     border-right: solid darkgrey 1px; }
 
-.plp-wrapper .body-plp-grid-body {
-  margin: 0px 15% 0px 15%;
-  display: flex; }
-  .plp-wrapper .body-plp-grid-body .body-plp-grid-arranger {
-    flex: 100%;
-    display: grid;
-    grid-template-columns: 30% 70%; }
-    .plp-wrapper .body-plp-grid-body .body-plp-grid-arranger .grid-arranger-items {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto auto auto; }
-      .plp-wrapper .body-plp-grid-body .body-plp-grid-arranger .grid-arranger-items .item {
-        margin: 5px;
-        border: solid black;
-        padding: 10px; }
-
 .plp-wrapper .grid-container {
   margin: 0px 15% 0px 15%;
   display: grid;
   grid-template-columns: 30% 70%; }
 
-.plp-wrapper .filter-plp {
-  font-size: 20px;
-  margin-right: 10px; }
-  .plp-wrapper .filter-plp .category .elements {
-    margin: 20px 10px 0px 10px; }
-    .plp-wrapper .filter-plp .category .elements .subelements {
-      margin-left: 10px; }
-      .plp-wrapper .filter-plp .category .elements .subelements a {
-        text-decoration: none;
-        color: darkgrey; }
-  .plp-wrapper .filter-plp .filter-elements {
-    border-left: solid darkgrey 1px;
-    color: darkgrey;
-    border-right: solid darkgrey 1px;
-    border-top: solid darkgrey 1px;
-    font-weight: bold; }
-
-.plp-wrapper .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem; }
-  .plp-wrapper .cards .card {
-    color: darkgrey; }
-
-@media (max-width: 800px) {
-  .plp-wrapper .cards {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media (max-width: 500px) {
-  .plp-wrapper .cards {
-    grid-template-columns: 1fr; } }
+@media only screen and (max-width: 600px) {
+  .plp-wrapper .plp-filter {
+    display: none; }
+  .plp-wrapper .grid-container {
+    grid-template-columns: 100%; }
+  .plp-wrapper .nav-desktop {
+    display: none; }
+  .plp-wrapper .nav-mobile {
+    display: inline; } }
 
 .pdp-wrapper .pdp-nav-menu {
   background-color: black;
@@ -5344,47 +5324,46 @@ a.thumbnail {
     display: inline;
     color: dimgray; }
 
-.pdp-wrapper .grid-container {
-  display: grid;
-  grid-template-columns: 70% 30%; }
-  .pdp-wrapper .grid-container .itemDesc .pic {
-    text-align: center; }
-  .pdp-wrapper .grid-container .itemDesc .description .title {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 20px 0px 20px 0px; }
-  .pdp-wrapper .grid-container .info .itemId {
-    font-size: 10px;
-    color: dimgray;
-    border-bottom: dimgray solid 1px; }
-  .pdp-wrapper .grid-container .info .itemName {
-    font-size: 25px;
-    color: black;
-    font-weight: bold;
-    margin: 10px 0px 10px 0px; }
-  .pdp-wrapper .grid-container .info .itemPrice {
-    font-size: 25px;
-    color: dimgray;
-    border-bottom: dimgray solid 1px; }
-  .pdp-wrapper .grid-container .info .colors {
-    margin: 20px;
-    color: dimgray; }
-    .pdp-wrapper .grid-container .info .colors .colorWrapper {
+.pdp-wrapper .itemDesc .pic {
+  text-align: center; }
+
+.pdp-wrapper .itemDesc .description .title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0px 20px 0px; }
+
+.pdp-wrapper .info .itemId {
+  font-size: 10px;
+  color: dimgray;
+  border-bottom: dimgray solid 1px; }
+
+.pdp-wrapper .info .itemName {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  margin: 10px 0px 10px 0px; }
+
+.pdp-wrapper .info .itemPrice {
+  font-size: 25px;
+  color: dimgray;
+  border-bottom: dimgray solid 1px; }
+
+.pdp-wrapper .info .colors {
+  margin: 20px;
+  color: dimgray; }
+  .pdp-wrapper .info .colors .colorWrapper {
+    display: inline;
+    margin: 20px; }
+    .pdp-wrapper .info .colors .colorWrapper .colorElements {
       display: inline;
-      margin: 20px; }
-      .pdp-wrapper .grid-container .info .colors .colorWrapper .colorElements {
-        display: inline;
-        padding: 5px;
-        border-left: dimgray solid 1px;
-        border-right: dimgray solid 1px; }
-  .pdp-wrapper .grid-container .info .sizes {
-    margin: 20px;
-    color: dimgray; }
-    .pdp-wrapper .grid-container .info .sizes .sizeWrapper {
+      padding: 5px; }
+
+.pdp-wrapper .info .sizes {
+  margin: 20px;
+  color: dimgray; }
+  .pdp-wrapper .info .sizes .sizeWrapper {
+    display: inline;
+    margin: 20px; }
+    .pdp-wrapper .info .sizes .sizeWrapper .sizeElements {
       display: inline;
-      margin: 20px; }
-      .pdp-wrapper .grid-container .info .sizes .sizeWrapper .sizeElements {
-        display: inline;
-        padding: 5px;
-        border-left: dimgray solid 1px;
-        border-right: dimgray solid 1px; }
+      padding: 5px; }
