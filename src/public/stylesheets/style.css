@@ -5234,7 +5234,7 @@ a.thumbnail {
 .plp-wrapper .nav-mobile {
   display: none; }
   .plp-wrapper .nav-mobile .nav-mobile-wrapper {
-    padding: 5px;
+    padding: 10px;
     background-color: black;
     color: white; }
     .plp-wrapper .nav-mobile .nav-mobile-wrapper .nav-mobile-elements {
@@ -5356,6 +5356,44 @@ a.thumbnail {
     list-style-type: none; }
     .plp-wrapper .content ul li {
       margin: 10px 0px 10px 0px; }
+
+.plp-wrapper .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s; }
+  .plp-wrapper .sidebar .sidebar-header {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    padding: 15px; }
+    .plp-wrapper .sidebar .sidebar-header .closebtn {
+      cursor: pointer;
+      display: inline;
+      float: right; }
+  .plp-wrapper .sidebar .collapsible {
+    color: dimgray;
+    background-color: lightgray; }
+  .plp-wrapper .sidebar .content {
+    border: none;
+    font-weight: normal; }
+  .plp-wrapper .sidebar .results-button {
+    font-weight: bolder;
+    margin: 5px;
+    width: 100%; }
+
+.plp-wrapper .openbtn {
+  cursor: pointer;
+  color: dimgray;
+  padding: 10px 15px;
+  border: none;
+  font-weight: bolder; }
 
 .slider {
   width: 100%; }

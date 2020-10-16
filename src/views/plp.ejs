@@ -1,6 +1,78 @@
 <%- include siteHeader.ejs%>
 
 <div class="plp-wrapper">
+    <div id="mySidebar" class="sidebar">
+        <div class="sidebar-header">
+            <div style="display: inline">Filters</div>
+            <div class="closebtn" onclick="closeNav()">&#5171;</div>
+        </div>
+            <button class="collapsible">ACTIVITY</button>
+            <div class="content">
+                <ul>
+                    <li class="filter-element">SNOW</li>
+                    <li class="filter-element">WHEEL</li>
+                    <li class="filter-element">ROAD</li>
+                </ul>
+            </div>
+            <button class="collapsible">PRODUCT TYPE</button>
+            <div class="content">
+                <div>
+                    <ul>
+                        <li class="filter-element">LEATHER SUITS</li>
+                        <li class="filter-element">JACKETS</li>
+                        <li class="filter-element">PANTS</li>
+                        <li class="filter-element">ACCESSORIES</li>
+                        <li class="filter-element">HELMETS</li>
+                        <li class="filter-element">SHOES</li>
+                        <li class="filter-element">BOOTS</li>
+                        <li class="filter-element">GLOVES</li>
+                        <li class="filter-element">SAFETY</li>
+                        <li class="filter-element">TECHNICAL LAYERS</li>
+                        <li class="filter-element">CASUAL WEAR</li>
+
+                    </ul>
+                </div>
+            </div>
+            <button class="collapsible" >GENDER</button>
+            <div class="content">
+                <div>
+                    <ul>
+                        <li class="filter-element">UNISEX</li>
+                        <li class="filter-element">MEN</li>
+                        <li class="filter-element">WOMEN</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="collapsible" >PRICE</button>
+            <div class="content">
+                <div>
+                    <input type="range" min="1" max="100" class="slider">
+                </div>
+            </div>
+            <button class="collapsible">COLOR</button>
+            <div  class="content">
+                <div class="colors-wrapper">
+                    <div style="background-color: green" class="color"></div>
+                    <div style="background-color: black" class="color"></div>
+                    <div style="background-color: white" class="color"></div>
+                    <div style="background-color: orange" class="color"></div>
+                    <div style="background-color: red" class="color"></div>
+                </div>
+            </div>
+            <button class="collapsible">SIZE</button>
+            <div class="content">
+                <div class="size-wrapper">
+                    <div class="size filter-element" >S</div>
+                    <div class="size filter-element">M</div>
+                    <div class="size filter-element">L</div>
+                    <div class="size filter-element">XL</div>
+                </div>
+            </div>
+        <div>
+            <button class="btn results-button">RESET FILTER</button>
+            <button class="btn btn-danger results-button">VIEW RESULTS</button>
+        </div>
+    </div>
     <div class="nav-desktop">
         <div class="nav-desktop-wrapper">
             <div class="nav-desktop-elements">
@@ -37,13 +109,15 @@
     <div class="nav-mobile">
         <div class="nav-mobile-wrapper">
             <div class="nav-mobile-elements">
+                <div style="float: left">&#9776;</div>
                 <div><%=name%></div>
+                <div style="float:right;">&#128722; 0</div>
             </div>
         </div>
         <div style="background-color: lightgray; margin: 0px" class="nav-mobile-wrapper">
-            <div style="color: dimgray;text-align: left" class="nav-mobile-elements">
-                <div>☰</div>
-                <div>Search</div>
+            <div style="color: dimgray;text-align: left; padding: 5px" class="nav-mobile-elements">
+                <button class="openbtn" onclick="openNav()">&#5176; Filters</button>
+                <div style="float: right">Search &#128269;</div>
             </div>
         </div>
     </div>
