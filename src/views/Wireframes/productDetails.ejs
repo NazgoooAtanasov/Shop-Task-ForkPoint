@@ -12,7 +12,13 @@
                             <a class="customButton">Buy now</a>
                         </div>
                         <div>
-                            <p>Price: <%=data.price%></p>
+                            <p>Price:</p>
+                            <p id="price"><%=data.price%></p>
+                            <select name="currency" id="cars">
+                                <option onclick="currency(value)" value="USD">USD</option>
+                                <option onclick="currency(value)" value="EUR">EUR</option>
+                                <option onclick="currency(value)" value="BGN">BGN</option>
+                            </select>
                         </div>
                     </div>
                 </div>

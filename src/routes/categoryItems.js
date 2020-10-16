@@ -5,14 +5,15 @@ const mdbClient = require('mongodb').MongoClient;
 dotenv.config();
 
 module.exports = async function mensCategoryInfo(req, res) {
-    const {categoryId, subcategoryId} = req.params;
-
     await mdbClient.connect(process.env.CONNECTIONSTRING, async (err, client) => {
+        const {categoryId, subcategoryId} = req.params;
         const db = client.db('shop');
+
         try {
             // Gets the name and the page title for the parent category.
             const category = await db.collection('categories').findOne({id: categoryId});
 
+            // Gets the name of the subcategory.
             const {name} = category.categories.filter(value => value.id === `${categoryId}-${subcategoryId}`)[0];
 
             // Gets the products for the subcategory.
@@ -21,7 +22,9 @@ module.exports = async function mensCategoryInfo(req, res) {
 
             // Renders the proper view with the information it needs.
             res.render('plp', {
+                // Underscore.js lib
                 _,
+                // Template data
                 data: category,
                 name: name,
                 subcategoryId: subcategoryId,
