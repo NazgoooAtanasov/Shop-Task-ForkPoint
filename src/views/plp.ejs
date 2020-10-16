@@ -6,7 +6,6 @@
             <div class="nav-desktop-elements">
                 <div>Store Locator</div>
                 <div>Login</div>
-                <div>EN</div>
                 <div>0</div>
             </div>
         </div>
@@ -42,15 +41,74 @@
             </div>
         </div>
     </div>
+    <div class="refine">Refine by:</div>
     <div class="grid-container">
-        <div class="plp-filter"></div>
+        <div class="filter">
+            <button class="collapsible">CATEGORY</button>
+            <div class="content">
+                <ul>
+                    <li class="filter-element">MOTORBIKE</li>
+                    <li>AVG</li>
+                    <li>WINTERSPORTS</li>
+                    <li>BIKE</li>
+                    <li>EQUESTRIAN</li>
+                </ul>
+            </div>
+            <button class="collapsible">PRODUCT TYPE</button>
+            <div class="content">
+                <div>
+                    <ul>
+                        <li>LEATHER SUITS</li>
+                        <li>JACKETS</li>
+                        <li>PANTS</li>
+                        <li>ACCESSORIES</li>
+                        <li>HELMETS</li>
+                        <li>SHOES</li>
+                        <li>BOOTS</li>
+                        <li>GLOVES</li>
+                        <li>SAFETY</li>
+                        <li>TECHNICAL LAYERS</li>
+                        <li >CASUAL WEAR</li>
+
+                    </ul>
+                </div>
+            </div>
+            <button class="collapsible" >GENDER</button>
+            <div class="content">
+                <div>
+                    <ul>
+                        <li>UNISEX</li>
+                        <li>MEN</li>
+                        <li>WOMEN</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="collapsible" >PRICE</button>
+            <div class="content">
+                <div>
+                    <input type="range">
+                </div>
+            </div>
+            <button class="collapsible">COLOR</button>
+            <div  class="content">
+            </div>
+            <button class="collapsible">SIZE</button>
+            <div class="content">
+                <div style="display: inline">
+                    <div style="display: inline">S</div>
+                    <div style="display: inline">M</div>
+                    <div style="display: inline">L</div>
+                    <div style="display: inline">XL</div>
+                </div>
+            </div>
+        </div>
         <div class="container-flex">
-            <div class="row">
+            <div class="row" style="">
                 <div class="card-deck">
                     <% _.each(products, product=> { %>
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <div onclick="window.location.assign('<%=data.id%>-<%=subcategoryId%>/<%=product.id%>');" class="card" style="margin: 5px">
-                                <img class="card-img-top thumbnail" src="/images/<%=product.image_groups.filter(value => value.view_type =='large')[0].images[0].link%>">
+                                <img class="card-img-top" src="/images/<%=product.image_groups.filter(value => value.view_type =='large')[0].images[0].link%>">
                                 <div class="card-body">
                                     <div style="color: dimgray; border-bottom: dimgray solid 1px" class="card-title"><%=product.name%></div>
                                     <div style="color: dimgray" class="card-price"><%=product.price%> EUR</div>
@@ -62,7 +120,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
 <%- include siteFooter.ejs%>
