@@ -5490,7 +5490,6 @@ a.thumbnail {
     display: inline;
     margin: 20px; }
     .pdp-wrapper .info-wrapper .colors .color-wrapper .color-elements {
-      border: solid dimgray 1px;
       display: inline;
       padding: 5px; }
 
@@ -5501,9 +5500,9 @@ a.thumbnail {
     display: inline;
     margin: 20px; }
     .pdp-wrapper .info-wrapper .sizes .size-wrapper .size-elements {
-      border: solid dimgray 1px;
       display: inline;
-      padding: 5px; }
+      padding: 5px;
+      margin: 5px; }
 
 .pdp-wrapper .info-wrapper .buy-now {
   text-align: center; }

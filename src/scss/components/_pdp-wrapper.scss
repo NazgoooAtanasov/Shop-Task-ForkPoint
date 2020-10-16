@@ -121,7 +121,6 @@
           display: inline;
           margin: 20px;
           .color-elements{
-            border: solid dimgray 1px;
             display: inline;
             padding: 5px;
           }
@@ -134,9 +133,9 @@
           display: inline;
           margin: 20px;
           .size-elements{
-            border: solid dimgray 1px;
             display: inline;
             padding: 5px;
+            margin: 5px;
           }
         }
       }
