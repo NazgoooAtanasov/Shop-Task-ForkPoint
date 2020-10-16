@@ -94,9 +94,6 @@
     .filter{
       display: none;
     }
-    .grid-container{
-      grid-template-columns: auto;
-    }
     .nav-desktop{
       display: none;
     }
@@ -177,5 +174,9 @@
       }
     }
   }
+}
+
+.slider {
+  width: 100%;
 }
 

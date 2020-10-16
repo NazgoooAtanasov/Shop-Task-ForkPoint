@@ -5297,8 +5297,6 @@ a.thumbnail {
 @media only screen and (max-width: 600px) {
   .plp-wrapper .filter {
     display: none; }
-  .plp-wrapper .grid-container {
-    grid-template-columns: auto; }
   .plp-wrapper .nav-desktop {
     display: none; }
   .plp-wrapper .nav-mobile {
@@ -5358,6 +5356,9 @@ a.thumbnail {
     list-style-type: none; }
     .plp-wrapper .content ul li {
       margin: 10px 0px 10px 0px; }
+
+.slider {
+  width: 100%; }
 
 .pdp-wrapper .nav-desktop {
   background-color: black;
