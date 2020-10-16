@@ -2,6 +2,7 @@
 const coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
+    coll[i].nextElementSibling.style.maxHeight = coll[i].nextElementSibling.scrollHeight + 'px';
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         const content = this.nextElementSibling;
@@ -13,3 +14,20 @@ for (let i = 0; i < coll.length; i++) {
     });
 }
 
+// Used to check items in filter list.
+const filterItems = document.getElementsByClassName('filter-element');
+
+
+for (let i = 0; i<filterItems.length;i++){
+    filterItems[i].setAttribute('color', "dimray");
+    const initialData = filterItems[i].firstChild.data;
+    filterItems[i].addEventListener('click', () => {
+        if(filterItems[i].style.color == 'black') {
+            filterItems[i].firstChild.data = `${initialData}`;
+            filterItems[i].style.color = 'dimgray';
+        }else{
+            filterItems[i].firstChild.data = `✓ ${initialData}`;
+            filterItems[i].style.color = 'black';
+        }
+    })
+}

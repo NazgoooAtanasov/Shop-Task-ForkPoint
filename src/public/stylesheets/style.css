@@ -5312,7 +5312,7 @@ a.thumbnail {
   .plp-wrapper .filter {
     display: none; } }
 
-.collapsible {
+.plp-wrapper .collapsible {
   background-color: white;
   color: black;
   font-weight: bolder;
@@ -5324,17 +5324,17 @@ a.thumbnail {
   outline: none;
   font-size: 15px; }
 
-.collapsible:after {
-  content: '\002B';
+.plp-wrapper .collapsible:after {
+  content: "\2212";
   color: dimgray;
   font-weight: bold;
   float: right;
   margin-left: 5px; }
 
-.active:after {
-  content: "\2212"; }
+.plp-wrapper .active:after {
+  content: '\002B'; }
 
-.content {
+.plp-wrapper .content {
   padding: 0 18px;
   color: dimgray;
   font-weight: bolder;
@@ -5343,9 +5343,24 @@ a.thumbnail {
   transition: max-height 0.2s ease-out;
   background-color: white;
   border-bottom: dimgray solid 1px; }
-  .content ul {
+  .plp-wrapper .content .size-wrapper {
+    display: inline; }
+    .plp-wrapper .content .size-wrapper .size {
+      display: inline;
+      padding: 5px;
+      margin: 15px; }
+  .plp-wrapper .content .colors-wrapper {
+    display: inline;
+    text-align: center; }
+    .plp-wrapper .content .colors-wrapper .color {
+      display: inline;
+      padding: 14px;
+      margin: 5px; }
+  .plp-wrapper .content .filter-element {
+    cursor: pointer; }
+  .plp-wrapper .content ul {
     list-style-type: none; }
-    .content ul li {
+    .plp-wrapper .content ul li {
       margin: 10px 0px 10px 0px; }
 
 .pdp-wrapper .nav-desktop {
