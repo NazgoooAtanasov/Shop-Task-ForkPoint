@@ -1,47 +1,8 @@
 <%- include siteHeader.ejs%>
 <div class="pdp-wrapper">
-    <div class="nav-desktop">
-        <div class="nav-desktop-left">
-            <div>STORE</div>
-            <div>COMPANY</div>
-            <div>AIRBAG</div>
-            <div>ATHLETES</div>
-            <div>NEWS</div>
-        </div>
-        <div class="nav-desktop-right">
-            <div style="padding: 10px"><img src="/images/location.png" style="width: 25px" alt=""> Store Locator</div>
-            <div style="padding: 10px">
-                <div style="padding:10px;border-left: solid 1px gray; border-right: solid 1px gray">
-                    <img src="/images/user.png" style="width: 25px" alt="">Login</div>
-            </div>
-            <div>Order status</div>
-            <div style="border-right: solid 1px gray;border-left: solid 1px gray; padding: 10px">
-                🇧🇬 BG
-            </div>
-            <div style="padding: 10px">&#128722; 0</div>
-        </div>
-    </div>
-    <div class="menu-wrapper">
-        <img class="element" style="max-width: 55%; max-height: 55%" src="/images/fp-logo.png" alt="">
-        <div class="element">MOTORBIKE</div>
-        <div class="element">AVG</div>
-        <div class="element">WINTERSPORTS</div>
-        <div class="element">BIKE</div>
-    </div>
-
-    <div class="nav-mobile">
-        <div class="nav-mobile-wrapper">
-            <div class="nav-mobile-elements">
-                <div class="nav-mobile-elements-center">
-                    <div style="float: left; text-align: center">&#5176;</div>
-                    <img src="/images/fp-logo.png" style="max-width: 50px" alt="">
-                    <div style="float:right">&#128722; 0</div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
+    <%- include ../components/pdpComponents/pdpDesktopNav.ejs%>
+    <%- include ../components/pdpComponents/pdpMobileNav.ejs%>
+    <%- include ../components/pdpComponents/pdpMenuBar.ejs%>
     <div class="container">
         <div class="row">
             <div class="col-sm-8">
@@ -122,7 +83,6 @@
             </div>
         </div>
     </div>
-
     </div>
 </div>
 <%- include siteFooter.ejs%>

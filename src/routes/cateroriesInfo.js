@@ -11,7 +11,7 @@ module.exports = async function categoriesInfo(req, res) {
     try{
       // Finds the category by the given id.
       const category = await db.collection('categories').findOne({id: {$regex: new RegExp(`\\b${categoryId}\\b`)}});
-      res.render('categoriesPage', {
+      res.render('/Wireframes/categoriesPage', {
         // Underscore.js lib
         _,
         // Template data
