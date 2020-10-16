@@ -13,7 +13,7 @@ module.exports = async function mensCategoryInfo(req, res) {
             // Gets the name and the page title for the parent category.
             const category = await db.collection('categories').findOne({id: categoryId});
 
-            const {name} = category.categories.filter(value => value.id == `${categoryId}-${subcategoryId}`)[0];
+            const {name} = category.categories.filter(value => value.id === `${categoryId}-${subcategoryId}`)[0];
 
             // Gets the products for the subcategory.
             const products = await db.collection('products')
@@ -29,7 +29,8 @@ module.exports = async function mensCategoryInfo(req, res) {
             });
         }
         catch (e) {
-            console.log(e);
+            res.status(500);
+            res.render('error',{error: e});
         }
     });
 };

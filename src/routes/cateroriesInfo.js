@@ -18,7 +18,8 @@ module.exports = async function categoriesInfo(req, res) {
         data: category,
       });
     }catch (e){
-      console.log(e);
+      res.status(500);
+      res.render('error',{error: e});
     }
   });
 };
