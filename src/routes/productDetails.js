@@ -14,9 +14,9 @@ module.exports = async function productDetails(req, res) {
             // Finds a product by a given id.
             const product = await collection.findOne({id: productId});
 
-            const {link} = product.image_groups.filter(value => value.view_type == 'large')[0].images[0];
-            const colors = product.variation_attributes.filter(value => value.id == 'color')[0].values;
-            const sizes = product.variation_attributes.filter(value => value.id == 'size')[0].values;
+            const {link} = product.image_groups.filter(value => value.view_type === 'large')[0]?.images[0];
+            const colors = product.variation_attributes.filter(value => value.id === 'color')[0]?.values;
+            const sizes = product.variation_attributes.filter(value => value.id === 'size')[0]?.values;
             console.log(sizes);
             res.render('pdp',{
                 _,

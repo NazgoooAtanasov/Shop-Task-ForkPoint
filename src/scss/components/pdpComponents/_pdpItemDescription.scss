@@ -1,0 +1,18 @@
+.item-description-wrapper{
+  .pic{
+    text-align: center;
+  }
+  .description{
+    .title{
+      font-size: 30px;
+      font-weight: bold;
+      margin: 20px 0 20px 0;
+    }
+
+    .long_desc{
+      font-size: 20px;
+      margin: 20px 0 20px 0;
+      list-style-type: none;
+    }
+  }
+}

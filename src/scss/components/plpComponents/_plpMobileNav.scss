@@ -1,0 +1,18 @@
+.nav-mobile{
+  display: none;
+  .nav-mobile-wrapper{
+    padding: 10px;
+    background-color: black;
+    color: white;
+
+    .nav-mobile-elements{
+      text-align: center;
+      font-weight: bold;
+      margin: 0 15% 0 15%;
+      *{
+        padding: 0 3px 0 3px;
+        display: inline;
+      }
+    }
+  }
+}

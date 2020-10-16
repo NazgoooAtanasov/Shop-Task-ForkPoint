@@ -1,0 +1,17 @@
+.nav-desktop{
+  .nav-desktop-wrapper{
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+
+    .nav-desktop-elements{
+      text-align: right;
+      margin: 0 15% 0 15%;
+      *{
+        padding: 0 3px 0 3px;
+        display: inline;
+      }
+    }
+  }
+}

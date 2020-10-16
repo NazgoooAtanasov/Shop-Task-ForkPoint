@@ -1,0 +1,46 @@
+<div class="info-wrapper">
+    <div class="item-id">
+        Item No. <%=data.id%>
+    </div>
+    <div class="item-name">
+        <%=data.name%>
+    </div>
+    <div class="item-price">
+        <%=data.price%> EURO
+    </div>
+    <div class="colors">
+        <div class="title">
+            Colors
+        </div>
+        <div class="color-wrapper">
+            <ul>
+                <% _.each(colors, color=> { %>
+                <li class="color-elements"><%=color.name%></li>
+                <%});%>
+            </ul>
+        </div>
+    </div>
+    <div class="sizes">
+        <div class="title">
+            Sizes
+        </div>
+        <div class="size-wrapper">
+            <ul>
+                <% _.each(sizes, size=> { %>
+                <li class="size-elements"><%=size.name%></li>
+                <%});%>
+            </ul>
+        </div>
+    </div>
+    <div class="buy-now">
+        <div class="buy-now-wrapper">
+            Quantity:
+            <div class="counter">
+                <button>+</button>
+                <div>1</div>
+                <button>-</button>
+            </div>
+            <button class="count-button btn btn-danger">ADD TO CART</button>
+        </div>
+    </div>
+</div>

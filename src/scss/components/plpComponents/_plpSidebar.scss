@@ -1,0 +1,46 @@
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  .sidebar-header {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    padding: 15px;
+
+    .closebtn{
+      cursor: pointer;
+      display: inline;
+      float: right;
+    }
+  }
+
+  .collapsible{
+    color: dimgray;
+    background-color: lightgray;
+  }
+  .content{
+    border: none;
+    font-weight: normal;
+  }
+
+  .results-button{
+    font-weight: bolder;
+    margin: 5px;
+    width: 100%;
+  }
+}
+.openbtn {
+  cursor: pointer;
+  color: dimgray;
+  padding: 10px 15px;
+  border: none;
+  font-weight: bolder;
+}

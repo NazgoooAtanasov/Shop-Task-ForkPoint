@@ -1,4 +1,5 @@
 .pdp-wrapper{
+
   .nav-desktop{
     background-color: black;
     color: white;
@@ -9,7 +10,7 @@
       text-align: left;
       margin: 0 15% 0 15%;
       *{
-        padding: 0px 3px 0px 3px;
+        padding: 0 3px 0 3px;
         display: inline;
       }
     }
@@ -17,147 +18,13 @@
     .nav-desktop-right{
       display: inline;
       text-align: right;
-      margin: 0 0% 0 15%;
+      margin: 0 0 0 15%;
       *{
-        padding: 0px 3px 0px 3px;
+        padding: 0 3px 0 3px;
         display: inline;
       }
     }
   }
-
-  .nav-mobile{
-    display: none;
-    margin: 0px;
-    .nav-mobile-wrapper{
-      padding: 5px;
-      background-color: black;
-      color: white;
-
-      .nav-mobile-elements{
-        text-align: center;
-        font-weight: bold;
-        *{
-          padding: 0px 3px 0px 3px;
-          display: inline;
-        }
-      }
-
-      .nav-mobile-elements-right{
-        text-align: right;
-        font-weight: bold;
-        margin: 0 15% 0 15%;
-        *{
-          padding: 0px 3px 0px 3px;
-          display: inline;
-        }
-      }
-
-      .nav-mobile-elements-left{
-        text-align: left;
-        font-weight: bold;
-        margin: 0 15% 0 15%;
-        *{
-          padding: 0px 3px 0px 3px;
-          display: inline;
-        }
-      }
-    }
-  }
-
-  .menu-wrapper{
-    height: 7vh;
-    margin: 0px 15% 0px 15%;
-    .element{
-      height: 100%;
-      margin: 5px;
-      display: inline;
-
-      color: dimgray;
-    }
-  }
-
-  .item-description-wrapper{
-      .pic{
-        text-align: center;
-      }
-      .description{
-        .title{
-          font-size: 30px;
-          font-weight: bold;
-          margin: 20px 0px 20px 0px;
-        }
-
-        .long_desc{
-          font-size: 20px;
-          margin: 20px 0px 20px 0px;
-          list-style-type: none;
-        }
-      }
-    }
-
-  .info-wrapper{
-      .item-id{
-        font-size: 10px;
-        color: dimgray;
-        border-bottom: dimgray solid 1px;
-      }
-      .item-name{
-        font-size: 25px;
-        color: black;
-        font-weight: bold;
-        margin: 10px 0px 10px 0px;
-      }
-
-      .item-price{
-        font-size: 25px;
-        color: dimgray;
-        border-bottom: dimgray solid 1px;
-      }
-
-      .colors{
-        margin: 20px;
-        color: dimgray;
-        .color-wrapper{
-          display: inline;
-          margin: 20px;
-          .color-elements{
-            display: inline;
-            padding: 5px;
-          }
-        }
-      }
-      .sizes{
-        margin: 20px;
-        color: dimgray;
-        .size-wrapper{
-          display: inline;
-          margin: 20px;
-          .size-elements{
-            display: inline;
-            padding: 5px;
-            margin: 5px;
-          }
-        }
-      }
-
-      .buy-now{
-        text-align: center;
-        .buy-now-wrapper{
-          *{
-            display: inline;
-          }
-          .counter{
-            button{
-              border: solid dimgray 1px;
-              padding: 5px;
-            }
-          }
-          .count-button{
-            width: 60%; font-weight: bolder
-          }
-        }
-      }
-    }
 
   @media only screen and (max-width: 600px) {
     .nav-desktop {

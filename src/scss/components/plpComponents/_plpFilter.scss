@@ -1,0 +1,70 @@
+.filter{
+  display: inline;
+}
+
+.collapsible {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:after {
+  content: "\2212";
+  color: dimgray;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\002B';
+}
+
+
+.content {
+  padding: 0 18px;
+  color: dimgray;
+  font-weight: bolder;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  border-bottom: dimgray solid 1px;
+
+
+  .size-wrapper{
+    display: inline;
+    .size{
+      display: inline;
+      padding: 5px;
+      margin: 15px;
+    }
+  }
+
+  .colors-wrapper{
+    display: inline;
+    text-align: center;
+    .color{
+      display: inline;
+      padding: 14px;
+      margin: 5px;
+    }
+  }
+  .filter-element{
+    cursor: pointer;
+  }
+  ul{
+
+    list-style-type: none;
+    li{
+      margin: 10px 0 10px 0
+    }
+  }
+}

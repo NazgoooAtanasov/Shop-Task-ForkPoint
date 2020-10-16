@@ -7,80 +7,15 @@
         <div class="row">
             <div class="col-sm-8">
                 <div class="col-sm-8">
-                    <div class="item-description-wrapper">
-                        <div style="max-width: 100%" class="pic">
-                            <img src="/images/<%=imageLink%>" alt="">
-                        </div>
-                    </div>
+                    <%- include ../components/pdpComponents/pdpItemImageDesciption.ejs%>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="info-wrapper">
-                    <div class="item-id">
-                        Item No. <%=data.id%>
-                    </div>
-                    <div class="item-name">
-                        <%=data.name%>
-                    </div>
-                    <div class="item-price">
-                        <%=data.price%> EURO
-                    </div>
-                    <div class="colors">
-                        <div class="title">
-                            Colors
-                        </div>
-                        <div class="color-wrapper">
-                            <ul>
-                                <% _.each(colors, color=> { %>
-                                <li class="color-elements"><%=color.name%></li>
-                                <%});%>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sizes">
-                        <div class="title">
-                            Sizes
-                        </div>
-                        <div class="size-wrapper">
-                            <ul>
-                                <% _.each(sizes, size=> { %>
-                                <li class="size-elements"><%=size.name%></li>
-                                <%});%>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="buy-now">
-                        <div class="buy-now-wrapper">
-                            Quantity:
-                            <div class="counter">
-                                <button>+</button>
-                                <div>1</div>
-                                <button>-</button>
-                            </div>
-                            <button class="count-button btn btn-danger">ADD TO CART</button>
-                        </div>
-                    </div>
-                </div>
+                <%- include ../components/pdpComponents/pdpInfo.ejs%>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-8">
-                <div class="item-description-wrapper">
-                    <div class="description">
-                        <div class="title">Description</div>
-                        <%=data.short_description%>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="item-description-wrapper">
-                    <div class="description">
-                        <div class="long_desc">
-                            <%-data.long_description%>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <%- include ../components/pdpComponents/pdpItemDescription.ejs%>
         </div>
     </div>
     </div>

@@ -1,54 +1,14 @@
 .plp-wrapper{
-  .nav-mobile{
-    display: none;
-    .nav-mobile-wrapper{
-      padding: 10px;
-      background-color: black;
-      color: white;
-
-      .nav-mobile-elements{
-        text-align: center;
-        font-weight: bold;
-        margin: 0 15% 0 15%;
-        *{
-          padding: 0px 3px 0px 3px;
-          display: inline;
-        }
-      }
-    }
-  }
-
-  .nav-desktop{
-    .nav-desktop-wrapper{
-      background-color: black;
-      color: white;
-      padding: 10px;
-
-
-      .nav-desktop-elements{
-        text-align: right;
-        margin: 0 15% 0 15%;
-        *{
-          padding: 0px 3px 0px 3px;
-          display: inline;
-        }
-      }
-    }
-  }
-
   .logo-menu{
     height: 7vh;
-
-
     .logo-menu-wrapper{
       display: inline;
       height: 100%;
-      margin: 0px 15% 0px 15%;
+      margin: 0 15% 0 15%;
 
       .logo-menu-elements{
         display: inline;
         height: 100%;
-        display: inline;
         .element{
           padding: 5px;
           color: dimgray;
@@ -68,7 +28,6 @@
       *{
         display: inline;
       }
-
       .title{
         font-size: 40px;
         font-weight: bold;
@@ -79,15 +38,12 @@
   }
 
   .grid-container{
-    margin: 0px 15% 0px 15%;
+    margin: 0 15% 0 15%;
   }
 
   .refine{
-    margin: 0px 15% 0px 15%;
+    margin: 0 15% 0 15%;
     padding: 15px;
-  }
-  .filter{
-    display: inline;
   }
 
   @media only screen and (max-width: 600px) {
@@ -107,125 +63,7 @@
       display: none;
     }
   }
-
-  .collapsible {
-    background-color: white;
-    color: black;
-    font-weight: bolder;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
-
-  .collapsible:after {
-    content: "\2212";
-    color: dimgray;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-
-  .active:after {
-    content: '\002B';
-  }
-
-
-  .content {
-    padding: 0 18px;
-    color: dimgray;
-    font-weight: bolder;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: white;
-    border-bottom: dimgray solid 1px;
-
-
-    .size-wrapper{
-      display: inline;
-      .size{
-        display: inline;
-        padding: 5px;
-        margin: 15px;
-      }
-    }
-
-    .colors-wrapper{
-      display: inline;
-      text-align: center;
-      .color{
-        display: inline;
-        padding: 14px;
-        margin: 5px;
-      }
-    }
-    .filter-element{
-      cursor: pointer;
-    }
-    ul{
-
-      list-style-type: none;
-      li{
-        margin: 10px 0px 10px 0px
-      }
-    }
-  }
-  .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: white;
-    overflow-x: hidden;
-    transition: 0.5s;
-    .sidebar-header {
-      text-align: center;
-      font-weight: bolder;
-      color: white;
-      background-color: black;
-      padding: 15px;
-
-      .closebtn{
-        cursor: pointer;
-        display: inline;
-        float: right;
-      }
-    }
-
-    .collapsible{
-      color: dimgray;
-      background-color: lightgray;
-    }
-    .content{
-      border: none;
-      font-weight: normal;
-    }
-
-    .results-button{
-      font-weight: bolder;
-      margin: 5px;
-      width: 100%;
-    }
-  }
-  .openbtn {
-    cursor: pointer;
-    color: dimgray;
-    padding: 10px 15px;
-    border: none;
-    font-weight: bolder;
-  }
 }
-
 .slider {
   width: 100%;
 }
-
-
-
-

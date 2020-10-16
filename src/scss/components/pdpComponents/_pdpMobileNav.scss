@@ -1,0 +1,38 @@
+.nav-mobile{
+  display: none;
+  margin: 0;
+  .nav-mobile-wrapper{
+    padding: 5px;
+    background-color: black;
+    color: white;
+
+    .nav-mobile-elements{
+      text-align: center;
+      font-weight: bold;
+      *{
+        padding: 0 3px 0 3px;
+        display: inline;
+      }
+    }
+
+    .nav-mobile-elements-right{
+      text-align: right;
+      font-weight: bold;
+      margin: 0 15% 0 15%;
+      *{
+        padding: 0 3px 0 3px;
+        display: inline;
+      }
+    }
+
+    .nav-mobile-elements-left{
+      text-align: left;
+      font-weight: bold;
+      margin: 0 15% 0 15%;
+      *{
+        padding: 0 3px 0 3px;
+        display: inline;
+      }
+    }
+  }
+}
