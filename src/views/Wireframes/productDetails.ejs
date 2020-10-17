@@ -13,11 +13,11 @@
                         </div>
                         <div>
                             <p>Price:</p>
-                            <p id="price"><%=data.price%></p>
+                            <p id="price"><%=Math.round(price)%> <%=currency%></p>
                             <select name="currency" id="cars">
-                                <option onclick="currency(value)" value="USD">USD</option>
-                                <option onclick="currency(value)" value="EUR">EUR</option>
-                                <option onclick="currency(value)" value="BGN">BGN</option>
+                                <option onclick="window.location.assign('/products/<%=category%>/<%=data.id%>/USD')" value="USD">USD</option>
+                                <option onclick="window.location.assign('/products/<%=category%>/<%=data.id%>/EUR')" value="EUR">EUR</option>
+                                <option onclick="window.location.assign('/products/<%=category%>/<%=data.id%>/USD')" value="BGN">BGN</option>
                             </select>
                         </div>
                     </div>

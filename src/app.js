@@ -40,6 +40,8 @@ app.use(express.errorHandler());
 app.get('/:categoryId', routes.categoriesInfo);
 app.get('/products/:categoryId-:subcategoryId', routes.categoryItems);
 app.get('/products/:category/:productId', routes.productDetails);
+app.get('/products/:category/:productId/:currency', routes.productDetails);
+
 
 
 // Run server
