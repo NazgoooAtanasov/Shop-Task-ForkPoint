@@ -28,7 +28,6 @@ module.exports = async function productDetails(req, res) {
         const collection = db.collection('products');
 
         try {
-            console.log(category);
             // Finds a product by a given id.
             const product = await collection.findOne({id: productId});
 
@@ -42,7 +41,7 @@ module.exports = async function productDetails(req, res) {
             const sizes = product.variation_attributes.filter(value => value.id === 'size')[0]?.values;
 
             // Renders the proper view with the information it needs.
-            res.render('../Wireframes/productDetails',{
+            res.render('pdp',{
                 // Underscore.js lib
                 _,
                 // Template data

@@ -5305,7 +5305,9 @@ a.thumbnail {
   .pdp-wrapper .menu-wrapper {
     display: none; }
   .pdp-wrapper .nav-mobile {
-    display: inline; } }
+    display: inline; }
+  .pdp-wrapper .image-slider {
+    display: none; } }
 
 .nav-desktop .nav-desktop-wrapper {
   background-color: black;
@@ -5521,3 +5523,9 @@ a.thumbnail {
   font-size: 20px;
   margin: 20px 0 20px 0;
   list-style-type: none; }
+
+.item-description-wrapper .image-slider {
+  max-height: 60%; }
+  .item-description-wrapper .image-slider .image {
+    margin-bottom: 5px;
+    padding: 10px; }

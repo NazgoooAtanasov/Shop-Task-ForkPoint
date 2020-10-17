@@ -15,4 +15,12 @@
       list-style-type: none;
     }
   }
+  .image-slider{
+    max-height: 60%;
+
+    .image{
+      margin-bottom: 5px;
+      padding: 10px;
+    }
+  }
 }

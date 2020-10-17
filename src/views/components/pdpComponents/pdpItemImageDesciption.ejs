@@ -1,5 +1,16 @@
 <div class="item-description-wrapper">
     <div style="max-width: 100%" class="pic">
-        <img src="/images/<%=imageLink%>" alt="">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="image-slider overflow-auto">
+                    <% _.each(data.image_groups.filter(pic => pic.view_type === 'small'), picture => {%>
+                        <img class="image" src="/images/<%= picture.images[0].link%>" alt="">
+                    <%});%>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <img src="/images/<%=imageLink%>"  alt="">
+            </div>
+        </div>
     </div>
 </div>
