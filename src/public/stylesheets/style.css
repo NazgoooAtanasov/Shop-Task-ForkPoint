@@ -5266,10 +5266,6 @@ a.thumbnail {
     padding-right: 5px;
     border-right: solid darkgrey 2px; }
 
-.plp-wrapper .grid-container {
-  margin-left: 431px;
-  margin-right: 425px; }
-
 .plp-wrapper .refine {
   margin-left: 431px;
   margin-right: 425px;
@@ -5290,6 +5286,14 @@ a.thumbnail {
 
 .slider {
   width: 100%; }
+
+.custom-col-small {
+  flex: 0 0 22%;
+  max-width: 22%; }
+
+.custom-col-big {
+  flex: 0 0 56%;
+  max-width: 56%; }
 
 .pdp-wrapper .nav-desktop {
   background-color: black;
