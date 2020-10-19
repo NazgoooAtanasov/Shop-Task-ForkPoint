@@ -5376,19 +5376,28 @@ a.thumbnail {
   transition: max-height 0.2s ease-out;
   background-color: white;
   border-bottom: dimgray solid 1px; }
-  .content .size-wrapper {
-    display: inline; }
-    .content .size-wrapper .size {
-      display: inline;
-      padding: 5px;
-      margin: 15px; }
-  .content .colors-wrapper {
-    display: inline;
-    text-align: center; }
-    .content .colors-wrapper .color {
-      display: inline;
-      padding: 14px;
-      margin: 5px; }
+  .content .sizes {
+    padding: 15px; }
+    .content .sizes .size-element {
+      display: inline-block;
+      margin: 10px; }
+    .content .sizes .selected {
+      border-bottom: red solid 3px; }
+    .content .sizes .size-element:hover {
+      cursor: pointer; }
+  .content .colors {
+    padding: 15px; }
+    .content .colors .color-element {
+      display: inline-block;
+      margin: 5px;
+      min-width: 25px;
+      max-width: 25px;
+      min-height: 25px;
+      max-height: 25px; }
+    .content .colors .color-element:hover {
+      cursor: pointer; }
+    .content .colors .selected {
+      border-bottom: red solid 3px; }
   .content .filter-element {
     padding: 10px 0 10px 0px;
     cursor: pointer; }

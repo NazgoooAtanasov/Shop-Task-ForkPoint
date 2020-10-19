@@ -41,31 +41,49 @@
   border-bottom: dimgray solid 1px;
 
 
-  .size-wrapper{
-    display: inline;
-    .size{
-      display: inline;
-      padding: 5px;
-      margin: 15px;
+  .sizes{
+    padding: 15px;
+
+    .size-element{
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .selected{
+      border-bottom: red solid 3px;
+    }
+
+    .size-element:hover{
+      cursor: pointer;
     }
   }
 
-  .colors-wrapper{
-    display: inline;
-    text-align: center;
-    .color{
-      display: inline;
-      padding: 14px;
+  .colors{
+    padding: 15px;
+
+    .color-element{
+      display: inline-block;
       margin: 5px;
+      min-width: 25px;
+      max-width: 25px;
+      min-height: 25px;
+      max-height: 25px;
+    }
+
+    .color-element:hover{
+      cursor: pointer;
+    }
+    
+    .selected{
+      border-bottom: red solid 3px;
     }
   }
+
   .filter-element{
     padding: 10px 0 10px 0px;
     cursor: pointer;
   }
   ul{
-
     list-style-type: none;
-
   }
 }

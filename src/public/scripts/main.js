@@ -14,6 +14,33 @@ for (let i = 0; i < coll.length; i++) {
     });
 }
 
+// Selector for the colors
+const colors = document.getElementsByClassName('color-element');
+
+for (let i = 0; i<colors.length;i++){
+    colors[i].addEventListener('click', () => {
+        if(colors[i].classList.contains('selected')) {
+            colors[i].classList.remove('selected');
+        }else{
+            colors[i].classList.add('selected');
+        }
+    })
+}
+
+// Selector for the sizes
+const sizes = document.getElementsByClassName('size-element');
+
+for (let i = 0; i<sizes.length;i++){
+    sizes[i].addEventListener('click', () => {
+        if(sizes[i].classList.contains('selected')) {
+            sizes[i].classList.remove('selected');
+        }else{
+            sizes[i].classList.add('selected');
+        }
+    })
+}
+
+
 // Used to check items in filter list.
 const filterItems = document.getElementsByClassName('filter-element');
 
@@ -43,3 +70,4 @@ function closesidebar() {
     document.getElementById("mySidebar").style.height = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
+

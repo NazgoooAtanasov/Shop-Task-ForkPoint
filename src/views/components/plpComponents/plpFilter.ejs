@@ -41,26 +41,30 @@
     <button class="collapsible" >PRICE</button>
     <div class="content">
         <div>
-            <input type="range" min="1" max="100" class="slider">
+            <div class='wrap' style='--a: -30; --b: 20; --min: -50; --max: 50'>
+                <input id='a' type='range' min='-50' value='-30' max='50'/>
+                <input id='b' type='range' min='-50' value='20' max='50'/>
+            </div>
         </div>
     </div>
     <button class="collapsible">COLOR</button>
-    <div  class="content">
-        <div class="colors-wrapper">
-            <div style="background-color: green" class="color"></div>
-            <div style="background-color: black" class="color"></div>
-            <div style="background-color: white" class="color"></div>
-            <div style="background-color: orange" class="color"></div>
-            <div style="background-color: red" class="color"></div>
+    <div class="content">
+        <div class="colors">
+            <div class="color-element" style="background-color: green"></div>
+            <div class="color-element" style="background-color: black"></div>
+            <div class="color-element" style="background-color: white"></div>
+            <div class="color-element" style="background-color: orange"></div>
+            <div class="color-element" style="background-color: red"></div>
         </div>
     </div>
     <button class="collapsible">SIZE</button>
     <div class="content">
-        <div class="size-wrapper">
-            <div class="size filter-element" >S</div>
-            <div class="size filter-element">M</div>
-            <div class="size filter-element">L</div>
-            <div class="size filter-element">XL</div>
+        <div class="sizes">
+            <div class="size-element">S</div>
+            <div class="size-element">M</div>
+            <div class="size-element">L</div>
+            <div class="size-element">XL</div>
+            <div class="size-element">XXL</div>
         </div>
     </div>
 </div>
