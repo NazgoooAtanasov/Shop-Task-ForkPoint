@@ -5232,23 +5232,31 @@ a.thumbnail {
     display: none; } }
 
 .plp-wrapper .logo-menu {
-  height: 7vh; }
+  padding-top: 11px;
+  padding-bottom: 15px; }
   .plp-wrapper .logo-menu .logo-menu-wrapper {
     display: inline;
-    height: 100%;
-    margin: 0 15% 0 15%; }
+    margin-left: 431px;
+    margin-right: 425px; }
     .plp-wrapper .logo-menu .logo-menu-wrapper .logo-menu-elements {
       display: inline;
       height: 100%; }
+      .plp-wrapper .logo-menu .logo-menu-wrapper .logo-menu-elements .image {
+        margin-right: 50px;
+        max-width: 53px;
+        max-height: 50px;
+        min-width: 53px;
+        min-height: 50px; }
       .plp-wrapper .logo-menu .logo-menu-wrapper .logo-menu-elements .element {
-        padding: 5px;
-        color: dimgray;
-        height: 100%;
+        margin-left: 11px;
+        margin-right: 11px;
+        color: black;
         text-align: center;
         display: inline; }
 
 .plp-wrapper .category-title {
-  margin: 10px 15% 10px 15%;
+  margin-left: 431px;
+  margin-right: 425px;
   border-bottom: solid darkgrey 1px; }
   .plp-wrapper .category-title .category-title-wrapper * {
     display: inline; }
@@ -5259,10 +5267,12 @@ a.thumbnail {
     border-right: solid darkgrey 1px; }
 
 .plp-wrapper .grid-container {
-  margin: 0 15% 0 15%; }
+  margin-left: 431px;
+  margin-right: 425px; }
 
 .plp-wrapper .refine {
-  margin: 0 15% 0 15%;
+  margin-left: 431px;
+  margin-right: 425px;
   padding: 15px; }
 
 @media only screen and (max-width: 600px) {
@@ -5315,7 +5325,8 @@ a.thumbnail {
   padding: 10px; }
   .nav-desktop .nav-desktop-wrapper .nav-desktop-elements {
     text-align: right;
-    margin: 0 15% 0 15%; }
+    margin-left: 431px;
+    margin-right: 425px; }
     .nav-desktop .nav-desktop-wrapper .nav-desktop-elements * {
       padding: 0 3px 0 3px;
       display: inline; }
