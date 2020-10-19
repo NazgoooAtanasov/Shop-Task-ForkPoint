@@ -5338,7 +5338,6 @@ a.thumbnail {
     margin-left: 431px;
     margin-right: 425px; }
     .nav-desktop .nav-desktop-wrapper .nav-desktop-elements * {
-      padding: 0 3px 0 3px;
       display: inline; }
 
 .filter {
@@ -5348,7 +5347,6 @@ a.thumbnail {
 .collapsible {
   background-color: white;
   color: black;
-  font-weight: bold;
   cursor: pointer;
   width: 100%;
   border: none;
@@ -5360,6 +5358,8 @@ a.thumbnail {
 
 .collapsible:after {
   content: "\2212";
+  background-color: whitesmoke;
+  padding: 0 4px;
   color: dimgray;
   font-weight: bold;
   float: right;

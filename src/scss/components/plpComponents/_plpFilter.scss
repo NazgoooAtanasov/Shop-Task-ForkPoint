@@ -6,7 +6,6 @@
 .collapsible {
   background-color: white;
   color: black;
-  font-weight: bold;
   cursor: pointer;
   width: 100%;
   border: none;
@@ -19,6 +18,8 @@
 
 .collapsible:after {
   content: "\2212";
+  background-color: whitesmoke;
+  padding: 0 4px;
   color: dimgray;
   font-weight: bold;
   float: right;
