@@ -42,7 +42,7 @@
         font-size: 40px;
         font-weight: bold;
         padding-right: 5px;
-        border-right: solid darkgrey 1px;
+        border-right: solid darkgrey 2px;
       }
     }
   }
@@ -55,7 +55,8 @@
   .refine{
     margin-left: 431px;
     margin-right: 425px;
-    padding: 15px;
+    padding-top: 26px;
+    padding-left: 8px;
   }
 
   @media only screen and (max-width: 600px) {

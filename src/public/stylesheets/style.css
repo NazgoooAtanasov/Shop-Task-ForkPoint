@@ -5264,7 +5264,7 @@ a.thumbnail {
     font-size: 40px;
     font-weight: bold;
     padding-right: 5px;
-    border-right: solid darkgrey 1px; }
+    border-right: solid darkgrey 2px; }
 
 .plp-wrapper .grid-container {
   margin-left: 431px;
@@ -5273,7 +5273,8 @@ a.thumbnail {
 .plp-wrapper .refine {
   margin-left: 431px;
   margin-right: 425px;
-  padding: 15px; }
+  padding-top: 26px;
+  padding-left: 8px; }
 
 @media only screen and (max-width: 600px) {
   .plp-wrapper .filter {
@@ -5332,19 +5333,21 @@ a.thumbnail {
       display: inline; }
 
 .filter {
-  display: inline; }
+  margin-top: 16px;
+  max-width: 270px; }
 
 .collapsible {
   background-color: white;
   color: black;
-  font-weight: bolder;
+  font-weight: bold;
   cursor: pointer;
-  padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px; }
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 20px; }
 
 .collapsible:after {
   content: "\2212";
@@ -5357,7 +5360,6 @@ a.thumbnail {
   content: '\002B'; }
 
 .content {
-  padding: 0 18px;
   color: dimgray;
   font-weight: bolder;
   max-height: 0;
@@ -5379,11 +5381,10 @@ a.thumbnail {
       padding: 14px;
       margin: 5px; }
   .content .filter-element {
+    padding: 10px 0 10px 0px;
     cursor: pointer; }
   .content ul {
     list-style-type: none; }
-    .content ul li {
-      margin: 10px 0 10px 0; }
 
 .nav-mobile {
   display: none; }
