@@ -5295,6 +5295,11 @@ a.thumbnail {
   flex: 0 0 56%;
   max-width: 56%; }
 
+.custom-image-grid {
+  min-width: 233px;
+  max-width: 233px;
+  max-height: 233px; }
+
 .pdp-wrapper .nav-desktop {
   background-color: black;
   color: white;
