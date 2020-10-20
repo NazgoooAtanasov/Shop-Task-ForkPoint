@@ -1,16 +1,18 @@
 <div class="item-description-wrapper">
-    <div style="max-width: 100%" class="pic">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="image-slider overflow-auto">
+    <div class="row">
+        <div class="col-sm-3" style="padding: 0">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
                     <% _.each(data.image_groups.filter(pic => pic.view_type === 'small'), picture => {%>
-                        <img class="image" src="/images/<%= picture.images[0].link%>" alt="">
+                        <div class="swiper-slide">
+                            <img style="height: 108px; width: 108px" src="/images/<%= picture.images[0].link%>" alt="">
+                        </div>
                     <%});%>
                 </div>
             </div>
-            <div class="col-sm-8">
-                <img src="/images/<%=imageLink%>"  alt="">
-            </div>
+        </div>
+        <div class="col-sm-9">
+            <img style="min-height: 615px; min-width: 615px" src="/images/<%=imageLink%>"  alt="">
         </div>
     </div>
 </div>

@@ -447,7 +447,7 @@ $menu-icons-back-compat: true !default;
     
     // Backward Compatibility for active state
     @if $menu-state-back-compat {
-      .active > a {
+      .selector > a {
         @include menu-state-active;
       }
     }

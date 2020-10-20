@@ -1,7 +1,4 @@
 .item-description-wrapper{
-  .pic{
-    text-align: center;
-  }
   .description{
     .title{
       font-size: 30px;
@@ -15,12 +12,17 @@
       list-style-type: none;
     }
   }
-  .image-slider{
-    max-height: 60%;
-
     .image{
-      margin-bottom: 5px;
-      padding: 10px;
+      max-width: 108px;
+      min-width: 108px;
     }
+  .swiper-container {
+    height: 615px;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    
   }
 }

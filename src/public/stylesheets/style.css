@@ -3482,7 +3482,7 @@ a.button:hover, a.button:focus {
   .menu .is-active > a {
     background: #1779ba;
     color: #fefefe; }
-  .menu .active > a {
+  .menu .selector > a {
     background: #1779ba;
     color: #fefefe; }
   .menu.align-left {
@@ -5365,7 +5365,7 @@ a.thumbnail {
   float: right;
   margin-left: 5px; }
 
-.active:after {
+.selector:after {
   content: '\002B'; }
 
 .content {
@@ -5541,9 +5541,6 @@ a.thumbnail {
     width: 60%;
     font-weight: bolder; }
 
-.item-description-wrapper .pic {
-  text-align: center; }
-
 .item-description-wrapper .description .title {
   font-size: 30px;
   font-weight: bold;
@@ -5554,8 +5551,13 @@ a.thumbnail {
   margin: 20px 0 20px 0;
   list-style-type: none; }
 
-.item-description-wrapper .image-slider {
-  max-height: 60%; }
-  .item-description-wrapper .image-slider .image {
-    margin-bottom: 5px;
-    padding: 10px; }
+.item-description-wrapper .image {
+  max-width: 108px;
+  min-width: 108px; }
+
+.item-description-wrapper .swiper-container {
+  height: 615px; }
+
+.item-description-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px; }

@@ -71,3 +71,13 @@ function closesidebar() {
     document.getElementById("main").style.marginLeft= "0";
 }
 
+
+const swiper = new Swiper('.swiper-container', {
+    direction: 'vertical',
+    slidesPerView: 5,
+    spaceBetween: 3,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
