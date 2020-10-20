@@ -5305,18 +5305,17 @@ a.thumbnail {
   color: white;
   padding: 10px; }
   .pdp-wrapper .nav-desktop .nav-desktop-left {
+    margin-left: 24%;
     display: inline;
-    text-align: left;
-    margin: 0 15% 0 15%; }
+    text-align: left; }
     .pdp-wrapper .nav-desktop .nav-desktop-left * {
-      padding: 0 3px 0 3px;
+      margin: 0 17px;
       display: inline; }
   .pdp-wrapper .nav-desktop .nav-desktop-right {
     display: inline;
-    text-align: right;
-    margin: 0 0 0 15%; }
+    margin-left: 3%;
+    text-align: right; }
     .pdp-wrapper .nav-desktop .nav-desktop-right * {
-      padding: 0 3px 0 3px;
       display: inline; }
 
 @media only screen and (max-width: 600px) {
