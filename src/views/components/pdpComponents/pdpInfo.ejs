@@ -10,37 +10,49 @@
     </div>
     <div class="colors">
         <div class="title">
-            Colors
+            Color
         </div>
-        <div class="color-wrapper">
-            <ul>
-                <% _.each(colors, color=> { %>
-                <li class="color-elements"><%=color.name%></li>
-                <%});%>
-            </ul>
+        <div>
+            <div class="color-element" style="margin-left: 0;background-color: green"></div>
+            <div class="color-element" style="background-color: black"></div>
+            <div class="color-element" style="background-color: white"></div>
+            <div class="color-element" style="background-color: orange"></div>
+            <div class="color-element" style="background-color: red"></div>
         </div>
     </div>
     <div class="sizes">
         <div class="title">
             Sizes
         </div>
-        <div class="size-wrapper">
-            <ul>
-                <% _.each(sizes, size=> { %>
-                <li class="size-elements"><%=size.name%></li>
-                <%});%>
-            </ul>
+        <div>
+            <div class="size-element" style="margin-left: 0">S</div>
+            <div class="size-element">M</div>
+            <div class="size-element">L</div>
+            <div class="size-element">XL</div>
+            <div class="size-element">XXL</div>
         </div>
     </div>
     <div class="buy-now">
+        <div class="quantity">Quantity</div>
         <div class="buy-now-wrapper">
-            Quantity:
             <div class="counter">
-                <button>+</button>
+                <button class="btn">-</button>
                 <div>1</div>
-                <button>-</button>
+                <button class="btn">+</button>
             </div>
             <button class="count-button btn btn-danger">ADD TO CART</button>
         </div>
+    </div>
+    <div class="share">
+        <div class="title">Share</div>
+        <div class="share-icons">
+            <img src="/images/fb.png" alt="">
+            <img src="/images/twitter.png" alt="">
+            <img src="/images/plus.png" alt="">
+        </div>
+    </div>
+    <div class="add-to-wishlist">
+        <img src="/images/heart.png" alt="">
+        <div class="text">Add to wishlist</div>
     </div>
 </div>

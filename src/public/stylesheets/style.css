@@ -5266,6 +5266,9 @@ a.thumbnail {
     padding-right: 5px;
     border-right: solid darkgrey 2px; }
 
+.plp-wrapper .card:hover {
+  cursor: pointer; }
+
 .plp-wrapper .refine {
   margin-left: 431px;
   margin-right: 425px;
@@ -5465,7 +5468,7 @@ a.thumbnail {
 
 .menu-wrapper {
   padding: 11px 0 15px 0;
-  margin-left: 23%; }
+  margin-left: 21.5%; }
   .menu-wrapper .icon {
     width: 53px;
     height: 50px;
@@ -5521,36 +5524,69 @@ a.thumbnail {
   border-bottom: dimgray solid 1px; }
 
 .info-wrapper .colors {
-  margin: 20px;
-  color: dimgray; }
-  .info-wrapper .colors .color-wrapper {
-    display: inline;
-    margin: 20px; }
-    .info-wrapper .colors .color-wrapper .color-elements {
-      display: inline;
-      padding: 5px; }
+  padding-top: 39px; }
+  .info-wrapper .colors .color-element {
+    display: inline-block;
+    margin: 4px;
+    min-width: 25px;
+    max-width: 25px;
+    min-height: 25px;
+    max-height: 25px; }
+  .info-wrapper .colors .color-element:hover {
+    cursor: pointer; }
+  .info-wrapper .colors .selected {
+    border-bottom: red solid 3px; }
 
 .info-wrapper .sizes {
-  margin: 20px;
-  color: dimgray; }
-  .info-wrapper .sizes .size-wrapper {
-    display: inline;
-    margin: 20px; }
-    .info-wrapper .sizes .size-wrapper .size-elements {
-      display: inline;
-      padding: 5px;
-      margin: 5px; }
+  padding-top: 39px; }
+  .info-wrapper .sizes .size-element {
+    color: dimgray;
+    display: inline-block;
+    margin: 8px;
+    padding: 5px; }
+  .info-wrapper .sizes .size-element:hover {
+    cursor: pointer; }
+  .info-wrapper .sizes .selected {
+    border-bottom: red solid 3px; }
 
 .info-wrapper .buy-now {
-  text-align: center; }
-  .info-wrapper .buy-now .buy-now-wrapper * {
+  text-align: center;
+  margin-top: 10%;
+  border-bottom: solid 1px dimgray;
+  padding-bottom: 4%; }
+  .info-wrapper .buy-now .quantity {
+    text-align: left; }
+  .info-wrapper .buy-now .counter * {
+    padding: 0px 14px; }
+  .info-wrapper .buy-now .counter .btn {
+    font-size: 30px;
+    color: dimgray; }
+  .info-wrapper .buy-now .buy-now-wrapper {
+    margin-top: 5%; }
+    .info-wrapper .buy-now .buy-now-wrapper * {
+      display: inline-block; }
+    .info-wrapper .buy-now .buy-now-wrapper .count-button {
+      border-radius: 0;
+      width: 60%;
+      font-weight: bolder; }
+
+.info-wrapper .share {
+  display: inline; }
+  .info-wrapper .share .title {
+    padding-top: 3%; }
+  .info-wrapper .share .share-icons {
     display: inline; }
-  .info-wrapper .buy-now .buy-now-wrapper .counter button {
-    border: solid dimgray 1px;
-    padding: 5px; }
-  .info-wrapper .buy-now .buy-now-wrapper .count-button {
-    width: 60%;
-    font-weight: bolder; }
+  .info-wrapper .share .share-icons:hover {
+    cursor: pointer; }
+
+.info-wrapper .add-to-wishlist {
+  margin-left: 20%;
+  display: inline; }
+  .info-wrapper .add-to-wishlist * {
+    display: inline; }
+
+.info-wrapper .add-to-wishlist:hover {
+  cursor: pointer; }
 
 .item-description-wrapper .description {
   padding-top: 33px;

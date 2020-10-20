@@ -19,46 +19,98 @@
   }
 
   .colors{
-    margin: 20px;
-    color: dimgray;
-    .color-wrapper{
-      display: inline;
-      margin: 20px;
-      .color-elements{
-        display: inline;
-        padding: 5px;
-      }
+    padding-top: 39px;
+    .color-element{
+      display: inline-block;
+      margin: 4px;
+      min-width: 25px;
+      max-width: 25px;
+      min-height: 25px;
+      max-height: 25px;
+    }
+    .color-element:hover{
+      cursor: pointer;
+    }
+
+    .selected{
+      border-bottom: red solid 3px;
     }
   }
+
   .sizes{
-    margin: 20px;
-    color: dimgray;
-    .size-wrapper{
-      display: inline;
-      margin: 20px;
-      .size-elements{
-        display: inline;
-        padding: 5px;
-        margin: 5px;
+    padding-top: 39px;
+    .size-element{
+      color: dimgray;
+      display: inline-block;
+      margin: 8px;
+      padding: 5px;
+    }
+    .size-element:hover{
+      cursor: pointer;
+    }
+    .selected{
+      border-bottom: red solid 3px;
+    }
+  }
+
+
+  .buy-now{
+    text-align: center;
+    margin-top: 10%;
+    border-bottom: solid 1px dimgray;
+    padding-bottom: 4%;
+    .quantity{
+      text-align: left;
+    }
+
+    .counter{
+      *{
+        padding: 0px 14px;
+      }
+      .btn{
+        font-size: 30px;
+        color: dimgray;
+      }
+    }
+
+    .buy-now-wrapper{
+      margin-top: 5%;
+      *{
+        display: inline-block;
+      }
+
+      .count-button{
+        border-radius: 0;
+        width: 60%; font-weight: bolder
       }
     }
   }
 
-  .buy-now{
-    text-align: center;
-    .buy-now-wrapper{
-      *{
-        display: inline;
-      }
-      .counter{
-        button{
-          border: solid dimgray 1px;
-          padding: 5px;
-        }
-      }
-      .count-button{
-        width: 60%; font-weight: bolder
-      }
+  .share{
+    display: inline;
+    .title{
+      padding-top: 3%;
+
     }
+    .share-icons{
+      display: inline;
+    }
+    .share-icons:hover{
+      cursor: pointer;
+    }
+  }
+
+  .add-to-wishlist{
+    margin-left: 20%;
+    display: inline;
+    *{
+      display: inline;
+    }
+    .text{
+
+    }
+  }
+  .add-to-wishlist:hover{
+    cursor: pointer;
   }
 }
