@@ -1,6 +1,6 @@
 <div class="item-description-wrapper">
     <div class="row">
-        <div class="col-sm-3" style="padding: 0">
+        <div class="col-sm-2" style="padding: 0">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <% _.each(data.image_groups.filter(pic => pic.view_type === 'small'), picture => {%>
@@ -11,8 +11,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-9">
-            <img style="min-height: 615px; min-width: 615px" src="/images/<%=imageLink%>"  alt="">
+        <div class="col-sm-10">
+            <img style="min-height: 615px; min-width: 615px;" src="/images/<%=imageLink%>"  alt="">
         </div>
     </div>
 </div>

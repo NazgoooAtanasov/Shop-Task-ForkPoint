@@ -3,21 +3,28 @@
     <%- include ../components/pdpComponents/pdpDesktopNav.ejs%>
     <%- include ../components/pdpComponents/pdpMobileNav.ejs%>
     <%- include ../components/pdpComponents/pdpMenuBar.ejs%>
-    <div class="container">
+    <div class="container-flex">
         <div class="row">
-            <div class="col-sm-8">
-                <div class="col-sm-8">
-                    <%- include ../components/pdpComponents/pdpItemImageDesciption.ejs%>
+            <div class="col-sm-2 custom-col-small">
+
+            </div>
+            <div class="col-sm-8 custom-col-big">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <%- include ../components/pdpComponents/pdpItemImageDesciption.ejs%>
+                    </div>
+                    <div class="col-sm-4">
+                        <%- include ../components/pdpComponents/pdpInfo.ejs%>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px">
+                    <%- include ../components/pdpComponents/pdpItemDescription.ejs%>
                 </div>
             </div>
-            <div class="col-sm-4" >
-                <%- include ../components/pdpComponents/pdpInfo.ejs%>
+            <div class="col-sm-2 custom-col-small">
+
             </div>
         </div>
-        <div class="row">
-            <%- include ../components/pdpComponents/pdpItemDescription.ejs%>
-        </div>
-    </div>
     </div>
 </div>
 <%- include siteFooter.ejs%>

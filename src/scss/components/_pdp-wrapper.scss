@@ -25,6 +25,15 @@
     }
   }
 
+  .custom-col-small{
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .custom-col-big{
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
   @media only screen and (max-width: 600px) {
     .nav-desktop {
       display: none;

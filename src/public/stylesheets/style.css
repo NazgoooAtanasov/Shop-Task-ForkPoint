@@ -5318,6 +5318,14 @@ a.thumbnail {
     .pdp-wrapper .nav-desktop .nav-desktop-right * {
       display: inline; }
 
+.pdp-wrapper .custom-col-small {
+  flex: 0 0 20%;
+  max-width: 20%; }
+
+.pdp-wrapper .custom-col-big {
+  flex: 0 0 60%;
+  max-width: 60%; }
+
 @media only screen and (max-width: 600px) {
   .pdp-wrapper .nav-desktop {
     display: none; }
@@ -5497,6 +5505,7 @@ a.thumbnail {
 
 .info-wrapper .item-id {
   font-size: 10px;
+  letter-spacing: 0.5px;
   color: dimgray;
   border-bottom: dimgray solid 1px; }
 
@@ -5543,15 +5552,17 @@ a.thumbnail {
     width: 60%;
     font-weight: bolder; }
 
-.item-description-wrapper .description .title {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 20px 0 20px 0; }
-
-.item-description-wrapper .description .long_desc {
-  font-size: 20px;
-  margin: 20px 0 20px 0;
-  list-style-type: none; }
+.item-description-wrapper .description {
+  padding-top: 33px;
+  padding-left: 20px; }
+  .item-description-wrapper .description .title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 33px; }
+  .item-description-wrapper .description .long_desc {
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+    list-style-type: none; }
 
 .item-description-wrapper .image {
   max-width: 108px;
