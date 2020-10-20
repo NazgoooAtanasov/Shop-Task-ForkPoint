@@ -31,14 +31,11 @@ module.exports = async function productDetails(req, res) {
             // Finds a product by a given id.
             const product = await collection.findOne({id: productId});
 
-            const price = await findPrice(currency, product.price);
-
+            const usd = product.price;
+            const euro = await findPrice('EUR', product.price);
+            const bgn = await findPrice('BGN', product.price);
             // Gets the image url for the product.
             const {link} = product.image_groups.filter(value => value.view_type === 'large')[0]?.images[0];
-            // Gets the color array of the product.
-            const colors = product.variation_attributes.filter(value => value.id === 'color')[0]?.values;
-            // Gets the size array of the product.
-            const sizes = product.variation_attributes.filter(value => value.id === 'size')[0]?.values;
 
             // Renders the proper view with the information it needs.
             res.render('pdp',{
@@ -47,10 +44,9 @@ module.exports = async function productDetails(req, res) {
                 // Template data
                 imageLink: link,
                 category:category,
-                price: price,
-                currency:currency ? currency : "USD",
-                sizes: sizes,
-                colors: colors,
+                usdPrice: usd,
+                euroPrice: Math.round(euro),
+                bgnPrice: Math.round(bgn),
                 data: product
             });
         }

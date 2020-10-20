@@ -25,7 +25,7 @@ for (let i = 0; i<colors.length;i++){
             colors[i].classList.add('selected');
         }
     })
-}
+            }
 
 // Selector for the sizes
 const sizes = document.getElementsByClassName('size-element');
@@ -40,6 +40,24 @@ for (let i = 0; i<sizes.length;i++){
     })
 }
 
+// Used for the dynamic change of the currency type.
+const currenciesSelectors = document.getElementsByClassName('currency-selector');
+const currencies = document.getElementsByClassName('currency');
+for (let i = 0; i<currenciesSelectors.length;i++){
+    currenciesSelectors[i].addEventListener('click', (event) => {
+        for (let k = 0; k<currencies.length;k++){
+            // Sets everything to inactive first.
+            if (!currencies[k].classList.contains('inactive-currency') &&
+                !currencies[k].classList.contains(currenciesSelectors[i].value)){
+                currencies[k].classList.add('inactive-currency');
+            }
+            // Finds the right currency to make visible.
+            if(currencies[k].classList.contains(currenciesSelectors[i].value)){
+                currencies[k].classList.remove('inactive-currency');
+            }
+        }
+    })
+}
 
 // Used to check items in filter list.
 const filterItems = document.getElementsByClassName('filter-element');

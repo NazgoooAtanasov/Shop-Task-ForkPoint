@@ -16,6 +16,15 @@
     font-size: 25px;
     color: dimgray;
     border-bottom: dimgray solid 1px;
+    .price-section{
+      .inactive-currency{
+        display: none;
+      }
+
+    }
+    *{
+      display: inline;
+    }
   }
 
   .colors{

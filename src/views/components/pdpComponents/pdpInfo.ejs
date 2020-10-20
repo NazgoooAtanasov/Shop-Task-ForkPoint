@@ -6,7 +6,18 @@
         <%=data.name.toUpperCase()%>
     </div>
     <div class="item-price">
-        <%=data.price%> EUR
+        <div style="display: inline" class="price-section">
+            <div class="currency inactive-currency usd"><%=usdPrice%> USD</div>
+            <div class="currency  euro"><%=euroPrice%> EUR</div>
+            <div class="currency inactive-currency bgn"><%=bgnPrice%> BGN</div>
+            <select  style="max-width: 100px;display: inline" name="currency">
+                <option class="currency-selector" onclick="currencyChange" selected="selected" value="euro">EUR</option>
+                <option class="currency-selector" value="bgn">BGN</option>
+                <option class="currency-selector" value="usd">USD</option>
+            </select>
+        </div>
+
+
     </div>
     <div class="colors">
         <div class="title">
@@ -22,7 +33,7 @@
     </div>
     <div class="sizes">
         <div class="title">
-            Sizes
+            Size
         </div>
         <div>
             <div class="size-element" style="margin-left: 0">S</div>

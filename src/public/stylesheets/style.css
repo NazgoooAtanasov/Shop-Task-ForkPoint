@@ -5239,8 +5239,7 @@ a.thumbnail {
     margin-left: 431px;
     margin-right: 425px; }
     .plp-wrapper .logo-menu .logo-menu-wrapper .logo-menu-elements {
-      display: inline;
-      height: 100%; }
+      display: inline; }
       .plp-wrapper .logo-menu .logo-menu-wrapper .logo-menu-elements .image {
         margin-right: 50px;
         max-width: 53px;
@@ -5306,17 +5305,18 @@ a.thumbnail {
 .pdp-wrapper .nav-desktop {
   background-color: black;
   color: white;
-  padding: 10px; }
+  padding: 10px;
+  font-size: 14px; }
   .pdp-wrapper .nav-desktop .nav-desktop-left {
-    margin-left: 24%;
+    margin-left: 25%;
     display: inline;
     text-align: left; }
     .pdp-wrapper .nav-desktop .nav-desktop-left * {
-      margin: 0 17px;
+      margin: 0 10px;
       display: inline; }
   .pdp-wrapper .nav-desktop .nav-desktop-right {
     display: inline;
-    margin-left: 3%;
+    margin-left: 6%;
     text-align: right; }
     .pdp-wrapper .nav-desktop .nav-desktop-right * {
       display: inline; }
@@ -5522,6 +5522,10 @@ a.thumbnail {
   font-size: 25px;
   color: dimgray;
   border-bottom: dimgray solid 1px; }
+  .info-wrapper .item-price .price-section .inactive-currency {
+    display: none; }
+  .info-wrapper .item-price * {
+    display: inline; }
 
 .info-wrapper .colors {
   padding-top: 39px; }
