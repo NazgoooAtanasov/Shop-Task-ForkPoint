@@ -1,17 +1,53 @@
-.nav-mobile{
+.plp-nav-mobile{
   display: none;
-  .nav-mobile-wrapper{
-    padding: 10px;
+  .plp-nav-mobile-wrapper{
     background-color: black;
-    color: white;
-
-    .nav-mobile-elements{
+    padding: 17px;
+    *{
+      display: inline;
+    }
+    .title{
       text-align: center;
+      font-weight: bolder;
+      color: white;
+    }
+    .ham{
+      margin-right: 30%;
+      img{
+        max-width: 23px;
+        max-height: 20px;
+      }
+    }
+    .cart{
+      margin-left: 25%;
+    }
+  }
+  .plp-filter-mobile-wrapper{
+    background-color: whitesmoke;
+    padding: 13px;
+    *{
+      display: inline;
+    }
+
+    .filter-button{
+      img{
+        max-width: 23px;
+        max-height: 22px;
+        padding-right: 5px;
+      }
+
+      .openbtn{
+        padding: 0;
+      }
+    }
+
+    .mglass{
+      color: dimgray;
       font-weight: bold;
-      margin: 0 15% 0 15%;
-      *{
-        padding: 0 3px 0 3px;
-        display: inline;
+      margin-left: 50%;
+      img{
+        max-width: 23px;
+        max-height: 20px;
       }
     }
   }
