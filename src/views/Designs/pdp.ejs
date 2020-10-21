@@ -5,24 +5,21 @@
     <%- include ../components/pdpComponents/pdpMenuBar.ejs%>
     <div class="container-flex">
         <div class="row">
-            <div class="col-sm-2 custom-col-small">
-
-            </div>
-            <div class="col-sm-8 custom-col-big">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <%- include ../components/pdpComponents/pdpItemImageDesciption.ejs%>
-                    </div>
-                    <div class="col-sm-4">
-                        <%- include ../components/pdpComponents/pdpInfo.ejs%>
-                    </div>
+            <%- include ../components/pdpComponents/pdpDesktop.ejs%>
+            <div class="col pdp-mobile-grid" >
+                <div class="pdp-mobile-wrapper">
+                            <div class="swiper-mobile-container" style="overflow: hidden">
+                                <div class="swiper-wrapper">
+                                    <% _.each(data.image_groups.filter(pic => pic.view_type === 'large'), picture => {%>
+                                        <div class="swiper-slide">
+                                            <img src="/images/<%= picture.images[0].link%>" alt="">
+                                        </div>
+                                    <%});%>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div  style="padding-top: 100px;" class="swiper-pagination"></div>
+                            </div>
                 </div>
-                <div class="row" style="margin-top: 30px">
-                    <%- include ../components/pdpComponents/pdpItemDescription.ejs%>
-                </div>
-            </div>
-            <div class="col-sm-2 custom-col-small">
-
             </div>
         </div>
     </div>

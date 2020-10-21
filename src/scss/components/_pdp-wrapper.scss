@@ -34,8 +34,21 @@
     max-width: 60%;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
     .nav-desktop {
+      display: none;
+    }
+    .swiperc{
+      display: none;
+    }
+
+    .pdp-desktop-grid{
+      display: none;
+    }
+    .pdp-mobile-grid{
+      display: inline;
+    }
+    .custom-col-small{
       display: none;
     }
     .menu-wrapper{

@@ -5,28 +5,8 @@
     <%- include ../components/plpComponents/plpDesktopNav.ejs%>
     <%- include ../components/plpComponents/plpMobileNav.ejs%>
     <div class="refine">Refine by:</div>
-    <div class="container-flex">
-        <div class="row">
-            <div class="col-sm-2 custom-col-small"></div>
-            <div class="col-sm-8 custom-col-big">
-                <div class="container-flex grid-container">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <%- include ../components/plpComponents/plpFilter.ejs%>
-                        </div>
-                        <div class="col-sm-9">
-                            <div class="container-flex">
-                                <div class="row">
-                                    <%- include ../components/plpComponents/plpItems.ejs%>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-2 custom-col-small"></div>
-        </div>
-    </div>
+    <%- include ../components/plpComponents/plpDesktopGrid.ejs%>
+    <%- include ../components/plpComponents/plpMobileGrid.ejs%>
 
 </div>
 

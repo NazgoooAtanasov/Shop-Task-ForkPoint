@@ -59,7 +59,7 @@
     padding-left: 8px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 580px) {
     .filter{
       display: none;
     }
@@ -67,6 +67,12 @@
       display: none;
     }
     .plp-nav-mobile{
+      display: inline;
+    }
+    .plp-desktop-grid{
+      display: none;
+    }
+    .plp-mobile-grid{
       display: inline;
     }
     .refine{

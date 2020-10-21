@@ -99,3 +99,12 @@ const swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+const swiperMobile = new Swiper('.swiper-mobile-container',{
+    slidersPerView: 1,
+    spaceBetween: 3,
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+    },
+});
