@@ -1,26 +1,12 @@
 <%- include siteHeader.ejs%>
 <div class="pdp-wrapper">
     <%- include ../components/pdpComponents/pdpDesktopNav.ejs%>
-    <%- include ../components/pdpComponents/pdpMobileNav.ejs%>
     <%- include ../components/pdpComponents/pdpMenuBar.ejs%>
+    <%- include ../components/pdpComponents/pdpMobileNav.ejs%>
     <div class="container-flex">
         <div class="row">
             <%- include ../components/pdpComponents/pdpDesktop.ejs%>
-            <div class="col pdp-mobile-grid" >
-                <div class="pdp-mobile-wrapper">
-                            <div class="swiper-mobile-container" style="overflow: hidden">
-                                <div class="swiper-wrapper">
-                                    <% _.each(data.image_groups.filter(pic => pic.view_type === 'large'), picture => {%>
-                                        <div class="swiper-slide">
-                                            <img src="/images/<%= picture.images[0].link%>" alt="">
-                                        </div>
-                                    <%});%>
-                                </div>
-                                <!-- Add Pagination -->
-                                <div  style="padding-top: 100px;" class="swiper-pagination"></div>
-                            </div>
-                </div>
-            </div>
+            <%- include ../components/pdpComponents/pdpMobile.ejs%>
         </div>
     </div>
 </div>

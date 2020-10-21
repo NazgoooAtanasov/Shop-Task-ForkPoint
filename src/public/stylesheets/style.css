@@ -5529,20 +5529,6 @@ a.thumbnail {
       .nav-mobile .nav-mobile-wrapper .nav-mobile-elements * {
         padding: 0 3px 0 3px;
         display: inline; }
-    .nav-mobile .nav-mobile-wrapper .nav-mobile-elements-right {
-      text-align: right;
-      font-weight: bold;
-      margin: 0 15% 0 15%; }
-      .nav-mobile .nav-mobile-wrapper .nav-mobile-elements-right * {
-        padding: 0 3px 0 3px;
-        display: inline; }
-    .nav-mobile .nav-mobile-wrapper .nav-mobile-elements-left {
-      text-align: left;
-      font-weight: bold;
-      margin: 0 15% 0 15%; }
-      .nav-mobile .nav-mobile-wrapper .nav-mobile-elements-left * {
-        padding: 0 3px 0 3px;
-        display: inline; }
 
 .info-wrapper .item-id {
   font-size: 10px;
