@@ -1,5 +1,47 @@
 <div class="col pdp-mobile-grid" >
     <div class="pdp-mobile-wrapper">
         <!-- image slider here -->
+        <div class="item-info-mobile">
+            <%- include ../pdpComponents/pdpItemInfo.ejs%>
+
+            <div class="counter">
+                <div class="title">
+                    Quantity
+                </div>
+                <div class="counter-wrapper">
+                    <div class="btn">-</div>
+                    <div>1</div>
+                    <div class="btn">+</div>
+                </div>
+            </div>
+
+            <div class="share">
+                <img style="max-height: 62px; max-width: 62px" src="/images/fbmobile.png" alt="">
+                <img style="max-height: 62px; max-width: 62px" src="/images/twittermobile.png" alt="">
+                <img style="max-height: 62px; max-width: 62px" src="/images/insta.png" alt="">
+                <img style="max-height: 62px; max-width: 62px" src="/images/yt.png" alt="">
+            </div>
+
+            <div class="wishlist">
+                <img src="/images/heart.png" alt="">
+                <div class="title">
+                    ADD TO WISHLIST
+                </div>
+            </div>
+
+            <button class="collapsible">DESCRIPTION</button>
+            <div class="content">
+                <div class="short">
+                    <%=data.short_description%>
+                </div>
+                <div class="long">
+                    <%-data.long_description%>
+                </div>
+            </div>
+
+            <div class="add-to-cart">
+                <button class="btn btn-danger">ADD TO CART</button>
+            </div>
+        </div>
     </div>
 </div>

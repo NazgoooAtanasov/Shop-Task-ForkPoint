@@ -1,10 +1,108 @@
-.pdp-mobile-wrapper{
-  .swiper-mobile-container {
-    max-width: 750px;
-  }
+.pdp-mobile-grid{
+  .pdp-mobile-wrapper{
+    .item-info-mobile{
+      .info-wrapper{
+        .item-id{
+          text-indent: 20px;
+        }
+        .item-name{
+          text-indent: 20px;
+        }
+        .item-price{
+          text-indent: 20px;
+        }
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
+        .colors{
+          text-indent: 20px;
+          padding-top: 10px;
+          .title{
+            padding: 0;
+          }
+          div{
+            padding-left: 25px;
+          }
+        }
+
+        .sizes{
+          text-indent: 20px;
+          padding-top: 10px;
+          .title{
+            padding: 0;
+          }
+          .size-element{
+            text-indent: 0;
+            padding:5px;
+          }
+          div{
+            padding-left: 25px;
+          }
+        }
+      }
+      .counter{
+        padding-left: 20px;
+
+        .title{
+        }
+
+        .counter-wrapper{
+          padding-left: 25px;
+          *{
+            display: inline;
+            padding: 0px 14px;
+          }
+          .btn{
+            font-size: 30px;
+            color: dimgray;
+          }
+        }
+      }
+      .share{
+        padding: 10px 10% 5px 32%;
+        *{
+          padding: 0 10px;
+          display: inline;
+        }
+        img:hover{
+          cursor: pointer;
+        }
+      }
+      .wishlist{
+        padding-top: 20px;
+        font-weight: bolder;
+        font-size: 18px;
+        border-top: solid dimgray 1px;
+        border-bottom: solid dimgray 1px;
+        text-align: center;
+        color: dimgray;
+        *{
+          display: inline;
+        }
+        .title{
+        }
+      }
+      .collapsible{
+        padding-left: 20px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        color: dimgrey;
+        border-bottom: 1px solid dimgrey;
+      }
+      .content{
+        .short{
+          padding: 5px 20px 10px 20px;
+        }
+        .long{
+          padding: 5px 20px 10px 20px;
+        }
+      }
+      .btn{
+        font-weight: bolder;
+        font-size: 20px;
+        border-radius: 0;
+        padding: 10px;
+        margin: 10px;
+        width: 97.5%;
+      }
+    }
   }
 }

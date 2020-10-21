@@ -5638,3 +5638,82 @@ a.thumbnail {
 .item-description-wrapper .swiper-slide {
   text-align: center;
   font-size: 18px; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .item-id {
+  text-indent: 20px; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .item-name {
+  text-indent: 20px; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .item-price {
+  text-indent: 20px; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .colors {
+  text-indent: 20px;
+  padding-top: 10px; }
+  .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .colors .title {
+    padding: 0; }
+  .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .colors div {
+    padding-left: 25px; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .sizes {
+  text-indent: 20px;
+  padding-top: 10px; }
+  .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .sizes .title {
+    padding: 0; }
+  .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .sizes .size-element {
+    text-indent: 0;
+    padding: 5px; }
+  .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .sizes div {
+    padding-left: 25px; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .counter {
+  padding-left: 20px; }
+  .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .counter .counter-wrapper {
+    padding-left: 25px; }
+    .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .counter .counter-wrapper * {
+      display: inline;
+      padding: 0px 14px; }
+    .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .counter .counter-wrapper .btn {
+      font-size: 30px;
+      color: dimgray; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .share {
+  padding: 10px 10% 5px 32%; }
+  .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .share * {
+    padding: 0 10px;
+    display: inline; }
+  .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .share img:hover {
+    cursor: pointer; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .wishlist {
+  padding-top: 20px;
+  font-weight: bolder;
+  font-size: 18px;
+  border-top: solid dimgray 1px;
+  border-bottom: solid dimgray 1px;
+  text-align: center;
+  color: dimgray; }
+  .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .wishlist * {
+    display: inline; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .collapsible {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: dimgrey;
+  border-bottom: 1px solid dimgrey; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .content .short {
+  padding: 5px 20px 10px 20px; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .content .long {
+  padding: 5px 20px 10px 20px; }
+
+.pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .btn {
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 0;
+  padding: 10px;
+  margin: 10px;
+  width: 97.5%; }
