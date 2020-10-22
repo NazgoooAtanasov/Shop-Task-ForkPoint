@@ -100,8 +100,8 @@ const swiper = new Swiper('.swiper-container', {
     },
 });
 
-const swiperMobile = new Swiper('.swiper-mobile-container',{
-    slidersPerView: 1,
+const mobileSwiper = new Swiper('.swiper-container-mobile', {
+    slidesPerView: 1,
     spaceBetween: 3,
     pagination: {
         el: '.swiper-pagination',

@@ -1,9 +1,19 @@
 <div class="col pdp-mobile-grid" >
     <div class="pdp-mobile-wrapper">
         <!-- image slider here -->
+        <div class="swiper-container-mobile" style="overflow: hidden">
+            <div class="swiper-wrapper">
+                <% _.each(data.image_groups.filter(pic => pic.view_type === 'small'), picture => {%>
+                    <div class="swiper-slide">
+                        <img src="/images/<%= picture.images[0].link%>" alt="">
+                    </div>
+                <%});%>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
         <div class="item-info-mobile">
             <%- include ../pdpComponents/pdpItemInfo.ejs%>
-
             <div class="counter">
                 <div class="title">
                     Quantity
