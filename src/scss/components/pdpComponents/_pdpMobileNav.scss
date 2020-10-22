@@ -13,7 +13,79 @@
         padding: 0 3px 0 3px;
         display: inline;
       }
-    }
 
+      .leftarr{
+        margin-right: 40%;
+        img{
+          max-height: 20px;
+        }
+      }
+
+      .fp-logo{
+        img{
+          max-width: 45px;
+          max-height: 41px;
+        }
+      }
+      .scart{
+        margin-left: 37%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .nav-mobile {
+    .nav-mobile-wrapper {
+      .nav-mobile-elements {
+        .leftarr {
+            margin-right: 40%;
+          img {
+          }
+        }
+
+        .fp-logo {
+          margin-left: 4%;
+          img {
+          }
+        }
+
+        .scart {
+          margin-left: 41%;
+          img {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .nav-mobile{
+    .nav-mobile-wrapper{
+      .nav-mobile-elements{
+        .leftarr{
+          margin-right: 30%;
+          img{
+            max-height: 15px;
+          }
+        }
+        .fp-logo{
+          margin-left: 5%;
+          margin-right: 12%;
+          img{
+            max-width: 35px;
+            max-height: 31px;
+          }
+        }
+        .scart{
+          margin-left: 14%;
+          img{
+            max-width: 25px;
+            max-height: 21px;
+          }
+        }
+      }
+    }
   }
 }
