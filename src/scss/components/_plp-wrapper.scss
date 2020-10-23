@@ -1,14 +1,16 @@
-.plp-wrapper{
-  .logo-menu{
+.plp-wrapper {
+  .logo-menu {
     padding-top: 11px;
     padding-bottom: 15px;
-    .logo-menu-wrapper{
+
+    .logo-menu-wrapper {
       display: inline;
       margin-left: 431px;
       margin-right: 425px;
 
-      .logo-menu-elements{
+      .logo-menu-elements {
         display: inline;
+
         .image {
           margin-right: 50px;
           max-width: 53px;
@@ -16,7 +18,8 @@
           min-width: 53px;
           min-height: 50px;
         }
-        .element{
+
+        .element {
           margin-left: 11px;
           margin-right: 11px;
           color: black;
@@ -27,16 +30,17 @@
     }
   }
 
-  .category-title{
+  .category-title {
     margin-left: 431px;
     margin-right: 425px;
     border-bottom: solid darkgrey 1px;
 
-    .category-title-wrapper{
-      *{
+    .category-title-wrapper {
+      * {
         display: inline;
       }
-      .title{
+
+      .title {
         font-size: 40px;
         font-weight: bold;
         padding-right: 5px;
@@ -45,14 +49,13 @@
     }
   }
 
-  .card:hover{
+  .card:hover {
     cursor: pointer;
   }
 
-  .grid-container{
-  }
+  .grid-container {}
 
-  .refine{
+  .refine {
     margin-left: 431px;
     margin-right: 425px;
     padding-top: 26px;
@@ -60,43 +63,51 @@
   }
 
   @media only screen and (max-width: 1023px) {
-    .filter{
+    .filter {
       display: none;
     }
-    .nav-desktop{
+
+    .nav-desktop {
       display: none;
     }
-    .plp-nav-mobile{
+
+    .plp-nav-mobile {
       display: inline;
     }
-    .plp-desktop-grid{
+
+    .plp-desktop-grid {
       display: none;
     }
-    .plp-mobile-grid{
+
+    .plp-mobile-grid {
       display: inline;
     }
-    .refine{
+
+    .refine {
       display: none;
     }
-    .filter{
+
+    .filter {
       display: none;
     }
   }
 }
+
 .slider {
   width: 100%;
 }
 
-.custom-col-small{
+.custom-col-small {
   flex: 0 0 22%;
   max-width: 22%;
 }
-.custom-col-big{
+
+.custom-col-big {
   flex: 0 0 56%;
   max-width: 56%;
 }
 
-.custom-image-grid{
+.custom-image-grid {
   min-width: 233px;
   max-width: 233px;
   max-height: 233px;

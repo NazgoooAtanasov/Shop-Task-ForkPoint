@@ -1,35 +1,39 @@
-.info-wrapper{
-  .item-id{
+.info-wrapper {
+  .item-id {
     font-size: 10px;
     letter-spacing: 0.5px;
     color: dimgray;
     border-bottom: dimgray solid 1px;
   }
-  .item-name{
+
+  .item-name {
     font-size: 25px;
     color: black;
     font-weight: bold;
     margin: 10px 0 10px 0;
   }
 
-  .item-price{
+  .item-price {
     font-size: 25px;
     color: dimgray;
     border-bottom: dimgray solid 1px;
-    .price-section{
-      .inactive-currency{
+
+    .price-section {
+      .inactive-currency {
         display: none;
       }
 
     }
-    *{
+
+    * {
       display: inline;
     }
   }
 
-  .colors{
+  .colors {
     padding-top: 39px;
-    .color-element{
+
+    .color-element {
       display: inline-block;
       margin: 4px;
       min-width: 25px;
@@ -37,89 +41,101 @@
       min-height: 25px;
       max-height: 25px;
     }
-    .color-element:hover{
+
+    .color-element:hover {
       cursor: pointer;
     }
 
-    .selected{
+    .selected {
       border-bottom: red solid 3px;
     }
   }
 
-  .sizes{
+  .sizes {
     padding-top: 39px;
-    .size-element{
+
+    .size-element {
       color: dimgray;
       display: inline-block;
       margin: 8px;
       padding: 5px;
     }
-    .size-element:hover{
+
+    .size-element:hover {
       cursor: pointer;
     }
-    .selected{
+
+    .selected {
       border-bottom: red solid 3px;
     }
   }
 
 
-  .buy-now{
+  .buy-now {
     text-align: center;
     margin-top: 10%;
     border-bottom: solid 1px dimgray;
     padding-bottom: 4%;
-    .quantity{
+
+    .quantity {
       text-align: left;
     }
 
-    .counter{
-      *{
+    .counter {
+      * {
         padding: 0px 14px;
       }
-      .btn{
+
+      .btn {
         font-size: 30px;
         color: dimgray;
       }
     }
 
-    .buy-now-wrapper{
+    .buy-now-wrapper {
       margin-top: 5%;
-      *{
+
+      * {
         display: inline-block;
       }
 
-      .count-button{
+      .count-button {
         border-radius: 0;
-        width: 60%; font-weight: bolder
+        width: 60%;
+        font-weight: bolder
       }
     }
   }
 
-  .share{
+  .share {
     display: inline;
-    .title{
+
+    .title {
       padding-top: 3%;
 
     }
-    .share-icons{
+
+    .share-icons {
       display: inline;
     }
-    .share-icons:hover{
+
+    .share-icons:hover {
       cursor: pointer;
     }
   }
 
-  .add-to-wishlist{
+  .add-to-wishlist {
     margin-left: 20%;
     display: inline;
-    *{
+
+    * {
       display: inline;
     }
-    .text{
 
-    }
+    .text {}
   }
-  .add-to-wishlist:hover{
+
+  .add-to-wishlist:hover {
     cursor: pointer;
   }
 }

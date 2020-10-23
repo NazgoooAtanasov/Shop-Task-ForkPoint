@@ -1,12 +1,12 @@
-.pdp-mobile-grid{
+.pdp-mobile-grid {
   display: none;
   padding-left: 0;
   padding-right: 0;
 
 
 
-  .pdp-mobile-wrapper{
-    .swiper-container-mobile{
+  .pdp-mobile-wrapper {
+    .swiper-container-mobile {
       width: 100%;
       height: 100%;
     }
@@ -18,74 +18,87 @@
     }
 
 
-    .item-info-mobile{
-      .info-wrapper{
-        .item-id{
-          padding-left: 20px;
-        }
-        .item-name{
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-        .item-price{
+    .item-info-mobile {
+      .info-wrapper {
+        .item-id {
           padding-left: 20px;
         }
 
-        .colors{
+        .item-name {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        .item-price {
+          padding-left: 20px;
+        }
+
+        .colors {
           padding-left: 20px;
           padding-top: 10px;
-          .title{
+
+          .title {
             padding: 0;
           }
-          div{
+
+          div {
             padding-left: 25px;
           }
         }
 
-        .sizes{
+        .sizes {
           padding-left: 25px;
           padding-top: 10px;
-          .title{
+
+          .title {
             padding: 0;
           }
-          .size-element{
+
+          .size-element {
             text-indent: 0;
-            padding:5px;
+            padding: 5px;
           }
-          div{
+
+          div {
             padding-left: 25px;
           }
         }
       }
-      .counter{
+
+      .counter {
         padding-left: 20px;
 
-        .title{
-        }
+        .title {}
 
-        .counter-wrapper{
+        .counter-wrapper {
           padding-left: 25px;
-          *{
+
+          * {
             display: inline;
             padding: 0px 14px;
           }
-          .btn{
+
+          .btn {
             font-size: 30px;
             color: dimgray;
           }
         }
       }
-      .share{
+
+      .share {
         padding: 10px 10% 5px 32%;
-        *{
+
+        * {
           padding: 0 10px;
           display: inline;
         }
-        img:hover{
+
+        img:hover {
           cursor: pointer;
         }
       }
-      .wishlist{
+
+      .wishlist {
         padding-top: 20px;
         font-weight: bolder;
         font-size: 18px;
@@ -93,30 +106,36 @@
         border-bottom: solid dimgray 1px;
         text-align: center;
         color: dimgray;
-        *{
+
+        * {
           display: inline;
         }
-        .title{
-        }
+
+        .title {}
       }
-      .collapsible{
+
+      .collapsible {
         padding-left: 20px;
         padding-bottom: 15px;
         padding-top: 15px;
         color: dimgrey;
         border-bottom: 1px solid dimgrey;
       }
-      .content{
-        .short{
+
+      .content {
+        .short {
           padding: 5px 20px 10px 20px;
         }
-        .long{
+
+        .long {
           padding: 5px 20px 10px 20px;
         }
       }
-      .add-to-cart{
+
+      .add-to-cart {
         width: 95.5%;
-        .btn{
+
+        .btn {
           font-weight: bolder;
           font-size: 20px;
           border-radius: 0;
@@ -127,14 +146,29 @@
     }
   }
 }
-@media only screen and (max-width: 630px){
-  .pdp-mobile-grid{
-    .pdp-mobile-wrapper{
-      .item-info-mobile{
-        .share{
+
+@media only screen and (max-width: 630px) {
+  .pdp-mobile-grid {
+    .pdp-mobile-wrapper {
+      .item-info-mobile {
+        .share {
           padding-left: 25%;
-          *{
-          }
+
+          * {}
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .pdp-mobile-grid {
+    .pdp-mobile-wrapper {
+      .item-info-mobile {
+        .share {
+          padding-left: 14%;
+
+          * {}
         }
       }
     }

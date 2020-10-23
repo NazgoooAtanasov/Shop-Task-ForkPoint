@@ -1,4 +1,4 @@
-.filter{
+.filter {
   margin-top: 16px;
   max-width: 270px;
 }
@@ -41,27 +41,27 @@
   border-bottom: dimgray solid 1px;
 
 
-  .sizes{
+  .sizes {
     padding: 15px;
 
-    .size-element{
+    .size-element {
       display: inline-block;
       margin: 10px;
     }
 
-    .selected{
+    .selected {
       border-bottom: red solid 3px;
     }
 
-    .size-element:hover{
+    .size-element:hover {
       cursor: pointer;
     }
   }
 
-  .colors{
+  .colors {
     padding: 15px;
 
-    .color-element{
+    .color-element {
       display: inline-block;
       margin: 5px;
       min-width: 25px;
@@ -70,20 +70,21 @@
       max-height: 25px;
     }
 
-    .color-element:hover{
+    .color-element:hover {
       cursor: pointer;
     }
-    
-    .selected{
+
+    .selected {
       border-bottom: red solid 3px;
     }
   }
 
-  .filter-element{
+  .filter-element {
     padding: 10px 0 10px 0px;
     cursor: pointer;
   }
-  ul{
+
+  ul {
     list-style-type: none;
   }
 }

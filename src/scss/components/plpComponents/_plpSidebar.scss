@@ -8,6 +8,7 @@
   background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
+
   .sidebar-header {
     text-align: center;
     font-weight: bolder;
@@ -15,49 +16,52 @@
     background-color: black;
     padding: 15px;
 
-    .closebtn{
+    .closebtn {
       cursor: pointer;
       display: inline;
       float: right;
-      img{
+
+      img {
         height: 20px;
       }
     }
   }
 
-  .collapsible{
+  .collapsible {
     color: dimgray;
     background-color: lightgray;
     padding-left: 15px;
   }
 
-  .content{
+  .content {
     padding-left: 25px;
     border: none;
     font-weight: normal;
 
 
-    .sizes{
+    .sizes {
       padding: 15px;
 
-      .size-element{
+      .size-element {
         display: inline-block;
         margin: 10px;
       }
 
-      .selected{
+      .selected {
         border-bottom: red solid 3px;
       }
 
-      .size-element:hover{
+      .size-element:hover {
         cursor: pointer;
       }
     }
 
-    .colors{
+
+
+    .colors {
       padding: 15px;
 
-      .color-element{
+      .color-element {
         display: inline-block;
         margin: 5px;
         min-width: 25px;
@@ -66,22 +70,24 @@
         max-height: 25px;
       }
 
-      .color-element:hover{
+      .color-element:hover {
         cursor: pointer;
       }
 
-      .selected{
+      .selected {
         border-bottom: red solid 3px;
       }
     }
   }
-  .results-button{
+
+  .results-button {
     font-weight: bolder;
     border-radius: 0;
     margin: 5px;
     width: 98%;
   }
 }
+
 .openbtn {
   cursor: pointer;
   color: dimgray;

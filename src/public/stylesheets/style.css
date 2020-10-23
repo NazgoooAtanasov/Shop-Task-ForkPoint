@@ -5443,7 +5443,15 @@ a.thumbnail {
         max-width: 23px;
         max-height: 20px; }
     .plp-nav-mobile .plp-nav-mobile-wrapper .cart {
-      margin-left: 25%; }
+      margin-left: 20%; }
+    @media only screen and (min-width: 500px) {
+      .plp-nav-mobile .plp-nav-mobile-wrapper .cart {
+        margin-left: 28%; } }
+    @media only screen and (min-width: 750px) {
+      .plp-nav-mobile .plp-nav-mobile-wrapper .cart {
+        margin-left: 35%; }
+      .plp-nav-mobile .plp-nav-mobile-wrapper .ham {
+        margin-right: 38%; } }
   .plp-nav-mobile .plp-filter-mobile-wrapper {
     background-color: whitesmoke;
     padding: 13px; }
@@ -5458,10 +5466,13 @@ a.thumbnail {
     .plp-nav-mobile .plp-filter-mobile-wrapper .mglass {
       color: dimgray;
       font-weight: bold;
-      margin-left: 50%; }
+      margin-left: 53%; }
       .plp-nav-mobile .plp-filter-mobile-wrapper .mglass img {
         max-width: 23px;
         max-height: 20px; }
+    @media only screen and (min-width: 500px) {
+      .plp-nav-mobile .plp-filter-mobile-wrapper .mglass {
+        margin-left: 75%; } }
 
 .sidebar {
   height: 100%;
@@ -5530,6 +5541,10 @@ a.thumbnail {
 
 .plp-mobile-grid {
   display: none; }
+
+@media only screen and (max-width: 469px) {
+  .col- {
+    margin-left: 25%; } }
 
 .menu-wrapper {
   padding: 11px 0 15px 0;
@@ -5784,3 +5799,7 @@ a.thumbnail {
 @media only screen and (max-width: 630px) {
   .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .share {
     padding-left: 25%; } }
+
+@media only screen and (max-width: 400px) {
+  .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .share {
+    padding-left: 14%; } }

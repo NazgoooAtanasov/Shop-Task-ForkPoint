@@ -1,10 +1,12 @@
 .header-wrapper {
-  .breadcrumbs{
+  .breadcrumbs {
     margin: 0px 15% 0px 15%;
   }
-  .headerNav{
+
+  .headerNav {
     border: solid black;
   }
+
   .headerNotification {
     margin-left: 15%;
     margin-right: 15%;
@@ -14,7 +16,7 @@
 
 }
 
-.customButton{
+.customButton {
   border: solid black;
   margin: 5px;
   border-radius: 15px;
@@ -22,19 +24,21 @@
   text-decoration: none;
   color: black;
 }
-.customButton:hover{
+
+.customButton:hover {
   color: black;
 }
 
-.header-freeShipping{
+.header-freeShipping {
   background-color: red;
   color: white;
   text-align: center;
   font-size: 15px;
 }
-@media only screen and (max-width: 1023px){
 
-  .header-freeShipping{
+@media only screen and (max-width: 1023px) {
+
+  .header-freeShipping {
     display: none;
   }
 }

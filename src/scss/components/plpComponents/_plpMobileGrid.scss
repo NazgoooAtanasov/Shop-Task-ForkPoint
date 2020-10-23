@@ -1,3 +1,9 @@
-.plp-mobile-grid{
+.plp-mobile-grid {
   display: none;
+}
+
+@media only screen and (max-width: 469px) {
+  .col- {
+    margin-left: 25%;
+  }
 }

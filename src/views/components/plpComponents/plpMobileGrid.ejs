@@ -1,0 +1,17 @@
+<div class="plp-mobile-grid">
+    <div class="container-flex">
+        <div class="row" style="margin: 0">
+            <% _.each(products, product=> { %>
+            <div class="col-">
+                <div onclick="window.location.assign('<%=data.id%>-<%=subcategoryId%>/<%=product.id%>');" class="card" >
+                    <img class="card-img-top custom-image-grid" src="/images/<%=product.image_groups.filter(value => value.view_type =='large')[0].images[0].link%>">
+                    <div class="card-body">
+                        <div  class="card-title"><%=product.name%></div>
+                        <div  class="card-price"><%=product.price%> EUR</div>
+                    </div>
+                </div>
+            </div>
+            <%});%>
+        </div>
+    </div>
+</div>
