@@ -21,7 +21,9 @@ app.set('views', `${__dirname}/views/Designs`);
 app.set('view engine', 'ejs');
 app.use(express.favicon());
 app.use(express.logger('dev'));
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
 app.use(bodyParser.json());
 app.use(methodOverride('X-HTTP-Method-Override'));
 app.use(express.cookieParser('61d333a8-6325-4506-96e7-a180035cc26f'));
@@ -29,7 +31,9 @@ app.use(session({
   secret: 'forkpoint training',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: true },
+  cookie: {
+    secure: true
+  },
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));

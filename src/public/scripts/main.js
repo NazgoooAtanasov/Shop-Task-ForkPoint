@@ -3,10 +3,10 @@ const coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
     coll[i].nextElementSibling.style.maxHeight = coll[i].nextElementSibling.scrollHeight + 'px';
-    coll[i].addEventListener("click", function() {
+    coll[i].addEventListener("click", function () {
         this.classList.toggle("active");
         const content = this.nextElementSibling;
-        if (content.style.maxHeight){
+        if (content.style.maxHeight) {
             content.style.maxHeight = null;
         } else {
             content.style.maxHeight = content.scrollHeight + "px";
@@ -17,24 +17,24 @@ for (let i = 0; i < coll.length; i++) {
 // Selector for the colors
 const colors = document.getElementsByClassName('color-element');
 
-for (let i = 0; i<colors.length;i++){
+for (let i = 0; i < colors.length; i++) {
     colors[i].addEventListener('click', () => {
-        if(colors[i].classList.contains('selected')) {
+        if (colors[i].classList.contains('selected')) {
             colors[i].classList.remove('selected');
-        }else{
+        } else {
             colors[i].classList.add('selected');
         }
     })
-            }
+}
 
 // Selector for the sizes
 const sizes = document.getElementsByClassName('size-element');
 
-for (let i = 0; i<sizes.length;i++){
+for (let i = 0; i < sizes.length; i++) {
     sizes[i].addEventListener('click', () => {
-        if(sizes[i].classList.contains('selected')) {
+        if (sizes[i].classList.contains('selected')) {
             sizes[i].classList.remove('selected');
-        }else{
+        } else {
             sizes[i].classList.add('selected');
         }
     })
@@ -43,16 +43,16 @@ for (let i = 0; i<sizes.length;i++){
 // Used for the dynamic change of the currency type.
 const currenciesSelectors = document.getElementsByClassName('currency-selector');
 const currencies = document.getElementsByClassName('currency');
-for (let i = 0; i<currenciesSelectors.length;i++){
+for (let i = 0; i < currenciesSelectors.length; i++) {
     currenciesSelectors[i].addEventListener('click', (event) => {
-        for (let k = 0; k<currencies.length;k++){
+        for (let k = 0; k < currencies.length; k++) {
             // Sets everything to inactive first.
             if (!currencies[k].classList.contains('inactive-currency') &&
-                !currencies[k].classList.contains(currenciesSelectors[i].value)){
+                !currencies[k].classList.contains(currenciesSelectors[i].value)) {
                 currencies[k].classList.add('inactive-currency');
             }
             // Finds the right currency to make visible.
-            if(currencies[k].classList.contains(currenciesSelectors[i].value)){
+            if (currencies[k].classList.contains(currenciesSelectors[i].value)) {
                 currencies[k].classList.remove('inactive-currency');
             }
         }
@@ -63,14 +63,14 @@ for (let i = 0; i<currenciesSelectors.length;i++){
 const filterItems = document.getElementsByClassName('filter-element');
 
 
-for (let i = 0; i<filterItems.length;i++){
+for (let i = 0; i < filterItems.length; i++) {
     filterItems[i].setAttribute('color', "dimray");
     const initialData = filterItems[i].firstChild.data;
     filterItems[i].addEventListener('click', () => {
-        if(filterItems[i].style.color == 'black') {
+        if (filterItems[i].style.color == 'black') {
             filterItems[i].firstChild.data = `${initialData}`;
             filterItems[i].style.color = 'dimgray';
-        }else{
+        } else {
             filterItems[i].firstChild.data = `✓ ${initialData}`;
             filterItems[i].style.color = 'black';
         }
@@ -86,7 +86,7 @@ function opensidebar() {
 function closesidebar() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("mySidebar").style.height = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("main").style.marginLeft = "0";
 }
 
 
