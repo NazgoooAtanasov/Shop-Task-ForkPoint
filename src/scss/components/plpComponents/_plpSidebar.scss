@@ -19,22 +19,67 @@
       cursor: pointer;
       display: inline;
       float: right;
+      img{
+        height: 20px;
+      }
     }
   }
 
   .collapsible{
     color: dimgray;
     background-color: lightgray;
-  }
-  .content{
-    border: none;
-    font-weight: normal;
+    padding-left: 15px;
   }
 
+  .content{
+    padding-left: 25px;
+    border: none;
+    font-weight: normal;
+
+
+    .sizes{
+      padding: 15px;
+
+      .size-element{
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .selected{
+        border-bottom: red solid 3px;
+      }
+
+      .size-element:hover{
+        cursor: pointer;
+      }
+    }
+
+    .colors{
+      padding: 15px;
+
+      .color-element{
+        display: inline-block;
+        margin: 5px;
+        min-width: 25px;
+        max-width: 25px;
+        min-height: 25px;
+        max-height: 25px;
+      }
+
+      .color-element:hover{
+        cursor: pointer;
+      }
+
+      .selected{
+        border-bottom: red solid 3px;
+      }
+    }
+  }
   .results-button{
     font-weight: bolder;
+    border-radius: 0;
     margin: 5px;
-    width: 100%;
+    width: 98%;
   }
 }
 .openbtn {

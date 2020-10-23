@@ -23,10 +23,10 @@
   color: dimgray;
   font-weight: bold;
   float: right;
-  margin-left: 5px;
+  margin-right: 15px;
 }
 
-.selector:after {
+.active:after {
   content: '\002B';
 }
 
