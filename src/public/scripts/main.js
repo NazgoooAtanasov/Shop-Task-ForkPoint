@@ -103,8 +103,4 @@ const swiper = new Swiper('.swiper-container', {
 const mobileSwiper = new Swiper('.swiper-container-mobile', {
     slidesPerView: 1,
     spaceBetween: 3,
-    pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-    },
 });

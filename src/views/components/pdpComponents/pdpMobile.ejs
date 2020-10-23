@@ -3,7 +3,7 @@
         <!-- image slider here -->
         <div class="swiper-container-mobile" style="overflow: hidden">
             <div class="swiper-wrapper">
-                <% _.each(data.image_groups.filter(pic => pic.view_type === 'small'), picture => {%>
+                <% _.each(data.image_groups.filter(pic => pic.view_type === 'large'), picture => {%>
                     <div class="swiper-slide">
                         <img src="/images/<%= picture.images[0].link%>" alt="">
                     </div>
