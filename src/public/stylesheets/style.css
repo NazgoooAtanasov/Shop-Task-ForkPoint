@@ -5704,6 +5704,12 @@ a.thumbnail {
     margin: 20px 0 20px 0;
     list-style-type: none; }
 
+.item-description-wrapper .head-image {
+  min-height: 615px;
+  min-width: 615px;
+  max-height: 615px;
+  max-width: 615px; }
+
 .item-description-wrapper .image {
   max-width: 108px;
   min-width: 108px; }
@@ -5714,6 +5720,15 @@ a.thumbnail {
 .item-description-wrapper .swiper-slide {
   text-align: center;
   font-size: 18px; }
+
+@media only screen and (max-width: 1600px) {
+  .item-description-wrapper .head-image {
+    max-width: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    min-width: 300px; }
+  .item-description-wrapper .swiper-container {
+    height: 515px; } }
 
 .pdp-mobile-grid {
   display: none;

@@ -1,4 +1,6 @@
 .item-description-wrapper {
+
+
   .description {
     padding-top: 33px;
     padding-left: 20px;
@@ -14,8 +16,15 @@
       margin: 20px 0 20px 0;
       list-style-type: none;
     }
+
   }
 
+  .head-image{
+    min-height: 615px;
+    min-width: 615px;
+    max-height: 615px;
+    max-width: 615px;
+  }
   .image {
     max-width: 108px;
     min-width: 108px;
@@ -28,8 +37,17 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-
-
   }
 
+  @media only screen and (max-width: 1600px) {
+      .head-image{
+        max-width: 300px;
+        max-height: 300px;
+        min-height: 300px;
+        min-width: 300px;
+      }
+    .swiper-container {
+      height: 515px;
+    }
+  }
 }

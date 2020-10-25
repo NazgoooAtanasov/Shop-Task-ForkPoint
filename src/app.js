@@ -6,6 +6,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const session = require('express-session');
+const mongoConnect = require('./database').mongoConnect;
 
 const routes = {
   categoriesInfo: require('./routes/cateroriesInfo'),
@@ -48,8 +49,12 @@ app.get('/products/:category/:productId/:currency', routes.productDetails);
 
 
 
-// Run server
-http.createServer(app).listen(app.get('port'), () => {
-  // eslint-disable-next-line no-console
-  console.log(`Express server listening on port ${app.get('port')}`);
-});
+
+mongoConnect(()=>{
+  // Run server
+  http.createServer(app).listen(app.get('port'), () => {
+    // eslint-disable-next-line no-console
+    console.log(`Express server listening on port ${app.get('port')}`);
+  });
+})
+
