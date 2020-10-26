@@ -15,7 +15,7 @@ for (let i = 0; i < coll.length; i++) {
 }
 
 // Selector for the colors
-const colors = document.getElementsByClassName('color-element');
+const colors = document.getElementsByClassName('filter-select');
 
 for (let i = 0; i < colors.length; i++) {
     colors[i].addEventListener('click', () => {

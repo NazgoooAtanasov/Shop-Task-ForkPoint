@@ -46,10 +46,12 @@
 
     .size-element {
       display: inline-block;
-      margin: 10px;
+      padding: 0 5px;
     }
 
     .selected {
+      color: black;
+      border: red solid 1px;
       border-bottom: red solid 3px;
     }
 
@@ -59,23 +61,26 @@
   }
 
   .colors {
-    padding: 15px;
-
-    .color-element {
+    .filter-select{
+      height: 31px;
+      width: 31px;
       display: inline-block;
-      margin: 5px;
-      min-width: 25px;
-      max-width: 25px;
-      min-height: 25px;
-      max-height: 25px;
-    }
+      .color-element {
+        display: inline-block;
+        margin: 2px;
+        min-width: 25px;
+        max-width: 25px;
+        min-height: 25px;
+        max-height: 25px;
+      }
 
-    .color-element:hover {
-      cursor: pointer;
+      .color-element:hover {
+        cursor: pointer;
+      }
     }
-
     .selected {
-      border-bottom: red solid 3px;
+      border: solid red 1px;
+      border-radius: 2px;
     }
   }
 

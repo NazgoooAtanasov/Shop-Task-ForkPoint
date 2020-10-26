@@ -33,21 +33,26 @@
   .colors {
     padding-top: 39px;
 
-    .color-element {
+    .filter-select{
       display: inline-block;
-      margin: 4px;
-      min-width: 25px;
-      max-width: 25px;
-      min-height: 25px;
-      max-height: 25px;
-    }
+      height: 31px;
+      width: 29px;
+      .color-element {
+        display: inline-block;
+        min-width: 25px;
+        max-width: 25px;
+        min-height: 25px;
+        max-height: 25px;
+      }
 
-    .color-element:hover {
-      cursor: pointer;
+      .color-element:hover {
+        cursor: pointer;
+      }
     }
 
     .selected {
-      border-bottom: red solid 3px;
+      border: solid red 1px;
+      border-radius: 2px;
     }
   }
 
@@ -58,7 +63,7 @@
       color: dimgray;
       display: inline-block;
       margin: 8px;
-      padding: 5px;
+      padding: 5px 12px 5px 12px;
     }
 
     .size-element:hover {
@@ -66,6 +71,10 @@
     }
 
     .selected {
+      color: black;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: red solid 1px;
       border-bottom: red solid 3px;
     }
   }

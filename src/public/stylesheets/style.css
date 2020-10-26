@@ -5402,24 +5402,29 @@ a.thumbnail {
     padding: 15px; }
     .content .sizes .size-element {
       display: inline-block;
-      margin: 10px; }
+      padding: 0 5px; }
     .content .sizes .selected {
+      color: black;
+      border: red solid 1px;
       border-bottom: red solid 3px; }
     .content .sizes .size-element:hover {
       cursor: pointer; }
-  .content .colors {
-    padding: 15px; }
-    .content .colors .color-element {
+  .content .colors .filter-select {
+    height: 31px;
+    width: 31px;
+    display: inline-block; }
+    .content .colors .filter-select .color-element {
       display: inline-block;
-      margin: 5px;
+      margin: 2px;
       min-width: 25px;
       max-width: 25px;
       min-height: 25px;
       max-height: 25px; }
-    .content .colors .color-element:hover {
+    .content .colors .filter-select .color-element:hover {
       cursor: pointer; }
-    .content .colors .selected {
-      border-bottom: red solid 3px; }
+  .content .colors .selected {
+    border: solid red 1px;
+    border-radius: 2px; }
   .content .filter-element {
     padding: 10px 0 10px 0px;
     cursor: pointer; }
@@ -5629,17 +5634,21 @@ a.thumbnail {
 
 .info-wrapper .colors {
   padding-top: 39px; }
-  .info-wrapper .colors .color-element {
+  .info-wrapper .colors .filter-select {
     display: inline-block;
-    margin: 4px;
-    min-width: 25px;
-    max-width: 25px;
-    min-height: 25px;
-    max-height: 25px; }
-  .info-wrapper .colors .color-element:hover {
-    cursor: pointer; }
+    height: 31px;
+    width: 29px; }
+    .info-wrapper .colors .filter-select .color-element {
+      display: inline-block;
+      min-width: 25px;
+      max-width: 25px;
+      min-height: 25px;
+      max-height: 25px; }
+    .info-wrapper .colors .filter-select .color-element:hover {
+      cursor: pointer; }
   .info-wrapper .colors .selected {
-    border-bottom: red solid 3px; }
+    border: solid red 1px;
+    border-radius: 2px; }
 
 .info-wrapper .sizes {
   padding-top: 39px; }
@@ -5647,10 +5656,14 @@ a.thumbnail {
     color: dimgray;
     display: inline-block;
     margin: 8px;
-    padding: 5px; }
+    padding: 5px 12px 5px 12px; }
   .info-wrapper .sizes .size-element:hover {
     cursor: pointer; }
   .info-wrapper .sizes .selected {
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: red solid 1px;
     border-bottom: red solid 3px; }
 
 .info-wrapper .buy-now {
