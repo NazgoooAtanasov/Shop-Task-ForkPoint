@@ -31,25 +31,26 @@
   }
 
   .colors {
-    padding-top: 39px;
-
-    .filter-select{
-      display: inline-block;
-      height: 31px;
-      width: 29px;
-      .color-element {
+    margin-top: 39px;
+    .items{
+      .filter-select{
+        height: 31px;
+        width: 31px;
         display: inline-block;
-        min-width: 25px;
-        max-width: 25px;
-        min-height: 25px;
-        max-height: 25px;
-      }
+        .color-element {
+          display: inline-block;
+          margin: 2px;
+          min-width: 25px;
+          max-width: 25px;
+          min-height: 25px;
+          max-height: 25px;
+        }
 
-      .color-element:hover {
-        cursor: pointer;
+        .color-element:hover {
+          cursor: pointer;
+        }
       }
     }
-
     .selected {
       border: solid red 1px;
       border-radius: 2px;
@@ -91,8 +92,11 @@
     }
 
     .counter {
+      border: #cccccc solid 1px;
+      margin-right: 10px;
+
       * {
-        padding: 0px 14px;
+        padding: 0px 11px;
       }
 
       .btn {
@@ -111,6 +115,7 @@
       .count-button {
         border-radius: 0;
         width: 60%;
+        height: 51px;
         font-weight: bolder
       }
     }

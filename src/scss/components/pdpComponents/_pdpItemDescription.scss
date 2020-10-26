@@ -1,6 +1,4 @@
 .item-description-wrapper {
-
-
   .description {
     padding-top: 33px;
     padding-left: 20px;
@@ -39,13 +37,25 @@
     font-size: 18px;
   }
 
+  @media only screen and (max-width: 1850px) {
+    .head-image{
+      max-width: 450px;
+      max-height: 450px;
+      min-height: 450px;
+      min-width: 450px;
+    }
+    .swiper-container {
+      height: 515px;
+    }
+  }
+
   @media only screen and (max-width: 1600px) {
-      .head-image{
-        max-width: 300px;
-        max-height: 300px;
-        min-height: 300px;
-        min-width: 300px;
-      }
+    .head-image{
+      max-width: 300px;
+      max-height: 300px;
+      min-height: 300px;
+      min-width: 300px;
+    }
     .swiper-container {
       height: 515px;
     }

@@ -5294,6 +5294,7 @@ a.thumbnail {
   width: 100%; }
 
 .custom-col-small {
+  padding: 0;
   flex: 0 0 22%;
   max-width: 22%; }
 
@@ -5633,18 +5634,19 @@ a.thumbnail {
     display: inline; }
 
 .info-wrapper .colors {
-  padding-top: 39px; }
-  .info-wrapper .colors .filter-select {
-    display: inline-block;
+  margin-top: 39px; }
+  .info-wrapper .colors .items .filter-select {
     height: 31px;
-    width: 29px; }
-    .info-wrapper .colors .filter-select .color-element {
+    width: 31px;
+    display: inline-block; }
+    .info-wrapper .colors .items .filter-select .color-element {
       display: inline-block;
+      margin: 2px;
       min-width: 25px;
       max-width: 25px;
       min-height: 25px;
       max-height: 25px; }
-    .info-wrapper .colors .filter-select .color-element:hover {
+    .info-wrapper .colors .items .filter-select .color-element:hover {
       cursor: pointer; }
   .info-wrapper .colors .selected {
     border: solid red 1px;
@@ -5673,11 +5675,14 @@ a.thumbnail {
   padding-bottom: 4%; }
   .info-wrapper .buy-now .quantity {
     text-align: left; }
-  .info-wrapper .buy-now .counter * {
-    padding: 0px 14px; }
-  .info-wrapper .buy-now .counter .btn {
-    font-size: 30px;
-    color: dimgray; }
+  .info-wrapper .buy-now .counter {
+    border: #cccccc solid 1px;
+    margin-right: 10px; }
+    .info-wrapper .buy-now .counter * {
+      padding: 0px 11px; }
+    .info-wrapper .buy-now .counter .btn {
+      font-size: 30px;
+      color: dimgray; }
   .info-wrapper .buy-now .buy-now-wrapper {
     margin-top: 5%; }
     .info-wrapper .buy-now .buy-now-wrapper * {
@@ -5685,6 +5690,7 @@ a.thumbnail {
     .info-wrapper .buy-now .buy-now-wrapper .count-button {
       border-radius: 0;
       width: 60%;
+      height: 51px;
       font-weight: bolder; }
 
 .info-wrapper .share {
@@ -5734,6 +5740,15 @@ a.thumbnail {
   text-align: center;
   font-size: 18px; }
 
+@media only screen and (max-width: 1850px) {
+  .item-description-wrapper .head-image {
+    max-width: 450px;
+    max-height: 450px;
+    min-height: 450px;
+    min-width: 450px; }
+  .item-description-wrapper .swiper-container {
+    height: 515px; } }
+
 @media only screen and (max-width: 1600px) {
   .item-description-wrapper .head-image {
     max-width: 300px;
@@ -5763,11 +5778,11 @@ a.thumbnail {
     padding-left: 20px; }
   .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .colors {
     padding-left: 20px;
-    padding-top: 10px; }
+    margin-top: 10px; }
+    .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .colors .items {
+      margin-left: 25px; }
     .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .colors .title {
       padding: 0; }
-    .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .colors div {
-      padding-left: 25px; }
   .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .sizes {
     padding-left: 25px;
     padding-top: 10px; }
@@ -5779,12 +5794,17 @@ a.thumbnail {
     .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .sizes div {
       padding-left: 25px; }
   .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .counter {
-    padding-left: 20px; }
+    padding-left: 20px;
+    display: inline-block; }
+    .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .counter .title {
+      padding-left: 0; }
     .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .counter .counter-wrapper {
-      padding-left: 25px; }
+      margin-left: 30px;
+      display: inline-block;
+      border: solid 1px #cccccc; }
       .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .counter .counter-wrapper * {
         display: inline;
-        padding: 0px 14px; }
+        padding: 8px 10px; }
       .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .counter .counter-wrapper .btn {
         font-size: 30px;
         color: dimgray; }
@@ -5805,6 +5825,8 @@ a.thumbnail {
     color: dimgray; }
     .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .wishlist * {
       display: inline; }
+    .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .wishlist .title {
+      color: #888888; }
   .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .collapsible {
     padding-left: 20px;
     padding-bottom: 15px;

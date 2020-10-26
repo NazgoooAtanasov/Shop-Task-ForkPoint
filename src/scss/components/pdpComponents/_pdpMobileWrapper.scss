@@ -3,8 +3,6 @@
   padding-left: 0;
   padding-right: 0;
 
-
-
   .pdp-mobile-wrapper {
     .swiper-container-mobile {
       width: 100%;
@@ -35,14 +33,12 @@
 
         .colors {
           padding-left: 20px;
-          padding-top: 10px;
-
+          margin-top: 10px;
+          .items {
+            margin-left: 25px;
+          }
           .title {
             padding: 0;
-          }
-
-          div {
-            padding-left: 25px;
           }
         }
 
@@ -67,15 +63,17 @@
 
       .counter {
         padding-left: 20px;
+        display: inline-block;
 
-        .title {}
+        .title {padding-left: 0}
 
         .counter-wrapper {
-          padding-left: 25px;
-
+          margin-left: 30px;
+          display: inline-block;
+          border: solid 1px #cccccc;
           * {
             display: inline;
-            padding: 0px 14px;
+            padding: 8px 10px;
           }
 
           .btn {
@@ -111,7 +109,7 @@
           display: inline;
         }
 
-        .title {}
+        .title {color: #888888}
       }
 
       .collapsible {
