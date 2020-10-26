@@ -45,14 +45,14 @@
     padding: 15px;
 
     .size-element {
-      display: inline-block;
-      padding: 0 5px;
+      text-align: center;
     }
 
     .selected {
       color: black;
       border: red solid 1px;
       border-bottom: red solid 3px;
+      text-align: center;
     }
 
     .size-element:hover {

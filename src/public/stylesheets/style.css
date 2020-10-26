@@ -5402,12 +5402,12 @@ a.thumbnail {
   .content .sizes {
     padding: 15px; }
     .content .sizes .size-element {
-      display: inline-block;
-      padding: 0 5px; }
+      text-align: center; }
     .content .sizes .selected {
       color: black;
       border: red solid 1px;
-      border-bottom: red solid 3px; }
+      border-bottom: red solid 3px;
+      text-align: center; }
     .content .sizes .size-element:hover {
       cursor: pointer; }
   .content .colors .filter-select {
