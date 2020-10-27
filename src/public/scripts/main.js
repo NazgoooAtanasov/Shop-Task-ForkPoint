@@ -43,7 +43,7 @@ for (let i = 0; i < sizes.length; i++) {
 // Used for the dynamic change of the currency type.
 const currenciesSelectors = document.getElementsByName("currency");
 const currencies = document.getElementsByClassName('currency');
-currenciesSelectors[0].addEventListener('change', (event) =>{
+currenciesSelectors[0]?.addEventListener('change', (event) =>{
     for (let i = 0; i < currencies.length; i++) {
         // Sets everything to inactive first.
         if (!currencies[i].classList.contains('inactive-currency') &&

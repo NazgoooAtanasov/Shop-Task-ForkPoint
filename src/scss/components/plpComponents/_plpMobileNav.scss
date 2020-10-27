@@ -16,7 +16,7 @@
     }
 
     .ham {
-      margin-right: 30%;
+      margin-right: auto;
 
       img {
         max-width: 23px;
@@ -25,22 +25,33 @@
     }
 
     .cart {
-      margin-left: 20%;
+      margin-left: auto;
     }
 
-    @media only screen and (min-width: 500px) {
-      .cart {
+    @media only screen and (min-width: 320px){
+      .ham{
+        margin-right: 21%;
+      }
+      .cart{
+        margin-left: 12%;
+      }
+    }
+
+    @media only screen and (min-width: 520px){
+      .ham{
+        margin-right: 32%;
+      }
+      .cart{
         margin-left: 28%;
       }
     }
 
-    @media only screen and (min-width: 750px) {
-      .cart {
-        margin-left: 35%;
+    @media only screen and (min-width: 710px){
+      .ham{
+        margin-right: 37%;
       }
-
-      .ham {
-        margin-right: 38%;
+      .cart{
+        margin-left: 34%;
       }
     }
   }
@@ -68,7 +79,7 @@
     .mglass {
       color: dimgray;
       font-weight: bold;
-      margin-left: 53%;
+      margin-left: auto;
 
       img {
         max-width: 23px;
@@ -76,9 +87,19 @@
       }
     }
 
-    @media only screen and (min-width: 500px) {
-      .mglass {
-        margin-left: 75%;
+    @media only screen and (min-width: 320px){
+      .mglass{
+        margin-left: 38%;
+      }
+    }
+    @media only screen and (min-width: 520px){
+      .mglass{
+        margin-left: 63%;
+      }
+    }
+    @media only screen and (min-width: 710px){
+      .mglass{
+        margin-left: 73%;
       }
     }
   }

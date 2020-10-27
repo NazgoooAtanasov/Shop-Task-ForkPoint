@@ -5405,6 +5405,7 @@ a.thumbnail {
     user-select: none;
     padding: 15px; }
     .content .sizes .size-element {
+      padding: 4px;
       text-align: center; }
     .content .sizes .selected {
       color: black;
@@ -5450,20 +5451,27 @@ a.thumbnail {
       font-weight: bolder;
       color: white; }
     .plp-nav-mobile .plp-nav-mobile-wrapper .ham {
-      margin-right: 30%; }
+      margin-right: auto; }
       .plp-nav-mobile .plp-nav-mobile-wrapper .ham img {
         max-width: 23px;
         max-height: 20px; }
     .plp-nav-mobile .plp-nav-mobile-wrapper .cart {
-      margin-left: 20%; }
-    @media only screen and (min-width: 500px) {
+      margin-left: auto; }
+    @media only screen and (min-width: 320px) {
+      .plp-nav-mobile .plp-nav-mobile-wrapper .ham {
+        margin-right: 21%; }
+      .plp-nav-mobile .plp-nav-mobile-wrapper .cart {
+        margin-left: 12%; } }
+    @media only screen and (min-width: 520px) {
+      .plp-nav-mobile .plp-nav-mobile-wrapper .ham {
+        margin-right: 32%; }
       .plp-nav-mobile .plp-nav-mobile-wrapper .cart {
         margin-left: 28%; } }
-    @media only screen and (min-width: 750px) {
-      .plp-nav-mobile .plp-nav-mobile-wrapper .cart {
-        margin-left: 35%; }
+    @media only screen and (min-width: 710px) {
       .plp-nav-mobile .plp-nav-mobile-wrapper .ham {
-        margin-right: 38%; } }
+        margin-right: 37%; }
+      .plp-nav-mobile .plp-nav-mobile-wrapper .cart {
+        margin-left: 34%; } }
   .plp-nav-mobile .plp-filter-mobile-wrapper {
     background-color: whitesmoke;
     padding: 13px; }
@@ -5478,13 +5486,19 @@ a.thumbnail {
     .plp-nav-mobile .plp-filter-mobile-wrapper .mglass {
       color: dimgray;
       font-weight: bold;
-      margin-left: 53%; }
+      margin-left: auto; }
       .plp-nav-mobile .plp-filter-mobile-wrapper .mglass img {
         max-width: 23px;
         max-height: 20px; }
-    @media only screen and (min-width: 500px) {
+    @media only screen and (min-width: 320px) {
       .plp-nav-mobile .plp-filter-mobile-wrapper .mglass {
-        margin-left: 75%; } }
+        margin-left: 38%; } }
+    @media only screen and (min-width: 520px) {
+      .plp-nav-mobile .plp-filter-mobile-wrapper .mglass {
+        margin-left: 63%; } }
+    @media only screen and (min-width: 710px) {
+      .plp-nav-mobile .plp-filter-mobile-wrapper .mglass {
+        margin-left: 73%; } }
 
 .sidebar {
   height: 100%;
@@ -5521,6 +5535,8 @@ a.thumbnail {
       .sidebar .content .sizes .col {
         max-width: 35px;
         max-height: 40px; }
+      .sidebar .content .sizes .size-element {
+        padding: 4px; }
       .sidebar .content .sizes .selected {
         border-bottom: red solid 4px; }
       .sidebar .content .sizes .size-element:hover {
@@ -5561,9 +5577,13 @@ a.thumbnail {
 .plp-mobile-grid {
   display: none; }
 
-@media only screen and (max-width: 469px) {
+@media only screen and (min-width: 320px) {
   .col- {
-    margin-left: 25%; } }
+    margin-left: 14%; } }
+
+@media only screen and (min-width: 520px) {
+  .col- {
+    margin-left: 3%; } }
 
 .menu-wrapper {
   padding: 11px 0 15px 0;
@@ -5802,7 +5822,7 @@ a.thumbnail {
       padding: 0; }
     .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .sizes .size-element {
       text-indent: 0;
-      padding: 5px; }
+      padding: 5px 10px; }
     .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .info-wrapper .sizes div {
       padding-left: 25px; }
   .pdp-mobile-grid .pdp-mobile-wrapper .item-info-mobile .counter {
