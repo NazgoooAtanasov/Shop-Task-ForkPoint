@@ -103,3 +103,17 @@ const mobileSwiper = new Swiper('.swiper-container-mobile', {
     slidesPerView: 1,
     spaceBetween: 3,
 });
+
+
+$(".js-range-slider").ionRangeSlider({
+    type: "double",
+    skin:'flat',
+    min: 0,
+    max: 1000,
+    from: 100,
+    to: 400,
+    drag_interval: true,
+    hide_min_max:true,
+    grid: false,
+    postfix: " EUR"
+});
