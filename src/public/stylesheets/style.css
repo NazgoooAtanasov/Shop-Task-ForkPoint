@@ -5276,8 +5276,7 @@ a.thumbnail {
 
 @media only screen and (max-width: 1650px) {
   .plp-wrapper .card img {
-    max-height: 200px;
-    max-width: 200px; } }
+    max-width: 100px; } }
 
 @media only screen and (max-width: 1023px) {
   .plp-wrapper .filter {
@@ -5293,7 +5292,11 @@ a.thumbnail {
   .plp-wrapper .refine {
     display: none; }
   .plp-wrapper .filter {
-    display: none; } }
+    display: none; }
+  .plp-wrapper .card img {
+    min-width: 233px;
+    max-width: 233px;
+    max-height: 233px; } }
 
 .slider {
   width: 100%; }
@@ -5308,7 +5311,6 @@ a.thumbnail {
   max-width: 56%; }
 
 .custom-image-grid {
-  min-width: 233px;
   max-width: 233px;
   max-height: 233px; }
 

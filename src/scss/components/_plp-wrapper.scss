@@ -67,9 +67,7 @@
 
     .card {
       img{
-        max-height: 200px;
-
-        max-width: 200px;
+        max-width: 100px;
       }
     }
   }
@@ -107,6 +105,13 @@
     .filter {
       display: none;
     }
+    .card{
+      img{
+        min-width: 233px;
+        max-width: 233px;
+        max-height: 233px;
+      }
+    }
   }
 }
 
@@ -126,7 +131,6 @@
 }
 
 .custom-image-grid {
-  min-width: 233px;
   max-width: 233px;
   max-height: 233px;
 }
