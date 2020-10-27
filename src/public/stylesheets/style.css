@@ -5278,7 +5278,7 @@ a.thumbnail {
   .plp-wrapper .card img {
     max-width: 100px; } }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   .plp-wrapper .filter {
     display: none; }
   .plp-wrapper .nav-desktop {
