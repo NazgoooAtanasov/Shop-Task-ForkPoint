@@ -47,8 +47,11 @@
     user-select: none;
     padding: 15px;
 
+    .col{
+      max-width: 33px;
+    }
     .size-element {
-      padding:4px;
+      padding:0px;
       text-align: center;
     }
 
