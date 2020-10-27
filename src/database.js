@@ -6,7 +6,7 @@ dotenv.config();
 let _db;
 
 const mongoConnect = async (callback) => {
-    await MongoClient.connect(process.env.CONNECTIONSTRING, (err, client)=>{
+    await MongoClient.connect(process.env.CONNECTIONSTRING, (err, client) => {
         _db = client.db('shop');
         callback();
     })

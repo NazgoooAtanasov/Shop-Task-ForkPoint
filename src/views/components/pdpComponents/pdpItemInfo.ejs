@@ -1,16 +1,16 @@
 <div class="info-wrapper">
     <div class="item-id">
-        Item No. <%=data.id%>
+        Item No. <%= data.id %>
     </div>
     <div class="item-name">
-        <%=data.name.toUpperCase()%>
+        <%= data.name.toUpperCase() %>
     </div>
     <div class="item-price">
         <div style="display: inline" class="price-section">
-            <div class="currency inactive-currency usd"><%=usdPrice%> USD</div>
-            <div class="currency  euro"><%=euroPrice%> EUR</div>
-            <div class="currency inactive-currency bgn"><%=bgnPrice%> BGN</div>
-            <select  style="max-width: 100px;display: inline" name="currency">
+            <div class="currency inactive-currency usd"><%= usdPrice %> USD</div>
+            <div class="currency  euro"><%= euroPrice %> EUR</div>
+            <div class="currency inactive-currency bgn"><%= bgnPrice %> BGN</div>
+            <select style="max-width: 100px;display: inline" name="currency">
                 <option class="currency-selector" selected="selected" value="euro">EUR</option>
                 <option class="currency-selector" value="bgn">BGN</option>
                 <option class="currency-selector" value="usd">USD</option>

@@ -38,17 +38,24 @@
     border: none;
     font-weight: normal;
 
+    .range-slider {
+      padding: 20px 0;
+      width: 80%;
+      margin-left: 7%;
+    }
 
     .sizes {
       padding: 15px;
 
-      .col{
+      .col {
         max-width: 35px;
         max-height: 40px;
       }
-      .size-element{
-        padding:4px;
+
+      .size-element {
+        padding: 4px;
       }
+
       .selected {
         border-bottom: red solid 4px;
       }
@@ -58,16 +65,16 @@
       }
     }
 
-
-
     .colors {
       margin-top: 15px;
       margin-left: 15px;
       user-select: none;
-      .filter-select{
+
+      .filter-select {
         height: 31px;
         width: 31px;
         display: inline-block;
+
         .color-element {
           display: inline-block;
           margin: 2px;
@@ -81,6 +88,7 @@
           cursor: pointer;
         }
       }
+
       .selected {
         border: solid red 1px;
         border-radius: 2px;

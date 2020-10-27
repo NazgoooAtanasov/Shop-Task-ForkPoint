@@ -1,13 +1,16 @@
 <div class="card-group">
     <% _.each(products, product=> { %>
     <div class="col-sm-4">
-        <div onclick="window.location.assign('<%=data.id%>-<%=subcategoryId%>/<%=product.id%>');" class="card" style="border: none">
-            <img class="card-img-top" src="/images/<%=product.image_groups.filter(value => value.view_type =='large')[0].images[0].link%>">
+        <div onclick="window.location.assign('<%= data.id %>-<%= subcategoryId %>/<%= product.id %>');" class="card"
+             style="border: none">
+            <img class="card-img-top"
+                 src="/images/<%= product.image_groups.filter(value => value.view_type == 'large')[0].images[0].link %>">
             <div class="card-body" style="padding: 15px 0">
-                <div style="color: dimgray; border-bottom: dimgray solid 1px" class="card-title"><%=product.name%></div>
-                <div style="color: dimgray" class="card-price"><%=product.price%> EUR</div>
+                <div style="color: dimgray; border-bottom: dimgray solid 1px"
+                     class="card-title"><%= product.name %></div>
+                <div style="color: dimgray" class="card-price"><%= product.price %> EUR</div>
             </div>
         </div>
     </div>
-    <%});%>
+    <% }); %>
 </div>

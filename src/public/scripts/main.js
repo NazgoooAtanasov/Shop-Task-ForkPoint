@@ -43,7 +43,7 @@ for (let i = 0; i < sizes.length; i++) {
 // Used for the dynamic change of the currency type.
 const currenciesSelectors = document.getElementsByName("currency");
 const currencies = document.getElementsByClassName('currency');
-currenciesSelectors[0]?.addEventListener('change', (event) =>{
+currenciesSelectors[0]?.addEventListener('change', (event) => {
     for (let i = 0; i < currencies.length; i++) {
         // Sets everything to inactive first.
         if (!currencies[i].classList.contains('inactive-currency') &&
@@ -107,13 +107,13 @@ const mobileSwiper = new Swiper('.swiper-container-mobile', {
 
 $(".js-range-slider").ionRangeSlider({
     type: "double",
-    skin:'flat',
+    skin: 'flat',
     min: 0,
     max: 1000,
-    from: 100,
-    to: 400,
+    from: 250,
+    to: 870,
     drag_interval: true,
-    hide_min_max:true,
+    hide_min_max: true,
     grid: false,
     postfix: " EUR"
 });

@@ -1,26 +1,26 @@
 .body-wrapper {
-    .bodyArranger {
-        margin: 0px 15% 0px 15%;
-    }
+  .bodyArranger {
+    margin: 0px 15% 0px 15%;
+  }
 
-    .bodyNotifier {
-        font-weight: bold;
-        font-size: 30px;
-    }
+  .bodyNotifier {
+    font-weight: bold;
+    font-size: 30px;
+  }
 
-    ul {
-        list-style-type: none;
-    }
+  ul {
+    list-style-type: none;
+  }
 
-    li {
-        list-style-type: none;
-        padding: 10px;
-    }
+  li {
+    list-style-type: none;
+    padding: 10px;
+  }
 }
 
 .gridContainer {
-    display: grid;
-    grid-column-gap: 5px;
-    grid-template-columns: auto auto;
-    width: 100%;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto auto;
+  width: 100%;
 }

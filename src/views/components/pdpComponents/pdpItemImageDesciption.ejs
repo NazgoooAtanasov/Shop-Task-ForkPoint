@@ -1,18 +1,18 @@
 <div class="item-description-wrapper">
     <div class="row">
-        <div class="col-sm-2 swiperc"  style="padding: 0">
+        <div class="col-sm-2 swiperc" style="padding: 0">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <% _.each(data.image_groups.filter(pic => pic.view_type === 'small'), picture => {%>
+                    <% _.each(data.image_groups.filter(pic => pic.view_type === 'small'), picture => { %>
                         <div class="swiper-slide">
-                            <img style="height: 108px; width: 108px" src="/images/<%= picture.images[0].link%>" alt="">
+                            <img style="height: 108px; width: 108px" src="/images/<%= picture.images[0].link %>" alt="">
                         </div>
-                    <%});%>
+                    <% }); %>
                 </div>
             </div>
         </div>
         <div class="col-sm-10">
-            <img class="head-image" style="" src="/images/<%=imageLink%>"  alt="">
+            <img class="head-image" style="" src="/images/<%= imageLink %>" alt="">
         </div>
     </div>
 </div>

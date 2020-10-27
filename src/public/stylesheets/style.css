@@ -5449,6 +5449,10 @@ a.thumbnail {
     cursor: pointer; }
   .content ul {
     list-style-type: none; }
+  .content .range-slider {
+    padding-bottom: 10px;
+    width: 75%;
+    margin-left: 10%; }
 
 .plp-nav-mobile {
   display: none; }
@@ -5541,6 +5545,10 @@ a.thumbnail {
     padding-left: 25px;
     border: none;
     font-weight: normal; }
+    .sidebar .content .range-slider {
+      padding: 20px 0;
+      width: 80%;
+      margin-left: 7%; }
     .sidebar .content .sizes {
       padding: 15px; }
       .sidebar .content .sizes .col {

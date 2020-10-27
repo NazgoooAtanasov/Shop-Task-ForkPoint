@@ -33,11 +33,13 @@
   .colors {
     user-select: none;
     margin-top: 39px;
-    .items{
-      .filter-select{
+
+    .items {
+      .filter-select {
         height: 31px;
         width: 31px;
         display: inline-block;
+
         .color-element {
           display: inline-block;
           margin: 2px;
@@ -52,6 +54,7 @@
         }
       }
     }
+
     .selected {
       border: solid red 1px;
       border-radius: 2px;
@@ -145,7 +148,8 @@
       display: inline;
     }
 
-    .text {}
+    .text {
+    }
   }
 
   .add-to-wishlist:hover {

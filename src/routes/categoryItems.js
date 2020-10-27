@@ -1,7 +1,7 @@
 const _ = require('underscore');
 const dotenv = require('dotenv');
 
-const getDB =require('../database').getDB;
+const getDB = require('../database').getDB;
 
 dotenv.config();
 

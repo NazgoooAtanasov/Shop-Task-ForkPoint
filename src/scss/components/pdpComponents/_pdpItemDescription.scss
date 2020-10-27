@@ -17,12 +17,13 @@
 
   }
 
-  .head-image{
+  .head-image {
     min-height: 615px;
     min-width: 615px;
     max-height: 615px;
     max-width: 615px;
   }
+
   .image {
     max-width: 108px;
     min-width: 108px;
@@ -38,7 +39,7 @@
   }
 
   @media only screen and (max-width: 1850px) {
-    .head-image{
+    .head-image {
       max-width: 450px;
       max-height: 450px;
       min-height: 450px;
@@ -50,7 +51,7 @@
   }
 
   @media only screen and (max-width: 1600px) {
-    .head-image{
+    .head-image {
       max-width: 300px;
       max-height: 300px;
       min-height: 300px;

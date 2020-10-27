@@ -49,11 +49,12 @@
     user-select: none;
     padding: 15px;
 
-    .col{
+    .col {
       max-width: 33px;
     }
+
     .size-element {
-      padding:0px;
+      padding: 0px;
       text-align: center;
     }
 
@@ -72,10 +73,12 @@
   .colors {
     margin-left: 15px;
     user-select: none;
-    .filter-select{
+
+    .filter-select {
       height: 31px;
       width: 31px;
       display: inline-block;
+
       .color-element {
         display: inline-block;
         margin: 2px;
@@ -89,6 +92,7 @@
         cursor: pointer;
       }
     }
+
     .selected {
       border: solid red 1px;
       border-radius: 2px;
@@ -102,5 +106,11 @@
 
   ul {
     list-style-type: none;
+  }
+
+  .range-slider {
+    padding-bottom: 10px;
+    width: 75%;
+    margin-left: 10%;
   }
 }

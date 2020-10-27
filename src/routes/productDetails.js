@@ -2,7 +2,7 @@ const _ = require('underscore');
 const dotenv = require('dotenv');
 
 const soapService = require('../soapService');
-const getDB =require('../database').getDB;
+const getDB = require('../database').getDB;
 
 dotenv.config();
 
@@ -23,7 +23,8 @@ const findPrice = async (currency, itemPrice) => {
 module.exports = async function productDetails(req, res) {
     const database = getDB();
 
-    const {productId,
+    const {
+        productId,
         category
     } = req.params;
     let {
