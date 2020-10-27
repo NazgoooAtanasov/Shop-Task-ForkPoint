@@ -40,7 +40,7 @@
         <div>
             <ul>
                 <li class="filter-element">UNISEX</li>
-                <li style="border-bottom: #CDCDCD solid 1px; border-top: dimgray solid 1px" class="filter-element">MEN</li>
+                <li style="border-bottom: #CDCDCD solid 1px; border-top: #CDCDCD solid 1px" class="filter-element">MEN</li>
                 <li class="filter-element">WOMEN</li>
             </ul>
         </div>
@@ -54,20 +54,60 @@
     <button class="collapsible">&#8226; COLOR</button>
     <div  class="content">
         <div class="colors">
-            <div style="background-color: green" class="color-element"></div>
-            <div style="background-color: black" class="color-element"></div>
-            <div style="background-color: white" class="color-element"></div>
-            <div style="background-color: orange" class="color-element"></div>
-            <div style="background-color: red" class="color-element"></div>
+            <div class="filter-select selected">
+                <div class="color-element" style="background-color: green"></div>
+            </div>
+            <div class="filter-select selected">
+                <div class="color-element" style="background-color: black"></div>
+            </div>
+            <div class="filter-select">
+                <div class="color-element" style="border: #cccccc solid 1px ;background-color: white"></div>
+            </div>
+            <div class="filter-select">
+                <div class="color-element" style="background-color: orange"></div>
+            </div>
+            <div class="filter-select selected">
+                <div class="color-element" style="background-color: red"></div>
+            </div>
         </div>
     </div>
     <button class="collapsible">&#8226; SIZE</button>
     <div class="content">
         <div class="sizes">
-            <div class="size-element" >S</div>
-            <div class="size-element">M</div>
-            <div class="size-element">L</div>
-            <div class="size-element">XL</div>
+            <div class="container-flex">
+                <div class="row">
+                    <div class="col" style="margin: 3px; padding: 0">
+                        <div class="size-element selected">
+                            XS
+                        </div>
+                    </div>
+                    <div class="col" style="margin: 3px; padding: 0">
+                        <div class="size-element ">
+                            S
+                        </div>
+                    </div>
+                    <div class="col" style="margin: 3px; padding: 0">
+                        <div class="size-element ">
+                            M
+                        </div>
+                    </div>
+                    <div class="col" style="margin: 3px; padding: 0">
+                        <div class="size-element ">
+                            L
+                        </div>
+                    </div>
+                    <div class="col" style="margin: 3px; padding: 0">
+                        <div class="size-element ">
+                            XL
+                        </div>
+                    </div>
+                    <div class="col" style="margin: 3px; padding: 0">
+                        <div class="size-element ">
+                            XXL
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div>

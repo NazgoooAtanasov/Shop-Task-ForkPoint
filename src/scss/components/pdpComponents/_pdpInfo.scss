@@ -31,6 +31,7 @@
   }
 
   .colors {
+    user-select: none;
     margin-top: 39px;
     .items{
       .filter-select{
@@ -58,6 +59,7 @@
   }
 
   .sizes {
+    user-select: none;
     padding-top: 39px;
 
     .size-element {

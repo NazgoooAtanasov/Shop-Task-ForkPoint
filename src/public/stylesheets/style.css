@@ -5368,6 +5368,7 @@ a.thumbnail {
   max-width: 270px; }
 
 .collapsible {
+  user-select: none;
   background-color: white;
   color: black;
   cursor: pointer;
@@ -5392,6 +5393,7 @@ a.thumbnail {
   content: '\002B'; }
 
 .content {
+  user-select: none;
   color: dimgray;
   font-weight: bolder;
   max-height: 0;
@@ -5400,6 +5402,7 @@ a.thumbnail {
   background-color: white;
   border-bottom: dimgray solid 1px; }
   .content .sizes {
+    user-select: none;
     padding: 15px; }
     .content .sizes .size-element {
       text-align: center; }
@@ -5410,22 +5413,25 @@ a.thumbnail {
       text-align: center; }
     .content .sizes .size-element:hover {
       cursor: pointer; }
-  .content .colors .filter-select {
-    height: 31px;
-    width: 31px;
-    display: inline-block; }
-    .content .colors .filter-select .color-element {
-      display: inline-block;
-      margin: 2px;
-      min-width: 25px;
-      max-width: 25px;
-      min-height: 25px;
-      max-height: 25px; }
-    .content .colors .filter-select .color-element:hover {
-      cursor: pointer; }
-  .content .colors .selected {
-    border: solid red 1px;
-    border-radius: 2px; }
+  .content .colors {
+    margin-left: 15px;
+    user-select: none; }
+    .content .colors .filter-select {
+      height: 31px;
+      width: 31px;
+      display: inline-block; }
+      .content .colors .filter-select .color-element {
+        display: inline-block;
+        margin: 2px;
+        min-width: 25px;
+        max-width: 25px;
+        min-height: 25px;
+        max-height: 25px; }
+      .content .colors .filter-select .color-element:hover {
+        cursor: pointer; }
+    .content .colors .selected {
+      border: solid red 1px;
+      border-radius: 2px; }
   .content .filter-element {
     padding: 10px 0 10px 0px;
     cursor: pointer; }
@@ -5512,26 +5518,33 @@ a.thumbnail {
     font-weight: normal; }
     .sidebar .content .sizes {
       padding: 15px; }
-      .sidebar .content .sizes .size-element {
-        display: inline-block;
-        margin: 10px; }
+      .sidebar .content .sizes .col {
+        max-width: 35px;
+        max-height: 40px; }
       .sidebar .content .sizes .selected {
         border-bottom: red solid 3px; }
       .sidebar .content .sizes .size-element:hover {
         cursor: pointer; }
     .sidebar .content .colors {
-      padding: 15px; }
-      .sidebar .content .colors .color-element {
-        display: inline-block;
-        margin: 5px;
-        min-width: 25px;
-        max-width: 25px;
-        min-height: 25px;
-        max-height: 25px; }
-      .sidebar .content .colors .color-element:hover {
-        cursor: pointer; }
+      margin-top: 15px;
+      margin-left: 15px;
+      user-select: none; }
+      .sidebar .content .colors .filter-select {
+        height: 31px;
+        width: 31px;
+        display: inline-block; }
+        .sidebar .content .colors .filter-select .color-element {
+          display: inline-block;
+          margin: 2px;
+          min-width: 25px;
+          max-width: 25px;
+          min-height: 25px;
+          max-height: 25px; }
+        .sidebar .content .colors .filter-select .color-element:hover {
+          cursor: pointer; }
       .sidebar .content .colors .selected {
-        border-bottom: red solid 3px; }
+        border: solid red 1px;
+        border-radius: 2px; }
   .sidebar .results-button {
     font-weight: bolder;
     border-radius: 0;
@@ -5634,6 +5647,7 @@ a.thumbnail {
     display: inline; }
 
 .info-wrapper .colors {
+  user-select: none;
   margin-top: 39px; }
   .info-wrapper .colors .items .filter-select {
     height: 31px;
@@ -5653,6 +5667,7 @@ a.thumbnail {
     border-radius: 2px; }
 
 .info-wrapper .sizes {
+  user-select: none;
   padding-top: 39px; }
   .info-wrapper .sizes .size-element {
     color: dimgray;

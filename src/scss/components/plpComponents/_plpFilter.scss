@@ -4,6 +4,7 @@
 }
 
 .collapsible {
+  user-select: none;
   background-color: white;
   color: black;
   cursor: pointer;
@@ -32,6 +33,7 @@
 
 
 .content {
+  user-select: none;
   color: dimgray;
   font-weight: bolder;
   max-height: 0;
@@ -42,6 +44,7 @@
 
 
   .sizes {
+    user-select: none;
     padding: 15px;
 
     .size-element {
@@ -61,6 +64,8 @@
   }
 
   .colors {
+    margin-left: 15px;
+    user-select: none;
     .filter-select{
       height: 31px;
       width: 31px;
