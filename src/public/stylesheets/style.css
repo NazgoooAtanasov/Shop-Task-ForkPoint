@@ -5274,6 +5274,11 @@ a.thumbnail {
   padding-top: 26px;
   padding-left: 8px; }
 
+@media only screen and (max-width: 1650px) {
+  .plp-wrapper .card img {
+    max-height: 200px;
+    max-width: 200px; } }
+
 @media only screen and (max-width: 1023px) {
   .plp-wrapper .filter {
     display: none; }
@@ -5378,7 +5383,8 @@ a.thumbnail {
   outline: none;
   font-size: 20px;
   padding-top: 15px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  padding-left: 20px; }
 
 .collapsible:after {
   content: "\2212";
@@ -5394,6 +5400,7 @@ a.thumbnail {
 
 .content {
   user-select: none;
+  padding-left: 25px;
   color: dimgray;
   font-weight: bolder;
   max-height: 0;

@@ -15,6 +15,7 @@
   font-size: 20px;
   padding-top: 15px;
   padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 .collapsible:after {
@@ -34,6 +35,7 @@
 
 .content {
   user-select: none;
+  padding-left: 25px;
   color: dimgray;
   font-weight: bolder;
   max-height: 0;
