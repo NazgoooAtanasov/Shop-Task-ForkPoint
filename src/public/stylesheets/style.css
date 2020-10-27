@@ -5409,7 +5409,7 @@ a.thumbnail {
     .content .sizes .selected {
       color: black;
       border: red solid 1px;
-      border-bottom: red solid 3px;
+      border-bottom: red solid 4px;
       text-align: center; }
     .content .sizes .size-element:hover {
       cursor: pointer; }
@@ -5522,7 +5522,7 @@ a.thumbnail {
         max-width: 35px;
         max-height: 40px; }
       .sidebar .content .sizes .selected {
-        border-bottom: red solid 3px; }
+        border-bottom: red solid 4px; }
       .sidebar .content .sizes .size-element:hover {
         cursor: pointer; }
     .sidebar .content .colors {
@@ -5672,16 +5672,13 @@ a.thumbnail {
   .info-wrapper .sizes .size-element {
     color: dimgray;
     display: inline-block;
-    margin: 8px;
     padding: 5px 12px 5px 12px; }
   .info-wrapper .sizes .size-element:hover {
     cursor: pointer; }
   .info-wrapper .sizes .selected {
     color: black;
-    padding-left: 10px;
-    padding-right: 10px;
     border: red solid 1px;
-    border-bottom: red solid 3px; }
+    border-bottom: red solid 4px; }
 
 .info-wrapper .buy-now {
   text-align: center;
@@ -5734,7 +5731,7 @@ a.thumbnail {
     font-weight: bold;
     padding-bottom: 33px; }
   .item-description-wrapper .description .long_desc {
-    font-size: 20px;
+    font-size: 15px;
     margin: 20px 0 20px 0;
     list-style-type: none; }
 
