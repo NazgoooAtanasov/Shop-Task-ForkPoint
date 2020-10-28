@@ -5236,8 +5236,9 @@ a.thumbnail {
   padding-bottom: 15px; }
   .plp-wrapper .logo-menu .logo-menu-wrapper {
     display: inline;
-    margin-left: 431px;
-    margin-right: 425px; }
+    margin-left: 431px; }
+    .plp-wrapper .logo-menu .logo-menu-wrapper .mglass {
+      margin-left: 19%; }
     .plp-wrapper .logo-menu .logo-menu-wrapper .logo-menu-elements {
       display: inline; }
       .plp-wrapper .logo-menu .logo-menu-wrapper .logo-menu-elements .image {
@@ -5314,6 +5315,23 @@ a.thumbnail {
   max-width: 233px;
   max-height: 233px; }
 
+@media only screen and (max-width: 1260px) {
+  .plp-wrapper .logo-menu .logo-menu-wrapper {
+    margin-left: 200px; }
+  .plp-wrapper .category-title {
+    margin-left: 200px;
+    margin-right: 200px; }
+  .plp-wrapper .refine {
+    margin-right: 200px;
+    margin-left: 200px; }
+  .custom-col-small {
+    padding: 0;
+    flex: 0 0 15%;
+    max-width: 15%; }
+  .custom-col-big {
+    flex: 0 0 70%;
+    max-width: 70%; } }
+
 .pdp-wrapper .nav-desktop {
   background-color: black;
   color: white;
@@ -5332,6 +5350,10 @@ a.thumbnail {
     text-align: right; }
     .pdp-wrapper .nav-desktop .nav-desktop-right * {
       display: inline; }
+
+@media only screen and (max-width: 1260px) {
+  .pdp-wrapper .nav-desktop .nav-desktop-left {
+    margin-left: 0%; } }
 
 .pdp-wrapper .custom-col-small {
   flex: 0 0 20%;
@@ -5369,6 +5391,10 @@ a.thumbnail {
     margin-right: 425px; }
     .nav-desktop .nav-desktop-wrapper .nav-desktop-elements * {
       display: inline; }
+  @media only screen and (max-width: 1260px) {
+    .nav-desktop .nav-desktop-wrapper .nav-desktop-elements {
+      margin-left: 200px;
+      margin-right: 200px; } }
 
 .filter {
   margin-top: 16px;

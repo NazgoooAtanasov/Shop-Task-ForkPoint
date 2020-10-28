@@ -6,7 +6,10 @@
     .logo-menu-wrapper {
       display: inline;
       margin-left: 431px;
-      margin-right: 425px;
+
+      .mglass {
+        margin-left: 19%
+      }
 
       .logo-menu-elements {
         display: inline;
@@ -73,10 +76,6 @@
     }
   }
 
-  @media only screen and (max-width: 1400px) {
-    .col-sm-4 {
-    }
-  }
 
   @media only screen and (max-width: 1024px) {
     .filter {
@@ -116,6 +115,7 @@
   }
 }
 
+
 .slider {
   width: 100%;
 }
@@ -134,4 +134,34 @@
 .custom-image-grid {
   max-width: 233px;
   max-height: 233px;
+}
+
+@media only screen and (max-width: 1260px) {
+  .plp-wrapper {
+    .logo-menu {
+      .logo-menu-wrapper {
+        margin-left: 200px;
+      }
+    }
+
+    .category-title {
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+
+    .refine {
+      margin-right: 200px;
+      margin-left: 200px;
+    }
+  }
+  .custom-col-small {
+    padding: 0;
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+
+  .custom-col-big {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
 }

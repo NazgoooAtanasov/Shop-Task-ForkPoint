@@ -27,6 +27,15 @@
     }
   }
 
+  @media only screen and (max-width: 1260px) {
+    .nav-desktop {
+      .nav-desktop-left {
+        margin-left: 0%;
+      }
+    }
+
+  }
+
   .custom-col-small {
     flex: 0 0 20%;
     max-width: 20%;
