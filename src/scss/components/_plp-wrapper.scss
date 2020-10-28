@@ -171,15 +171,6 @@
   }
 
 
-  @media only screen and (max-width: 1650px) {
-    .card {
-      img {
-        max-width: 100px;
-      }
-    }
-  }
-
-
   @media only screen and (max-width: 1024px) {
     .filter {
       display: none;
@@ -208,13 +199,6 @@
     .filter {
       display: none;
     }
-    .card {
-      img {
-        min-width: 233px;
-        max-width: 233px;
-        max-height: 233px;
-      }
-    }
   }
 }
 
@@ -236,6 +220,7 @@
 
 .custom-image-grid {
   max-width: 233px;
+  min-width: 233px;
   max-height: 233px;
 }
 

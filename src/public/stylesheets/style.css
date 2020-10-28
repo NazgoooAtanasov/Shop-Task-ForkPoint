@@ -5338,10 +5338,6 @@ a.thumbnail {
     margin-left: 240px;
     margin-right: 233px; } }
 
-@media only screen and (max-width: 1650px) {
-  .plp-wrapper .card img {
-    max-width: 100px; } }
-
 @media only screen and (max-width: 1024px) {
   .plp-wrapper .filter {
     display: none; }
@@ -5356,11 +5352,7 @@ a.thumbnail {
   .plp-wrapper .refine {
     display: none; }
   .plp-wrapper .filter {
-    display: none; }
-  .plp-wrapper .card img {
-    min-width: 233px;
-    max-width: 233px;
-    max-height: 233px; } }
+    display: none; } }
 
 .slider {
   width: 100%; }
@@ -5376,6 +5368,7 @@ a.thumbnail {
 
 .custom-image-grid {
   max-width: 233px;
+  min-width: 233px;
   max-height: 233px; }
 
 .pdp-wrapper .nav-desktop {
