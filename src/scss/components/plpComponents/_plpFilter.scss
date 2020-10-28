@@ -1,6 +1,5 @@
 .filter {
   margin-top: 16px;
-  max-width: 270px;
 }
 
 .collapsible {
@@ -12,10 +11,11 @@
   border: none;
   text-align: left;
   outline: none;
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 500;
   padding-top: 15px;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .collapsible:after {
@@ -36,13 +36,14 @@
 .content {
   user-select: none;
   padding-left: 25px;
-  color: dimgray;
-  font-weight: bolder;
+  color: #A8A8A8;
+  font-weight: 600;
+  font-size: 13px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: white;
-  border-bottom: dimgray solid 1px;
+  border-bottom: #cccccc solid 1px;
 
 
   .sizes {

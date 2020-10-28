@@ -63,12 +63,12 @@ const filterItems = document.getElementsByClassName('filter-element');
 
 
 for (let i = 0; i < filterItems.length; i++) {
-    filterItems[i].setAttribute('color', "dimray");
+    filterItems[i].setAttribute('color', "#A8A8A8");
     const initialData = filterItems[i].firstChild.data;
     filterItems[i].addEventListener('click', () => {
         if (filterItems[i].style.color == 'black') {
             filterItems[i].firstChild.data = `${initialData}`;
-            filterItems[i].style.color = 'dimgray';
+            filterItems[i].style.color = '#A8A8A8';
         } else {
             filterItems[i].firstChild.data = `✓ ${initialData}`;
             filterItems[i].style.color = 'black';

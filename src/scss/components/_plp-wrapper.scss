@@ -36,7 +36,7 @@
   .category-title {
     margin-left: 431px;
     margin-right: 425px;
-    border-bottom: solid darkgrey 1px;
+    border-bottom: solid #cccccc 1px;
 
     .category-title-wrapper {
       * {
@@ -47,10 +47,11 @@
         font-size: 40px;
         font-weight: bold;
         padding-right: 5px;
-        border-right: solid darkgrey 2px;
+        border-right: solid #cccccc 2px;
       }
     }
   }
+
 
   .card:hover {
     cursor: pointer;
@@ -60,15 +61,117 @@
   }
 
   .refine {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 400;
     margin-left: 431px;
     margin-right: 425px;
     padding-top: 26px;
     padding-left: 8px;
   }
 
+  @media only screen and (max-width: 1700px) {
+    .category-title {
+      margin-left: 390px;
+      margin-right: 384px;
+    }
+
+    .logo-menu {
+      .logo-menu-wrapper {
+        margin-left: 390px;
+      }
+    }
+    .refine {
+      margin-left: 390px;
+      margin-right: 384px;
+    }
+  }
+  @media only screen and (max-width: 1600px) {
+    .category-title {
+      margin-left: 360px;
+      margin-right: 360px;
+    }
+
+    .logo-menu {
+      .logo-menu-wrapper {
+        margin-left: 360px;
+      }
+    }
+
+    .refine {
+      margin-left: 360px;
+      margin-right: 360px;
+    }
+  }
+  @media only screen and (max-width: 1500px) {
+    .category-title {
+      margin-left: 330px;
+      margin-right: 327px;
+    }
+
+    .logo-menu {
+      .logo-menu-wrapper {
+        margin-left: 330px;
+      }
+    }
+    .refine {
+      margin-left: 330px;
+      margin-right: 327px;
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    .category-title {
+      margin-left: 300px;
+      margin-right: 297px;
+    }
+
+    .logo-menu {
+      .logo-menu-wrapper {
+        margin-left: 300px;
+      }
+    }
+    .refine {
+      margin-left: 300px;
+      margin-right: 297px;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .category-title {
+      margin-left: 270px;
+      margin-right: 263px;
+    }
+
+    .logo-menu {
+      .logo-menu-wrapper {
+        margin-left: 270px;
+      }
+    }
+    .refine {
+      margin-left: 270px;
+      margin-right: 263px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .category-title {
+      margin-left: 240px;
+      margin-right: 233px;
+    }
+
+    .logo-menu {
+      .logo-menu-wrapper {
+        margin-left: 240px;
+      }
+    }
+    .refine {
+      margin-left: 240px;
+      margin-right: 233px;
+    }
+  }
+
 
   @media only screen and (max-width: 1650px) {
-
     .card {
       img {
         max-width: 100px;
@@ -136,32 +239,3 @@
   max-height: 233px;
 }
 
-@media only screen and (max-width: 1260px) {
-  .plp-wrapper {
-    .logo-menu {
-      .logo-menu-wrapper {
-        margin-left: 200px;
-      }
-    }
-
-    .category-title {
-      margin-left: 200px;
-      margin-right: 200px;
-    }
-
-    .refine {
-      margin-right: 200px;
-      margin-left: 200px;
-    }
-  }
-  .custom-col-small {
-    padding: 0;
-    flex: 0 0 15%;
-    max-width: 15%;
-  }
-
-  .custom-col-big {
-    flex: 0 0 70%;
-    max-width: 70%;
-  }
-}
