@@ -5804,6 +5804,11 @@ a.thumbnail {
       width: 60%;
       height: 51px;
       font-weight: bolder; }
+  @media only screen and (max-width: 1700px) {
+    .info-wrapper .buy-now .counter {
+      margin-right: 0px; }
+    .info-wrapper .buy-now .buy-now-wrapper .count-button {
+      width: 50%; } }
 
 .info-wrapper .share {
   display: inline; }
