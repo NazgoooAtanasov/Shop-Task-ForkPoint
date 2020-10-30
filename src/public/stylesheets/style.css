@@ -5225,7 +5225,9 @@ a.thumbnail {
   background-color: red;
   color: white;
   text-align: center;
-  font-size: 15px; }
+  font-size: 13px;
+  padding-top: 3px;
+  padding-bottom: 0; }
 
 @media only screen and (max-width: 1023px) {
   .header-freeShipping {
@@ -5238,7 +5240,7 @@ a.thumbnail {
     display: inline;
     margin-left: 385px; }
     .plp-wrapper .logo-menu .logo-menu-wrapper .mglass {
-      margin-left: 19%; }
+      margin-left: 24%; }
     .plp-wrapper .logo-menu .logo-menu-wrapper .logo-menu-elements {
       display: inline; }
       .plp-wrapper .logo-menu .logo-menu-wrapper .logo-menu-elements .image {
@@ -5290,6 +5292,8 @@ a.thumbnail {
     margin-right: 384px; }
   .plp-wrapper .logo-menu .logo-menu-wrapper {
     margin-left: 344px; }
+  .plp-wrapper .logo-menu .mglass {
+    margin-right: 19px; }
   .plp-wrapper .refine {
     margin-left: 344px;
     margin-right: 384px; } }
@@ -5310,6 +5314,8 @@ a.thumbnail {
     margin-right: 360px; }
   .plp-wrapper .logo-menu .logo-menu-wrapper {
     margin-left: 317px; }
+  .plp-wrapper .logo-menu .mglass {
+    margin-right: 9px; }
   .plp-wrapper .refine {
     margin-left: 317px;
     margin-right: 360px; } }
@@ -5401,8 +5407,11 @@ a.thumbnail {
       display: inline; }
   .pdp-wrapper .nav-desktop .nav-desktop-right {
     display: inline;
-    margin-left: 6%;
-    text-align: right; }
+    margin-left: 8%;
+    text-align: right;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 600; }
     .pdp-wrapper .nav-desktop .nav-desktop-right * {
       display: inline; }
 
@@ -5443,7 +5452,10 @@ a.thumbnail {
   .nav-desktop .nav-desktop-wrapper .nav-desktop-elements {
     text-align: right;
     margin-left: 431px;
-    margin-right: 370px; }
+    margin-right: 370px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 600; }
     .nav-desktop .nav-desktop-wrapper .nav-desktop-elements * {
       display: inline; }
   @media only screen and (max-width: 1260px) {
@@ -5758,7 +5770,7 @@ a.thumbnail {
   border-bottom: dimgray solid 1px; }
 
 .info-wrapper .item-name {
-  font-size: 25px;
+  font-size: 28px;
   color: black;
   font-weight: bold;
   margin: 10px 0 10px 0; }
