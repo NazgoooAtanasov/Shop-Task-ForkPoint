@@ -5294,6 +5294,16 @@ a.thumbnail {
     margin-left: 344px;
     margin-right: 384px; } }
 
+@media only screen and (max-width: 1750px) {
+  .plp-wrapper .category-title {
+    margin-left: 344px;
+    margin-right: 384px; }
+  .plp-wrapper .logo-menu .logo-menu-wrapper {
+    margin-left: 344px; }
+  .plp-wrapper .refine {
+    margin-left: 344px;
+    margin-right: 384px; } }
+
 @media only screen and (max-width: 1600px) {
   .plp-wrapper .category-title {
     margin-left: 289px;
@@ -5517,10 +5527,26 @@ a.thumbnail {
       border: solid red 1px;
       border-radius: 2px; }
   .content .filter-element {
-    padding: 10px 0 10px 0px;
     cursor: pointer; }
-  .content ul {
-    list-style-type: none; }
+  .content li {
+    list-style-type: none;
+    position: relative;
+    margin: 2px;
+    padding: 0.5em 0.5em 0.5em 0.5em; }
+  .content li.check {
+    color: black; }
+  .content li.check::before {
+    content: '';
+    position: absolute;
+    border-color: red;
+    border-style: solid;
+    border-width: 0 0.3em 0.25em 0;
+    height: 1em;
+    top: 1.5em;
+    left: -0.8em;
+    margin-top: -1em;
+    transform: rotate(45deg);
+    width: 0.5em; }
   .content .range-slider {
     padding-bottom: 10px;
     width: 75%;
@@ -5616,7 +5642,7 @@ a.thumbnail {
   .sidebar .content {
     padding-left: 25px;
     border: none;
-    font-weight: normal; }
+    font-weight: 600; }
     .sidebar .content .range-slider {
       padding: 20px 0;
       margin-left: 7%; }

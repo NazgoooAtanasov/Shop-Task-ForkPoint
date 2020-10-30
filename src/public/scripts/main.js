@@ -60,21 +60,16 @@ currenciesSelectors[0]?.addEventListener('change', (event) => {
 
 // Used to check items in filter list.
 const filterItems = document.getElementsByClassName('filter-element');
-
-
 for (let i = 0; i < filterItems.length; i++) {
-    filterItems[i].setAttribute('color', "#A8A8A8");
-    const initialData = filterItems[i].firstChild.data;
-    filterItems[i].addEventListener('click', () => {
-        if (filterItems[i].style.color == 'black') {
-            filterItems[i].firstChild.data = `${initialData}`;
-            filterItems[i].style.color = '#A8A8A8';
+    filterItems[i].addEventListener('click', (event) => {
+        if (event.target.classList.contains('check')) {
+            event.target.classList.remove('check');
         } else {
-            filterItems[i].firstChild.data = `✓ ${initialData}`;
-            filterItems[i].style.color = 'black';
+            event.target.classList.add('check');
         }
-    })
+    });
 }
+
 
 function opensidebar() {
     document.getElementById("mySidebar").style.width = "100%";

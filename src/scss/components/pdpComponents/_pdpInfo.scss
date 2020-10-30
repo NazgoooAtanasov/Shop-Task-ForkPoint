@@ -108,7 +108,6 @@
     }
 
 
-
     .buy-now-wrapper {
       margin-top: 5%;
 
@@ -124,12 +123,12 @@
       }
     }
 
-    @media only screen and (max-width: 1700px){
-      .counter{
+    @media only screen and (max-width: 1700px) {
+      .counter {
         margin-right: 0px;
       }
-      .buy-now-wrapper{
-        .count-button{
+      .buy-now-wrapper {
+        .count-button {
           width: 50%;
         }
       }

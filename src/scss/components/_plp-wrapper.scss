@@ -71,8 +71,8 @@
   }
 
   @media only screen and (max-width: 1800px) {
-    .card{
-      img{
+    .card {
+      img {
         max-width: unset;
         min-width: unset;
         min-height: unset;
@@ -96,6 +96,23 @@
       margin-right: 384px;
     }
   }
+  @media only screen and (max-width: 1750px) {
+    .category-title {
+      margin-left: 344px;
+      margin-right: 384px;
+    }
+
+    .logo-menu {
+      .logo-menu-wrapper {
+        margin-left: 344px;
+      }
+    }
+    .refine {
+      margin-left: 344px;
+      margin-right: 384px;
+    }
+  }
+
   @media only screen and (max-width: 1600px) {
     .category-title {
       margin-left: 289px;
