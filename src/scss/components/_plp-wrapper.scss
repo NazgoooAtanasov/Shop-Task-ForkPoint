@@ -53,6 +53,9 @@
   }
 
 
+  .card{
+    border: none;
+  }
   .card:hover {
     cursor: pointer;
   }
@@ -90,7 +93,8 @@
       .logo-menu-wrapper {
         margin-left: 344px;
       }
-      .mglass{
+
+      .mglass {
         margin-right: 19px;
       }
     }
@@ -126,7 +130,8 @@
       .logo-menu-wrapper {
         margin-left: 317px;
       }
-      .mglass{
+
+      .mglass {
         margin-right: 9px;
       }
     }

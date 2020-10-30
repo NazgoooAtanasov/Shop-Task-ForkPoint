@@ -5268,6 +5268,9 @@ a.thumbnail {
     padding-right: 5px;
     border-right: solid #cccccc 2px; }
 
+.plp-wrapper .card {
+  border: none; }
+
 .plp-wrapper .card:hover {
   cursor: pointer; }
 
