@@ -2,11 +2,11 @@ const _ = require('underscore');
 const dotenv = require('dotenv');
 
 const getDB = require('../database').getDB;
-
 dotenv.config();
 
 module.exports = async function mensCategoryInfo(req, res) {
     const db = getDB();
+
     const {
         categoryId,
         subcategoryId

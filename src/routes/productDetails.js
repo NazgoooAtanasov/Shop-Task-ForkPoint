@@ -6,6 +6,7 @@ const getDB = require('../database').getDB;
 
 dotenv.config();
 
+// Function used to calculate the the price in given currency.
 const findPrice = async (currency, itemPrice) => {
     if (!currency) {
         return itemPrice;
@@ -27,20 +28,20 @@ module.exports = async function productDetails(req, res) {
         productId,
         category
     } = req.params;
-    let {
-        currency
-    } = req.params
-    const collection = await database.collection('products');
 
     try {
+        const collection = await database.collection('products');
+
         // Finds a product by a given id.
         const product = await collection.findOne({
             id: productId
         });
 
+        // This section calculates the price in different currencies.
         const usd = product.price;
         const euro = await findPrice('EUR', product.price);
         const bgn = await findPrice('BGN', product.price);
+
         // Gets the image url for the product.
         const {
             link

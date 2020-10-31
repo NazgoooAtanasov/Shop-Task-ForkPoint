@@ -105,18 +105,18 @@
   }
 
 
-
-  li{
+  li {
     list-style-type: none;
     position: relative;
     margin: 2px;
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 
-  li.check{
+  li.check {
     color: black;
   }
-  li.check::before{
+
+  li.check::before {
     content: '';
     position: absolute;
     border-color: red;
@@ -129,6 +129,7 @@
     transform: rotate(45deg);
     width: 0.5em;
   }
+
   .range-slider {
     padding-bottom: 10px;
     width: 75%;
